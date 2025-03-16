@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory, type Router } from 'vue-router';
-import HomeView from '../views/HomeView.vue';
+import HomeView from '@views/HomeView.vue';
 import { RouteName } from './routes';
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -9,7 +9,7 @@ import { RouteName } from './routes';
 //    which is lazy-loaded when the route is visited.
 ////////////////////////////////////////////////////////////////////////////////
 
-const About = () => import('../views/AboutView.vue');
+const About = () => import('@views/AboutView.vue');
 
 export const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),

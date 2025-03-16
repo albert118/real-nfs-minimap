@@ -1,0 +1,39 @@
+# Artifacts/binaries
+
+dist
+bin
+data/lib
+coverage
+*.tsbuildinfo
+
+# (Most) Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Python virt envs
+pyvenv.cfg
+
+# JavaScript
+
+node_modules
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Metadata
+
+.gitignore
+.gitattributes
+.gitconfig
+.prettierignore
+CODEOWNERS

@@ -1,0 +1,17 @@
+{
+	"name": "mapping-test",
+	"version": "0.0.1",
+	"description": "A mapping test project",
+	"type": "module",
+	"dependencies": {
+		"leaflet": "^1.9.4",
+		"pinia": "^3.0.1",
+		"typescript": "^5.8.2",
+		"vue": "^3.5.13",
+		"vue-router": "^4.5.0"
+	},
+	"devDependencies": {
+		"vitest": "^3.0.8",
+		"prettier": "^3.5.3"
+	}
+}

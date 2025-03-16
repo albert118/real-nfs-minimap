@@ -16,7 +16,8 @@
 
       // No `ScriptHost` because Vue 3 dropped support for IE
     ],
-     // Most non-library projects don't need to emit declarations.
+    "composite": true,
+    // Most non-library projects don't need to emit declarations.
     // So we add this option by default to make the config more friendly to most users.
     "noEmit": true,
 
@@ -51,6 +52,8 @@
     // Any imports or exports without a type modifier are left around. This is important for `<script setup>`.
     // Anything that uses the type modifier is dropped entirely.
     "verbatimModuleSyntax": true,
+    "preserveValueImports": false,
+    "importsNotUsedAsValues": "remove",
 
     // A few notes:
     // - Vue 3 supports ES2016+
@@ -72,11 +75,14 @@
     "skipLibCheck": true,
 
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
-    "types": [
-      "vite/client"
-    ],
+    "types": ["vite/client"],
     "paths": {
-      "@/*": ["./src/*"]
+      "@stores": ["./src/stores/*"],
+      "@utils": ["./src/utils/*"],
+      "@types": ["./src/types/*"],
+      "@plugins": ["./src/plugins/*"],
+      "@router": ["./src/router/index.ts"],
+      "@components": ["./src/components/index.ts"]
     }
   }
 }

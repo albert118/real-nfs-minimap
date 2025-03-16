@@ -5,7 +5,7 @@ bin
 data/lib
 coverage
 *.tsbuildinfo
-
+node_modules
 
 # Editor directories and files
 .vscode/*
@@ -18,12 +18,9 @@ coverage
 *.sw?
 
 
-# Python virt envs
+# Python
 pyvenv.cfg
-
-# JavaScript
-
-node_modules
+__pycache__/
 
 # Logs
 logs

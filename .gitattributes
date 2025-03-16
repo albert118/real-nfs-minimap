@@ -1,0 +1,15 @@
+# Configures default behaviour for file line endings
+*               text=auto eol=LF
+
+# override some files with specific defaults
+# as they are probably OS specific files anyway, or have specific diff modes
+
+*.bash          eol=crlf
+*.bat           eol=crlf
+*.cmd           eol=crlf
+*.md            diff=markdown
+*.sh            diff=bash
+
+# allow comments in .vscode config files
+.vscode/*.json  linguist-language=JSON-with-comments
+

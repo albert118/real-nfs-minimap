@@ -1,0 +1,7 @@
+# artifacts/binaries
+
+data/bin
+data/lib
+
+# python virt envs
+pyvenv.cfg

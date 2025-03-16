@@ -1,0 +1,10 @@
+{
+	"explorer.fileNesting.enabled": true,
+	"explorer.fileNesting.patterns": {
+		"tsconfig.json": "tsconfig.*.json",
+		"vite.config.*": "vitest.config.*",
+		"package.json": "package-lock.json, prettier*, prettier*, .editorconfig"
+	},
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode"
+}

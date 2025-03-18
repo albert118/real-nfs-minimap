@@ -9,7 +9,7 @@ import { RouteName } from './routes';
 //    which is lazy-loaded when the route is visited.
 ////////////////////////////////////////////////////////////////////////////////
 
-const About = () => import('@views/AboutView.vue');
+// const About = () => import('@views/AboutView.vue');
 
 export const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -18,12 +18,6 @@ export const router = createRouter({
       path: '/',
       name: RouteName.Home,
       component: HomeView,
-    },
-    {
-      path: '/about',
-      name: 'about',
-
-      component: About,
     },
   ],
 });

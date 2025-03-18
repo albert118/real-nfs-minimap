@@ -1,6 +1,7 @@
 # artifacts/binaries
 
 dist
+dev-dist
 bin
 data/lib
 coverage

@@ -1,8 +1,8 @@
-import type { App, ComponentPublicInstance } from 'vue';
+import type { App } from 'vue';
 
 export default {
   install(app: App) {
-    app.config.errorHandler = (err: unknown, instance: ComponentPublicInstance | null, info: string) => {
+    app.config.errorHandler = (err, instance, info) => {
       console.groupCollapsed('❌ An unhandled error has reached the app boundary (expand for details)');
 
       console.error(`\tError: ${err}`);

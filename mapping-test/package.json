@@ -1,8 +1,9 @@
 {
   "name": "mapping-test",
+  "shortName": "Mapping Test",
+  "description": "A mapping test project",
   "version": "0.0.1",
   "private": true,
-  "description": "A mapping test project",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -59,6 +59,7 @@ export default defineConfig({
           },
         ],
       },
+      // https://vite-pwa-org.netlify.app/guide/register-service-worker.html
       workbox: {
         // TODO: implement offline caching with this configuration
         runtimeCaching: [

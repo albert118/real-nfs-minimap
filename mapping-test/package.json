@@ -15,7 +15,6 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "leaflet": "^1.9.4",
     "pinia": "^3.0.1",
     "typescript": "^5.8.2",
     "vue": "^3.5.13",
@@ -27,17 +26,19 @@
     "@types/node": "^22.13.9",
     "@vite-pwa/assets-generator": "^0.2.6",
     "@vitejs/plugin-vue": "^5.2.1",
+    "@vue-leaflet/vue-leaflet": "^0.10.1",
     "@vue/test-utils": "^2.4.6",
     "@vue/tsconfig": "^0.7.0",
     "jsdom": "^26.0.0",
+    "leaflet": "^1.9.4",
     "prettier": "3.5.3",
+    "pwa-asset-generator": "^6.4.0",
     "typescript": "~5.8.0",
     "unplugin-auto-import": "^19.1.1",
     "vite": "^6.2.1",
     "vite-plugin-pwa": "^0.21.1",
     "vite-plugin-vue-devtools": "^7.7.2",
     "vitest": "^3.0.8",
-    "vue-tsc": "^2.2.8",
-    "pwa-asset-generator": "^6.4.0"
+    "vue-tsc": "^2.2.8"
   }
 }

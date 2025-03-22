@@ -10,6 +10,7 @@ import { createPinia } from 'pinia';
 import 'vuetify/styles';
 import { createVuetify } from 'vuetify';
 import { aliases, mdi } from 'vuetify/iconsets/mdi';
+import '@mdi/font/css/materialdesignicons.css';
 
 const vuetifyConfig = {
   icons: {

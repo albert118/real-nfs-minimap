@@ -9,6 +9,17 @@ import { createPinia } from 'pinia';
 // Vuetify
 import 'vuetify/styles';
 import { createVuetify } from 'vuetify';
+import { aliases, mdi } from 'vuetify/iconsets/mdi';
+
+const vuetifyConfig = {
+  icons: {
+    defaultSet: 'mdi',
+    aliases,
+    sets: {
+      mdi,
+    },
+  },
+};
 
 import { createApp } from 'vue';
 import App from './App.vue';
@@ -17,6 +28,6 @@ import GlobalErrorHandler from '@plugins/GlobalErrorHandler';
 
 const app = createApp(App);
 
-app.use(GlobalErrorHandler).use(createPinia()).use(router).use(createVuetify());
+app.use(GlobalErrorHandler).use(createPinia()).use(router).use(createVuetify(vuetifyConfig));
 
 app.mount('#app');

@@ -1,5 +1,17 @@
 <script setup lang="ts">
-import { LMap, LTileLayer, LMarker } from '@vue-leaflet/vue-leaflet';
+import { LMap, LTileLayer, LMarker, LIcon, LTooltip } from '@vue-leaflet/vue-leaflet';
+import IMdiMapMarker from '~icons/mdi/map-marker';
+
+// LIcon is a convoluted to add an icon - as a heading tag... There is no need for this to be part of the vue-leaflet library
+// as it has no reference to any leaflet objects
+// https://github.com/vue-leaflet/vue-leaflet/blob/master/src/components/LIcon.vue#L126
+// we can avoid this and just use the vuetify icon component instead (v-icon)
+// but... the implementation will blank anything passed to l-marker that isn't l-icon
+// https://github.com/vue-leaflet/vue-leaflet/blob/master/src/components/LMarker.vue#L77-L80
+// and leave an empty div in it's place (not good)
+// but other things MIGHT work, see the example here:
+// https://github.com/vue-leaflet/vue3-demo-project/blob/master/src/App.vue#L13-L27
+// all in all, if I can't customize something as simple as an icon then this library is dead to me
 
 export type MapProps = {
   center: Coordinate;
@@ -41,7 +53,9 @@ const onMove = (event: any) => {
         name="Stadia Maps Basemap"
         :attribution="attribution"
       />
-      <l-marker v-if="pointsOfInterest" v-for="poi in pointsOfInterest" :lat-lng="poi.geometry.coordinates.reverse()" />
+      <l-marker v-if="pointsOfInterest" v-for="poi in pointsOfInterest" :lat-lng="poi.geometry.coordinates.reverse()" :key="poi.id">
+        <v-icon :icon="IMdiMapMarker" color="info" />
+      </l-marker>
     </l-map>
   </div>
 </template>

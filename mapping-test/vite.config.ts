@@ -2,11 +2,18 @@ import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import vueDevTools from 'vite-plugin-vue-devtools';
 import tsconfig from './tsconfig.app.json';
-import path from 'path';
-import { VitePWA } from 'vite-plugin-pwa';
-import AutoImport from 'unplugin-auto-import/vite';
 import packageDefintion from './package.json';
+import path from 'path';
+
+// Progressive Web App
+import { VitePWA } from 'vite-plugin-pwa';
+
+// Components and Unplugin
 import vuetify from 'vite-plugin-vuetify';
+import Icons from 'unplugin-icons/vite';
+import AutoImport from 'unplugin-auto-import/vite';
+import Components from 'unplugin-vue-components/vite';
+import IconsResolver from 'unplugin-icons/resolver';
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -23,6 +30,7 @@ export default defineConfig({
       imports: ['vue', 'vitest', 'vue-router'],
       vueTemplate: true,
     }),
+    Icons(),
     vueDevTools(),
     // https://vite-pwa-org.netlify.app/
     VitePWA({
@@ -93,6 +101,10 @@ export default defineConfig({
       },
     }),
     vuetify(),
+    Components({
+      dts: './src/types/componentss.d.ts',
+      resolvers: [IconsResolver()],
+    }),
   ],
   resolve: {
     alias: Object.fromEntries(

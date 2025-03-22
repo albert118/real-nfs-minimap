@@ -7,6 +7,37 @@ import SettingsCard from '@components/SettingsCard.vue';
 const settings = useSettings();
 const arcadesDemo = useArcadesDemo();
 
+const currentPosition = ref<Coordinate | undefined>();
+const pointsOfInterest = ref<PointOfInterest[]>([]);
+
+onMounted(async () => {
+  // get location perms and then resolve the user's current position
+  await navigator.permissions.query({ name: 'geolocation' });
+  navigator.geolocation.getCurrentPosition(
+    (position: GeolocationPosition) => {
+      // resolve the current position
+      currentPosition.value = [position.coords.latitude, position.coords.longitude];
+      // the create a PoI for the user's location
+      pointsOfInterest.value.push({
+        type: 'Feature',
+        properties: {
+          name: 'You are here!',
+          description: 'I know where you live',
+        },
+        geometry: {
+          type: 'Point',
+          coordinates: currentPosition.value,
+        },
+        id: '1722312876312',
+      } as PointOfInterest);
+    },
+    () => {
+      console.warn('failed to resolve position! Will set fallback default coord for now');
+      currentPosition.value = [35.7, 139.8];
+    },
+  );
+});
+
 // the demo centers on the continent of Japan and shows various arcardes as Points of Interest (PoI's)
 const mapConfig = computed(() => {
   return settings.enableDemoMode
@@ -16,9 +47,9 @@ const mapConfig = computed(() => {
         center: [38, 139.69] as Coordinate,
       }
     : {
-        pointsOfInterest: [] as PointOfInterest[],
-        zoom: 18,
-        center: [35.7, 139.8] as Coordinate,
+        pointsOfInterest: pointsOfInterest.value,
+        zoom: 16,
+        center: currentPosition.value,
       };
 });
 </script>

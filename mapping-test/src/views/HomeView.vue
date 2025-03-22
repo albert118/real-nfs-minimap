@@ -8,16 +8,26 @@ const settings = useSettings();
 const arcadesDemo = useArcadesDemo();
 
 // the demo centers on the continent of Japan and shows various arcardes as Points of Interest (PoI's)
-const pointsOfInterest = computed(() => (settings.enableDemoMode ? arcadesDemo.features : []));
-const zoom = computed(() => (settings.enableDemoMode ? 6 : 18));
-const center = computed<Coordinate>(() => (settings.enableDemoMode ? [38, 139.69] : [35.7, 139.8]));
+const mapConfig = computed(() => {
+  return settings.enableDemoMode
+    ? {
+        pointsOfInterest: arcadesDemo.features,
+        zoom: 6,
+        center: [38, 139.69] as Coordinate,
+      }
+    : {
+        pointsOfInterest: [] as PointOfInterest[],
+        zoom: 18,
+        center: [35.7, 139.8] as Coordinate,
+      };
+});
 </script>
 
 <template>
   <main>
     <div class="stack">
       <SettingsCard :enable-demo="settings.enableDemoMode" @update:enable-demo="settings.toggleDemoMode()" />
-      <Map :points-of-interest="pointsOfInterest" :zoom="zoom" :center="center" />
+      <Map :points-of-interest="mapConfig.pointsOfInterest" :zoom="mapConfig.zoom" :center="mapConfig.center" />
     </div>
   </main>
 </template>

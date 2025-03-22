@@ -4,26 +4,29 @@ import { LMap, LTileLayer, LMarker } from '@vue-leaflet/vue-leaflet';
 export type MapProps = {
   center: Coordinate;
   pointsOfInterest: PointOfInterest[];
+  verbose: boolean;
 };
 
 const props = withDefaults(defineProps<Partial<MapProps>>(), {
-  // this is where we start for this example, continent of Japan
   // idky this won't ts validate, as it is the expected type but TS insists it's number[] not [number, number]
   // I assume this is a bug with defineProps and Vue 3
   // @ts-ignore
-  center: [38, 139.69],
+  center: [35.7, 139.8],
+  verbose: false,
 });
 
 const map = ref();
 
-// the zoom is enough to show the entire continent
+// the zoom is enough to show a continent
 const zoom = defineModel<number>('zoom', { required: false, default: 6 });
 
 const attribution =
   '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
 
 const onMove = (event: any) => {
-  console.log('[map] move: ', event);
+  // TODO: touch event handling
+  const { originalEvent } = event;
+  props.verbose && console.log(`[map] move: [ ${originalEvent.x}, ${originalEvent.y} ]`);
 };
 </script>
 

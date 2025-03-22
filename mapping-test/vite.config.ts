@@ -30,7 +30,7 @@ export default defineConfig({
       imports: ['vue', 'vitest', 'vue-router'],
       vueTemplate: true,
     }),
-    Icons(),
+    Icons({ compiler: 'vue3' }),
     vueDevTools(),
     // https://vite-pwa-org.netlify.app/
     VitePWA({
@@ -104,6 +104,12 @@ export default defineConfig({
     Components({
       dts: './src/types/componentss.d.ts',
       resolvers: [IconsResolver()],
+      types: [
+        {
+          from: 'vue-router',
+          names: ['RouterLink', 'RouterView'],
+        },
+      ],
     }),
   ],
   resolve: {

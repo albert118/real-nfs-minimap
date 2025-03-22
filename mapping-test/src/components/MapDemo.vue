@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useArcardes } from '@stores/arcadeStore';
+import { useArcadesDemo } from '@stores/arcadeStore';
 // this library works - but is basically a zombie
 import { LMap, LTileLayer, LMarker } from '@vue-leaflet/vue-leaflet';
 // these styles need to be imported globally, so they should be shifted higher and cached
@@ -11,7 +11,7 @@ const zoom = ref(6);
 // this is where we start for this example, continent of Japan
 const center = ref([38, 139.69]);
 
-const arcades = useArcardes();
+const arcades = useArcadesDemo();
 </script>
 
 <template>

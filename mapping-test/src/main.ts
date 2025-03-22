@@ -10,11 +10,6 @@ import { createPinia } from 'pinia';
 import 'vuetify/styles';
 import { createVuetify } from 'vuetify';
 
-// Oh, Vue Icons!
-import { OhVueIcon, addIcons } from 'oh-vue-icons';
-import { LaMapMarkerAltSolid } from 'oh-vue-icons/icons';
-addIcons(LaMapMarkerAltSolid);
-
 import { createApp } from 'vue';
 import App from './App.vue';
 import { router } from '@router';
@@ -23,8 +18,5 @@ import GlobalErrorHandler from '@plugins/GlobalErrorHandler';
 const app = createApp(App);
 
 app.use(GlobalErrorHandler).use(createPinia()).use(router).use(createVuetify());
-
-// register icons
-app.component('v-icon', OhVueIcon);
 
 app.mount('#app');

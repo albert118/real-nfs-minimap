@@ -102,7 +102,7 @@ export default defineConfig({
     }),
     vuetify(),
     Components({
-      dts: './src/types/componentss.d.ts',
+      dts: './src/types/components.d.ts',
       resolvers: [IconsResolver()],
       types: [
         {

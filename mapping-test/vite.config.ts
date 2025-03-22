@@ -6,6 +6,7 @@ import path from 'path';
 import { VitePWA } from 'vite-plugin-pwa';
 import AutoImport from 'unplugin-auto-import/vite';
 import packageDefintion from './package.json';
+import vuetify from 'vite-plugin-vuetify';
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -91,6 +92,7 @@ export default defineConfig({
         enabled: isDevelopment(),
       },
     }),
+    vuetify(),
   ],
   resolve: {
     alias: Object.fromEntries(

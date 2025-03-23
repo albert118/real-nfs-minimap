@@ -1,14 +1,34 @@
-import './assets/main.css'
+import '@assets/main.css';
 
-import { createApp } from 'vue'
-import { createPinia } from 'pinia'
+// Leaflet
+import 'leaflet/dist/leaflet.css';
 
-import App from './App.vue'
-import router from './router'
+// Pinia
+import { createPinia } from 'pinia';
 
-const app = createApp(App)
+// Vuetify
+import 'vuetify/styles';
+import { createVuetify } from 'vuetify';
+import { aliases, mdi } from 'vuetify/iconsets/mdi';
+import '@mdi/font/css/materialdesignicons.css';
 
-app.use(createPinia())
-app.use(router)
+const vuetifyConfig = {
+  icons: {
+    defaultSet: 'mdi',
+    aliases,
+    sets: {
+      mdi,
+    },
+  },
+};
 
-app.mount('#app')
+import { createApp } from 'vue';
+import App from './App.vue';
+import { router } from '@router';
+import GlobalErrorHandler from '@plugins/GlobalErrorHandler';
+
+const app = createApp(App);
+
+app.use(GlobalErrorHandler).use(createPinia()).use(router).use(createVuetify(vuetifyConfig));
+
+app.mount('#app');

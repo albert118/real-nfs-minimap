@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import L from 'leaflet';
 import MapMarker from './MapMarker.vue';
-import { render, type AppContext } from 'vue';
+import { type AppContext } from 'vue';
 import renderComponent from '@utils/render';
 
 export type MapProps = {

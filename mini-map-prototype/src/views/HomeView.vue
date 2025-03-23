@@ -67,7 +67,12 @@ const mapConfig = computed(() => {
   <main>
     <div class="stack">
       <SettingsCard :enable-demo="settings.enableDemoMode" @update:enable-demo="settings.toggleDemoMode()" />
-      <Map :points-of-interest="mapConfig.pointsOfInterest" :zoom="mapConfig.zoom" :center="mapConfig.center" />
+      <Map
+        :points-of-interest="mapConfig.pointsOfInterest"
+        :zoom="mapConfig.zoom"
+        :center="mapConfig.center"
+        attribution='&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+      />
     </div>
   </main>
 </template>

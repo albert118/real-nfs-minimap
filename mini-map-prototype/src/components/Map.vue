@@ -2,27 +2,24 @@
 import L from 'leaflet';
 import MapMarker from './MapMarker.vue';
 import { render, type AppContext } from 'vue';
+import renderComponent from '@utils/render';
 
 export type MapProps = {
   center: Coordinate;
   pointsOfInterest: PointOfInterest[];
+  attribution: string;
 };
 
-const props = withDefaults(defineProps<Partial<MapProps>>(), {
-  // idky this won't ts validate, as it is the expected type but TS insists it's number[] not [number, number]
-  // I assume this is a bug with defineProps and Vue 3
-  // @ts-ignore
-  center: [35.7, 139.8],
-});
+const props = defineProps<Partial<MapProps>>();
+
 // the zoom is enough to show a continent
 const zoom = defineModel<number>('zoom', { required: false, default: 6 });
 
-const map = ref();
-
-const attribution =
-  '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
+const map = useTemplateRef<HTMLInputElement>('map');
 
 let appContext: AppContext | undefined;
+
+const stadiaMapUrlTemplate = 'https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png';
 
 // WATCH OUT FOR MAKING THIS ASYNC IN CASE WE LOSE APP CONTEXT!!
 onMounted(() => {
@@ -32,22 +29,22 @@ onMounted(() => {
     appContext = instance.appContext;
   }
 
-  // Japan, continent centered
-  const { x, y } = props.center;
   // TODO: fix order of these two variables and improve usage + deconstruction + naming
-  const lMap = L.map('map').setView([x, y], zoom.value);
-
-  L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
-    attribution: attribution,
-    maxZoom: 19,
-  }).addTo(lMap);
-
-  props.pointsOfInterest.map((poi) => addMarker(poi, lMap));
+  if (map.value) {
+    // TODO: default
+    const { x, y } = props.center ?? { x: 0, y: 0 };
+    const lMap = L.map(map.value).setView([x, y], zoom.value);
+    L.tileLayer(stadiaMapUrlTemplate, { attribution: props.attribution }).addTo(lMap);
+    props.pointsOfInterest && props.pointsOfInterest.map((poi) => addMarker(poi, lMap));
+  }
 });
 
 const addMarker = (poi: PointOfInterest, map: L.Map) => {
   const { x, y } = poi.geometry.coordinates;
 
+  // add a fake div marker to remove the default marker
+  // TODO: can we just unset the marker icon here? - no default is provided by Icon.Default implementation
+  // TODO: override Icon.Default.prototype.options.icon with undefined URL and hidden class
   const fakeDivIcon = L.divIcon({
     className: 'map--marker-icon',
   });
@@ -64,17 +61,13 @@ const addMarker = (poi: PointOfInterest, map: L.Map) => {
   }
 };
 
-// dynamically mount the component we want here by using Vue's hyperscript function (h) and the render API
 const createMarkerIcon = (lMarker: L.Marker) => {
-  if (!appContext) return;
+  if (!appContext) throw new Error('no app context exists!');
 
   const el = lMarker.getElement();
-
   if (!el) return;
 
-  const vNode = h(MapMarker);
-  vNode.appContext = appContext;
-  render(vNode, el);
+  renderComponent(el, MapMarker, appContext);
 };
 
 const getPoiName = (poi: PointOfInterest) => {
@@ -84,7 +77,7 @@ const getPoiName = (poi: PointOfInterest) => {
 </script>
 
 <template>
-  <div :ref="map" id="map" />
+  <div ref="map" id="map" />
 </template>
 
 <style lang="css">
@@ -97,6 +90,5 @@ const getPoiName = (poi: PointOfInterest) => {
 .map--marker-icon {
   width: 0;
   height: 0;
-  /* border: 1px solid red; */
 }
 </style>

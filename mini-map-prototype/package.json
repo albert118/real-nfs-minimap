@@ -1,5 +1,7 @@
 {
   "name": "mini-map-prototype",
+  "shortName": "Mini Map Prototype",
+  "description": "A prototype minimap",
   "version": "0.0.1",
   "private": true,
   "type": "module",

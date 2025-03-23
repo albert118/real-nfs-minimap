@@ -3,6 +3,7 @@ import { useArcadesDemo } from '@stores/arcadeStore';
 import { useSettings } from '@stores/settingsStore';
 import Map from '@components/Map.vue';
 import SettingsCard from '@components/SettingsCard.vue';
+import { useGeolocation } from '@vueuse/core';
 
 const settings = useSettings();
 const arcadesDemo = useArcadesDemo();
@@ -12,36 +13,46 @@ const pointsOfInterest = ref<PointOfInterest[]>([]);
 
 onMounted(async () => {
   // get location perms and then resolve the user's current position
-  await navigator.permissions.query({ name: 'geolocation' });
-  navigator.geolocation.getCurrentPosition(
-    (position: GeolocationPosition) => {
-      // resolve the current position
-      currentPosition.value = {
-        x: position.coords.latitude,
-        y: position.coords.longitude,
-      };
-      // the create a PoI for the user's location
-      pointsOfInterest.value.push({
-        type: 'Feature',
-        properties: {
-          name: 'You are here!',
-          description: 'I know where you live',
-        },
-        geometry: {
-          type: 'Point',
-          coordinates: currentPosition.value,
-        },
-        id: '1722312876312',
-      } as PointOfInterest);
+  const { coords, locatedAt, error, resume, pause } = useGeolocation({
+    enableHighAccuracy: true,
+    // if this isn't specified, then the error handler will never be called
+    timeout: 1000,
+    // disable cache
+    maximumAge: 0,
+  });
+
+  resume();
+
+  if (error.value) {
+    console.warn('failed to resolve position!');
+    console.error(error.value);
+  }
+
+  if (coords.value.latitude === Infinity || coords.value.longitude === Infinity) {
+    console.error('failed to resolve position! lat/long was infinity');
+  }
+
+  // resolve the current position
+  currentPosition.value = {
+    x: coords.value.latitude,
+    y: coords.value.longitude,
+  };
+
+  // the create a PoI for the user's location
+  pointsOfInterest.value.push({
+    type: 'Feature',
+    properties: {
+      name: 'You are here!',
+      description: 'I know where you live',
     },
-    () => {
-      console.warn('failed to resolve position! Will set fallback default coord for now');
-      currentPosition.value = {
-        x: 35.7,
-        y: 139.8,
-      };
+    geometry: {
+      type: 'Point',
+      coordinates: currentPosition.value,
     },
-  );
+    id: '1722312876312',
+  } as PointOfInterest);
+
+  pause();
 });
 
 // the demo centers on the continent of Japan and shows various arcardes as Points of Interest (PoI's)
@@ -57,7 +68,7 @@ const mapConfig = computed(() => {
       }
     : {
         pointsOfInterest: pointsOfInterest.value,
-        zoom: 16,
+        zoom: 6,
         center: currentPosition.value,
       };
 });

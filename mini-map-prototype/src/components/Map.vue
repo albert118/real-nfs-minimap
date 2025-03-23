@@ -22,12 +22,34 @@ const attribution =
 
 onMounted(() => {
   // Japan, continent centered
-  const lMap = L.map('map').setView(props.center, zoom.value, {});
+  const { x, y } = props.center;
+  // TODO: fix order of these two variables and improve usage + deconstruction + naming
+  const lMap = L.map('map').setView([x, y], zoom.value);
+
   L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
     attribution: attribution,
     maxZoom: 19,
   }).addTo(lMap);
+
+  props.pointsOfInterest.map((poi) => addMarker(poi, lMap));
 });
+
+const addMarker = (poi: PointOfInterest, map: L.Map) => {
+  const { x, y } = poi.geometry.coordinates;
+
+  try {
+    const lMarker = L.marker([y, x]).addTo(map);
+    const name = getPoiName(poi);
+    name && lMarker.bindPopup(name);
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+const getPoiName = (poi: PointOfInterest) => {
+  if (poi.properties['name']) return poi.properties['name'];
+  if (poi.properties['name:en']) return poi.properties['name:en'];
+};
 </script>
 
 <template>

@@ -21,9 +21,22 @@ export const useArcadesDemo = defineStore('arcadesDemo', () => {
     timestamp: new Date(typedArcades.timestamp),
   };
 
+  // we can pre-compute this entire data set, but loading large sets will potentially create performance issues
+  const features = typedArcades.features.map((f: any) => ({
+    id: f.id,
+    type: f.type,
+    properties: f.properties,
+    geometry: {
+      type: 'Point',
+      coordinates: {
+        x: f.geometry.coordinates[0],
+        y: f.geometry.coordinates[1],
+      },
+    },
+  }));
+
   return {
     meta,
-    // we can pre-compute this entire data set, but loading large sets will potentially create perofrmance issues
-    features: typedArcades.features as PointOfInterest[],
+    features,
   };
 });

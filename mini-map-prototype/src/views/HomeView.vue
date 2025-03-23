@@ -16,7 +16,10 @@ onMounted(async () => {
   navigator.geolocation.getCurrentPosition(
     (position: GeolocationPosition) => {
       // resolve the current position
-      currentPosition.value = [position.coords.latitude, position.coords.longitude];
+      currentPosition.value = {
+        x: position.coords.latitude,
+        y: position.coords.longitude,
+      };
       // the create a PoI for the user's location
       pointsOfInterest.value.push({
         type: 'Feature',
@@ -33,7 +36,10 @@ onMounted(async () => {
     },
     () => {
       console.warn('failed to resolve position! Will set fallback default coord for now');
-      currentPosition.value = [35.7, 139.8];
+      currentPosition.value = {
+        x: 35.7,
+        y: 139.8,
+      };
     },
   );
 });
@@ -44,7 +50,10 @@ const mapConfig = computed(() => {
     ? {
         pointsOfInterest: arcadesDemo.features,
         zoom: 6,
-        center: [38, 139.69] as Coordinate,
+        center: {
+          x: 38,
+          y: 139.69,
+        },
       }
     : {
         pointsOfInterest: pointsOfInterest.value,

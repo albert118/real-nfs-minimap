@@ -1,7 +1,10 @@
 export {};
 
 declare global {
-  export type Coordinate = [x: number, y: number];
+  export type Coordinate = {
+    x: number;
+    y: number;
+  };
 
   export type FeatureType = 'Feature';
 

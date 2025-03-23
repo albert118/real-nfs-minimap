@@ -8,19 +8,27 @@ import { useGeolocation } from '@vueuse/core';
 const settings = useSettings();
 const arcadesDemo = useArcadesDemo();
 
-const currentPosition = ref<Coordinate | undefined>();
+const isLoading = ref(true);
+
+// get location perms and then resolve the user's current position
+const { coords, locatedAt, error, resume, pause } = useGeolocation({
+  enableHighAccuracy: true,
+  // if this isn't specified, then the error handler will never be called
+  timeout: 1000,
+  // disable cache
+  maximumAge: 0,
+});
+
+const currentPosition = computed(() => {
+  return {
+    x: coords.value.latitude === Infinity ? 0 : coords.value.latitude,
+    y: coords.value.longitude === Infinity ? 0 : coords.value.longitude,
+  };
+});
+
 const pointsOfInterest = ref<PointOfInterest[]>([]);
 
 onMounted(async () => {
-  // get location perms and then resolve the user's current position
-  const { coords, locatedAt, error, resume, pause } = useGeolocation({
-    enableHighAccuracy: true,
-    // if this isn't specified, then the error handler will never be called
-    timeout: 1000,
-    // disable cache
-    maximumAge: 0,
-  });
-
   resume();
 
   if (error.value) {
@@ -31,12 +39,6 @@ onMounted(async () => {
   if (coords.value.latitude === Infinity || coords.value.longitude === Infinity) {
     console.error('failed to resolve position! lat/long was infinity');
   }
-
-  // resolve the current position
-  currentPosition.value = {
-    x: coords.value.latitude,
-    y: coords.value.longitude,
-  };
 
   // the create a PoI for the user's location
   pointsOfInterest.value.push({
@@ -53,11 +55,12 @@ onMounted(async () => {
   } as PointOfInterest);
 
   pause();
+  isLoading.value = false;
 });
 
 // the demo centers on the continent of Japan and shows various arcardes as Points of Interest (PoI's)
 const mapConfig = computed(() => {
-  return settings.enableDemoMode
+  return false
     ? {
         pointsOfInterest: arcadesDemo.features,
         zoom: 6,
@@ -79,6 +82,7 @@ const mapConfig = computed(() => {
     <div class="stack">
       <SettingsCard :enable-demo="settings.enableDemoMode" @update:enable-demo="settings.toggleDemoMode()" />
       <Map
+        v-if="!isLoading"
         :points-of-interest="mapConfig.pointsOfInterest"
         :zoom="mapConfig.zoom"
         :center="mapConfig.center"

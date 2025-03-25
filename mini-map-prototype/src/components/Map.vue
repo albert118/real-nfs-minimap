@@ -21,6 +21,20 @@ let appContext: AppContext | undefined;
 
 const stadiaMapUrlTemplate = 'https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png';
 
+const lMap = ref<L.Map | undefined>();
+
+watchEffect(() => {
+  if (!lMap.value) return;
+  // TODO: fix order of these two variables and improve usage + deconstruction + naming
+  const { x, y } = props.center ?? { x: 0, y: 0 };
+  lMap.value.setView([x, y], zoom.value);
+});
+
+watchEffect(() => {
+  if (!lMap.value || !props.pointsOfInterest) return;
+  props.pointsOfInterest.map((poi) => addMarker(poi, lMap.value!));
+});
+
 // WATCH OUT FOR MAKING THIS ASYNC IN CASE WE LOSE APP CONTEXT!!
 onMounted(() => {
   // Store the current app context
@@ -29,14 +43,11 @@ onMounted(() => {
     appContext = instance.appContext;
   }
 
-  // TODO: fix order of these two variables and improve usage + deconstruction + naming
-  if (map.value) {
-    // TODO: default
-    const { x, y } = props.center ?? { x: 0, y: 0 };
-    const lMap = L.map(map.value).setView([x, y], zoom.value);
-    L.tileLayer(stadiaMapUrlTemplate, { attribution: props.attribution }).addTo(lMap);
-    props.pointsOfInterest && props.pointsOfInterest.map((poi) => addMarker(poi, lMap));
-  }
+  if (!map.value) return undefined;
+
+  // init here, and then use update methods to avoid massive re-renders
+  lMap.value = L.map(map.value);
+  L.tileLayer(stadiaMapUrlTemplate, { attribution: props.attribution }).addTo(lMap.value);
 });
 
 const addMarker = (poi: PointOfInterest, map: L.Map) => {

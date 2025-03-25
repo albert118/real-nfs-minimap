@@ -4,8 +4,11 @@ import { useSettings } from '@stores/settingsStore';
 import Map from '@components/Map.vue';
 import SettingsCard from '@components/SettingsCard.vue';
 import { useGeolocation } from '@vueuse/core';
+import { storeToRefs } from 'pinia';
 
 const settings = useSettings();
+const { enableDemoMode } = storeToRefs(settings);
+
 const arcadesDemo = useArcadesDemo();
 
 const isLoading = ref(true);
@@ -59,22 +62,19 @@ onMounted(async () => {
 });
 
 // the demo centers on the continent of Japan and shows various arcardes as Points of Interest (PoI's)
-const mapConfig = computed(() => {
-  return false
-    ? {
-        pointsOfInterest: arcadesDemo.features,
-        zoom: 6,
-        center: {
-          x: 38,
-          y: 139.69,
-        },
-      }
-    : {
-        pointsOfInterest: pointsOfInterest.value,
-        zoom: 6,
-        center: currentPosition.value,
-      };
+const mapConfig = ref({
+  pointsOfInterest: arcadesDemo.features,
+  zoom: 6,
 });
+
+const center = computed<Coordinate>(() =>
+  enableDemoMode.value
+    ? {
+        x: 38,
+        y: 139.69,
+      }
+    : currentPosition.value,
+);
 </script>
 
 <template>
@@ -85,7 +85,7 @@ const mapConfig = computed(() => {
         v-if="!isLoading"
         :points-of-interest="mapConfig.pointsOfInterest"
         :zoom="mapConfig.zoom"
-        :center="mapConfig.center"
+        :center="center"
         attribution='&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
       />
     </div>

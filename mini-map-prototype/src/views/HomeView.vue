@@ -22,29 +22,30 @@ const { coords, locatedAt, error, resume, pause } = useGeolocation({
   maximumAge: 0,
 });
 
-const currentPosition = computed(() => {
-  return {
+const currentPosition = ref<Coordinate>({ x: 0, y: 0 });
+const currentPositionPoi = ref<PointOfInterest>();
+const pointsOfInterest = computed<PointOfInterest[]>(() => (enableDemoMode.value ? arcadesDemo.features : [currentPositionPoi.value]));
+
+const center = computed<Coordinate>(() =>
+  enableDemoMode.value
+    ? {
+        x: 38,
+        y: 139.69,
+      }
+    : currentPosition.value,
+);
+
+watch(coords, () => {
+  isLoading.value = true;
+
+  resume();
+
+  currentPosition.value = {
     x: coords.value.latitude === Infinity ? 0 : coords.value.latitude,
     y: coords.value.longitude === Infinity ? 0 : coords.value.longitude,
   };
-});
 
-const pointsOfInterest = ref<PointOfInterest[]>([]);
-
-onMounted(async () => {
-  resume();
-
-  if (error.value) {
-    console.warn('failed to resolve position!');
-    console.error(error.value);
-  }
-
-  if (coords.value.latitude === Infinity || coords.value.longitude === Infinity) {
-    console.error('failed to resolve position! lat/long was infinity');
-  }
-
-  // the create a PoI for the user's location
-  pointsOfInterest.value.push({
+  currentPositionPoi.value = {
     type: 'Feature',
     properties: {
       name: 'You are here!',
@@ -55,26 +56,26 @@ onMounted(async () => {
       coordinates: currentPosition.value,
     },
     id: '1722312876312',
-  } as PointOfInterest);
+  };
+
+  // console.log('currentPositionPoi.value', currentPositionPoi.value.geometry.coordinates);
 
   pause();
   isLoading.value = false;
 });
 
-// the demo centers on the continent of Japan and shows various arcardes as Points of Interest (PoI's)
-const mapConfig = ref({
-  pointsOfInterest: arcadesDemo.features,
-  zoom: 6,
-});
+onMounted(async () => {
+  if (error.value) {
+    console.warn('failed to resolve position!');
+    console.error(error.value);
+  }
 
-const center = computed<Coordinate>(() =>
-  enableDemoMode.value
-    ? {
-        x: 38,
-        y: 139.69,
-      }
-    : currentPosition.value,
-);
+  if (coords.value.latitude === Infinity || coords.value.longitude === Infinity) {
+    console.error('failed to resolve position! lat/long was infinity');
+  }
+
+  isLoading.value = false;
+});
 </script>
 
 <template>
@@ -83,8 +84,8 @@ const center = computed<Coordinate>(() =>
       <SettingsCard :enable-demo="settings.enableDemoMode" @update:enable-demo="settings.toggleDemoMode()" />
       <Map
         v-if="!isLoading"
-        :points-of-interest="mapConfig.pointsOfInterest"
-        :zoom="mapConfig.zoom"
+        :points-of-interest="pointsOfInterest"
+        :zoom="6"
         :center="center"
         attribution='&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
       />

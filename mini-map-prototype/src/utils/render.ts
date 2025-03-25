@@ -1,4 +1,6 @@
-import { render, type AppContext } from 'vue';
+import { render, type AppContext, type DefineComponent } from 'vue';
+
+// https://vuejs.org/api/built-in-components.html#keepalive
 
 /**
  *
@@ -6,8 +8,13 @@ import { render, type AppContext } from 'vue';
  * @param component The component to render
  * @param appContext Optional app context to provide injection keys, etc.
  */
-export default function renderComponent(el: HTMLElement, component: any, appContext?: AppContext) {
-  const vNode = h(component);
+export function renderComponent(el: HTMLElement, component: DefineComponent<any, any, any>, key: string, appContext?: AppContext) {
+  const vNode = h(component, { key });
   if (appContext) vNode.appContext = appContext;
   render(vNode, el);
+  return el;
+}
+
+export function destroyComponent(el: HTMLElement) {
+  render(null, el);
 }

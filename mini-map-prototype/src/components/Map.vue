@@ -2,7 +2,7 @@
 import L from 'leaflet';
 import MapMarker from './MapMarker.vue';
 import { type AppContext } from 'vue';
-import renderComponent from '@utils/render';
+import renderComponent, { destroyComponent } from '@utils/render';
 
 export type MapProps = {
   center: Coordinate;
@@ -23,6 +23,13 @@ const stadiaMapUrlTemplate = 'https://tiles.stadiamaps.com/tiles/alidade_smooth_
 
 const lMap = ref<L.Map | undefined>();
 
+interface MarkerReference {
+  lMarker: L.Marker;
+  el: HTMLElement;
+}
+
+const markers = ref<MarkerReference[]>([]);
+
 watchEffect(() => {
   if (!lMap.value) return;
   // TODO: fix order of these two variables and improve usage + deconstruction + naming
@@ -30,9 +37,22 @@ watchEffect(() => {
   lMap.value.setView([x, y], zoom.value);
 });
 
+const pointsOfInterest = ref(props.pointsOfInterest);
+
 watchEffect(() => {
-  if (!lMap.value || !props.pointsOfInterest) return;
-  props.pointsOfInterest.map((poi) => addMarker(poi, lMap.value!));
+  if (!lMap.value) return;
+
+  // clear the existing markers
+  markers.value.forEach((marker) => {
+    marker.lMarker.removeFrom(lMap.value!);
+    // TODO: this doesn't destroy the component!
+    destroyComponent(marker.el);
+  });
+  markers.value = [];
+
+  // add the new markers if they exist
+  pointsOfInterest.value && pointsOfInterest.value.map((poi) => addMarker(poi));
+  if (markers.value.length === 1) console.log(markers.value);
 });
 
 // WATCH OUT FOR MAKING THIS ASYNC IN CASE WE LOSE APP CONTEXT!!
@@ -50,8 +70,8 @@ onMounted(() => {
   L.tileLayer(stadiaMapUrlTemplate, { attribution: props.attribution }).addTo(lMap.value);
 });
 
-const addMarker = (poi: PointOfInterest, map: L.Map) => {
-  const { x, y } = poi.geometry.coordinates;
+const addMarker = (poi: PointOfInterest) => {
+  if (!lMap.value) return;
 
   // add a fake div marker to remove the default marker
   // TODO: can we just unset the marker icon here? - no default is provided by Icon.Default implementation
@@ -61,24 +81,32 @@ const addMarker = (poi: PointOfInterest, map: L.Map) => {
   });
 
   try {
+    const { x, y } = poi.geometry.coordinates;
     const lMarker = L.marker([y, x], {
       icon: fakeDivIcon,
-    }).addTo(map);
-    const name = getPoiName(poi);
-    name && lMarker.bindPopup(name);
-    createMarkerIcon(lMarker);
+    }).addTo(lMap.value!);
+
+    // TODO: track these popups and destroy them too
+    // const name = getPoiName(poi);
+    // name && lMarker.bindPopup(name);
+    const el = createMarkerIcon(lMarker, `${x}-${y}`);
+
+    if (!el) throw new Error('Fuck the thing did not render');
+
+    // track both the marker leaflet and Vue component references for lifecycle management
+    markers.value.push({ lMarker, el });
   } catch (error) {
     console.log(error);
   }
 };
 
-const createMarkerIcon = (lMarker: L.Marker) => {
+const createMarkerIcon = (lMarker: L.Marker, key: string) => {
   if (!appContext) throw new Error('no app context exists!');
 
   const el = lMarker.getElement();
   if (!el) return;
 
-  renderComponent(el, MapMarker, appContext);
+  return renderComponent(el, MapMarker, key, appContext);
 };
 
 const getPoiName = (poi: PointOfInterest) => {

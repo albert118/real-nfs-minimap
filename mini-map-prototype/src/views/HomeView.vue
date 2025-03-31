@@ -1,15 +1,18 @@
 <script setup lang="ts">
-import { useArcadesDemo } from '@stores/arcadeStore';
 import { useSettings } from '@stores/settingsStore';
 import Map from '@components/Map.vue';
 import SettingsCard from '@components/SettingsCard.vue';
 import { useGeolocation } from '@vueuse/core';
 import { storeToRefs } from 'pinia';
+import { useArcadesDemo } from '@stores/arcadeStore';
 
 const settings = useSettings();
 const { enableDemoMode } = storeToRefs(settings);
 
+// load the demo-dataset...
 const arcadesDemo = useArcadesDemo();
+// ... and default to it immediately
+const features = ref<PointOfInterest[]>(arcadesDemo.features.slice(0, 1));
 
 const isLoading = ref(true);
 
@@ -24,16 +27,11 @@ const { coords, locatedAt, error, resume, pause } = useGeolocation({
 
 const currentPosition = ref<Coordinate>({ x: 0, y: 0 });
 const currentPositionPoi = ref<PointOfInterest>();
-const pointsOfInterest = computed<PointOfInterest[]>(() => (enableDemoMode.value ? arcadesDemo.features : [currentPositionPoi.value]));
 
-const center = computed<Coordinate>(() =>
-  enableDemoMode.value
-    ? {
-        x: 38,
-        y: 139.69,
-      }
-    : currentPosition.value,
-);
+const center = ref<Coordinate>({
+  x: 38,
+  y: 139.69,
+});
 
 watch(coords, () => {
   isLoading.value = true;
@@ -64,6 +62,18 @@ watch(coords, () => {
   isLoading.value = false;
 });
 
+const onToggleDemoMode = () => {
+  console.log('toggled demo mode!');
+
+  if (enableDemoMode.value) {
+    features.value = arcadesDemo.features.slice(0, 1);
+  } else {
+    features.value = [];
+  }
+
+  enableDemoMode.value = !enableDemoMode.value;
+};
+
 onMounted(async () => {
   if (error.value) {
     console.warn('failed to resolve position!');
@@ -81,14 +91,8 @@ onMounted(async () => {
 <template>
   <main>
     <div class="stack">
-      <SettingsCard :enable-demo="settings.enableDemoMode" @update:enable-demo="settings.toggleDemoMode()" />
-      <Map
-        v-if="!isLoading"
-        :points-of-interest="pointsOfInterest"
-        :zoom="6"
-        :center="center"
-        attribution='&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
-      />
+      <SettingsCard :enable-demo="enableDemoMode" @update:enable-demo="onToggleDemoMode" />
+      <Map v-if="!isLoading" :zoom="6" :features="features" :center="center" />
     </div>
   </main>
 </template>

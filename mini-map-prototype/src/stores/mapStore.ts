@@ -1,0 +1,74 @@
+import { defineStore } from 'pinia';
+import { VueMarker } from './VueMarker';
+import type { AppContext, ShallowRef } from 'vue';
+import { MapBuilder } from './MapBuilder';
+
+export const useMap = defineStore('map', () => {
+  const markers = ref<Map<string, VueMarker>>(new Map());
+  const appContext = ref<AppContext | undefined>();
+
+  let builder: MapBuilder | undefined;
+
+  function load(mapRef: Readonly<ShallowRef<HTMLInputElement | null>>, features: PointOfInterest[], center: Coordinate) {
+    try {
+      console.log('building map');
+      // center MUST be set, else we will see a white placeholder (no map will load)
+      builder = new MapBuilder(mapRef).addBaseLayer().setCenter(6, center);
+
+      // we must track the instance (specifically AppContext) to render custom Vue components
+      const instance = getCurrentInstance();
+      if (!instance) throw new Error('no app context found');
+      appContext.value = instance.appContext;
+
+      console.log('map built:', builder!.map);
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  function clear() {
+    if (!builder) return;
+
+    // TODO: remove the map references
+    // markers.value.forEach((m) => {
+    //   m?.element && builder!.map.removeControl(m.element);
+    // });
+
+    const before = markers.value.size;
+    console.log('Clearing the current marker set');
+    markers.value.clear();
+    const after = markers.value.size;
+    console.log(`Cleared "${before - after}" markers (this should be ALL markers)`);
+  }
+
+  function setMarkers(features: PointOfInterest[]) {
+    if (!appContext.value) {
+      console.log('no app context when setting markers');
+      return;
+    }
+
+    // build the marker set for future lifecycle tracking
+    features.forEach((poi: PointOfInterest) => {
+      const vueMarker = new VueMarker(poi);
+      markers.value.set(vueMarker.toString(), vueMarker);
+    });
+
+    // first add the marker controls to the map...
+    markers.value.forEach((m) => m.marker.addTo(builder!.map));
+    // ... then upsert their HTML elements with our customisations
+    markers.value.forEach((m) => m.createMarkerIcon(appContext.value!));
+  }
+
+  function setCenter(zoom: number, coordinate: Coordinate) {
+    if (!builder) return;
+    builder!.setCenter(zoom, coordinate);
+  }
+
+  return {
+    load,
+    markers,
+    clear,
+    setMarkers,
+    setCenter,
+  };
+});

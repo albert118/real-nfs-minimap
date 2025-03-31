@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import IMdiMapMarker from '~icons/mdi/map-marker';
 import { VIcon } from 'vuetify/components';
+// TODO: fix the Vuetify import bullshit
+// "Vuetify Could not find defaults instance"
 </script>
 
 <template>

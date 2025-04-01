@@ -16,13 +16,12 @@ export class VueMarker implements VueMarkerType {
   coordinate: Coordinate;
   vueComponent: HTMLElement | undefined;
 
-  constructor(poi: PointOfInterest, el: HTMLElement, appContext: AppContext) {
-    this.name = this.getPoiName(poi);
-    this.coordinate = poi.geometry.coordinates;
+  constructor(coordinates: Coordinate, el: HTMLElement, appContext: AppContext) {
+    this.coordinate = coordinates;
+    this.name = `vue-marker-${this.coordinate.x}-${this.coordinate.y}`;
 
-    // this is fine for a key as a prototype, however the name + X-Y coords is not globally unique
-    const key = `vue-marker-${this.coordinate.x}-${this.coordinate.y}`;
-    this.vueComponent = renderComponent(el, MapMarker, key, appContext);
+    // name as key is fine for the prototype, however it is not globally unique
+    this.vueComponent = renderComponent(el, MapMarker, this.name, appContext);
     if (!this.vueComponent) throw new Error('Failed to render the MapMarker');
 
     // add a fake div marker to remove the default marker
@@ -47,11 +46,5 @@ export class VueMarker implements VueMarkerType {
 
   toString() {
     return `${this.name}:${this.coordinate.x}-${this.coordinate.y}`;
-  }
-
-  private getPoiName(poi: PointOfInterest) {
-    if (poi.properties['name']) return poi.properties['name'];
-    if (poi.properties['name:en']) return poi.properties['name:en'];
-    return '<no name>';
   }
 }

@@ -6,10 +6,11 @@ import { MapBuilder } from './MapBuilder';
 export const useMap = defineStore('map', () => {
   const markers = ref<Map<string, VueMarker>>(new Map());
   const appContext = ref<AppContext | undefined>();
+  const features = ref<PointOfInterest[]>([]);
 
   let builder: MapBuilder | undefined;
 
-  function load(mapRef: Readonly<ShallowRef<HTMLInputElement | null>>, features: PointOfInterest[], center: Coordinate) {
+  function load(mapRef: Readonly<ShallowRef<HTMLInputElement | null>>, center: Coordinate) {
     try {
       console.log('building map');
       // center MUST be set, else we will see a white placeholder (no map will load)
@@ -22,6 +23,10 @@ export const useMap = defineStore('map', () => {
     } catch (error) {
       console.error(error);
     }
+  }
+
+  function setFeatures(value: PointOfInterest[]) {
+    features.value = value;
   }
 
   function clear() {
@@ -39,20 +44,21 @@ export const useMap = defineStore('map', () => {
     });
 
     markers.value.clear();
+
     const after = markers.value.size;
     console.log(`Cleared "${before - after}" markers (this should be ALL markers)`);
   }
 
-  function setMarkers(features: PointOfInterest[], elements: HTMLInputElement[]) {
+  function setMarkers(elements: HTMLInputElement[]) {
     if (!appContext.value) {
       console.log('no app context when setting markers');
       return;
     }
 
     // build the marker set for future lifecycle tracking
-    features.forEach((poi: PointOfInterest, index: number) => {
+    features.value.forEach((poi: PointOfInterest, index: number) => {
       const el = elements[index];
-      const vueMarker = new VueMarker(poi, el, appContext.value!);
+      const vueMarker = new VueMarker(poi.geometry.coordinates, el, appContext.value!);
       markers.value.set(vueMarker.toString(), vueMarker);
     });
 
@@ -70,6 +76,7 @@ export const useMap = defineStore('map', () => {
     markers,
     clear,
     setMarkers,
+    setFeatures,
     setCenter,
   };
 });

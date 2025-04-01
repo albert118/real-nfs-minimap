@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const enableDemo = defineModel('enableDemo', { required: true, default: false });
+const enableDemo = defineModel('enableDemo', { required: true, default: true });
 </script>
 
 <template>

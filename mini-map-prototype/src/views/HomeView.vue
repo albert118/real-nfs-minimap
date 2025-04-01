@@ -5,6 +5,7 @@ import SettingsCard from '@components/SettingsCard.vue';
 import { useGeolocation } from '@vueuse/core';
 import { storeToRefs } from 'pinia';
 import { useArcadesDemo } from '@stores/arcadeStore';
+import { useMap } from '@stores/mapStore';
 
 const settings = useSettings();
 const { enableDemoMode } = storeToRefs(settings);
@@ -12,7 +13,12 @@ const { enableDemoMode } = storeToRefs(settings);
 // load the demo-dataset...
 const arcadesDemo = useArcadesDemo();
 // ... and default to it immediately
-const features = ref<PointOfInterest[]>(arcadesDemo.features.slice(0, 3));
+const features = ref<PointOfInterest[]>(arcadesDemo.features.slice(0, 20));
+
+// this is contrived currently, but I want to load the map with data
+// rather than get a map that figures out its data (let the map just figure out mapping and ignore data)
+const map = useMap();
+map.setFeatures(features.value);
 
 const isLoading = ref(true);
 
@@ -60,10 +66,10 @@ watch(coords, () => {
   isLoading.value = false;
 });
 
-const onToggleDemoMode = () => {
-  features.value = enableDemoMode.value ? arcadesDemo.features.slice(0, 3) : [];
+const onToggleDemoMode = (newValue: boolean) => {
+  enableDemoMode.value = newValue;
+  features.value = enableDemoMode.value ? arcadesDemo.features : [];
   console.log('toggled demo mode! New features count:', features.value.length);
-  enableDemoMode.value = !enableDemoMode.value;
 };
 
 onMounted(async () => {
@@ -78,13 +84,25 @@ onMounted(async () => {
 
   isLoading.value = false;
 });
+
+// private getPoiName(poi: PointOfInterest) {
+//     if (poi.properties['name']) return poi.properties['name'];
+//     if (poi.properties['name:en']) return poi.properties['name:en'];
+//     return '<no name>';
+//   }
+
+const markersRef = useTemplateRef<HTMLInputElement[] | null>('markersRef');
 </script>
 
 <template>
   <main>
     <div class="stack">
-      <SettingsCard :enable-demo="enableDemoMode" @update:enable-demo="onToggleDemoMode" />
-      <Map v-if="!isLoading" :zoom="6" :features="features" :center="center"> </Map>
+      <SettingsCard :enable-demo="enableDemoMode" @update:enable-demo="(val) => onToggleDemoMode(val)" />
+      <Map v-if="!isLoading" :zoom="6" :center="center" :markers-ref="markersRef">
+        <template #markers>
+          <div v-for="index in [...Array(features.length).keys()]" :key="`marker-#${index}`" :id="`marker-#${index}`" ref="markersRef" />
+        </template>
+      </Map>
     </div>
   </main>
 </template>

@@ -4,43 +4,40 @@ import L from 'leaflet';
 
 export type MapProps = {
   center: Coordinate;
-  features: PointOfInterest[];
 };
 
 const props = defineProps<MapProps>();
-const featuresRef = toRef(props.features);
 
 const mapRef = useTemplateRef<HTMLInputElement | null>('mapRef');
-const markersRef = useTemplateRef<HTMLInputElement[] | null>('markersRef');
 
 const map = useMap();
 
 // the zoom is enough to show a continent
 const zoom = defineModel<number>('zoom', { required: false, default: 6 });
 
+// provide a ref model for the markers
+const markersRef = defineModel<HTMLInputElement[] | null | undefined>('markersRef', { required: false, default: undefined });
+
 watchEffect(() => map.setCenter(zoom.value, props.center));
 
+// TODO: DX!
+// watching the ref has drawbacks
+// - ref isn't populated until after mounting, so it always triggers "immediately"
+// - the ref doesn't directly reflect changes in the markers - it's a side affect
+// - the DX is now fiddly, have to fill out a slot and provide a ref as a model
 watch(
-  props,
-  async (newVal, oldVal) => {
-    console.log('old:', oldVal?.features?.length ?? 0, 'new:', newVal.features?.length ?? 0);
-
+  markersRef,
+  () => {
     // clear...
-    map.clear();
+    // map.clear();
 
-    // make it obvious...
+    // make it obvious before reloading
     setTimeout(() => {
-      // ... before reloading
-      if (markersRef.value) {
-        map.setMarkers(featuresRef.value, markersRef.value);
-      }
+      if (markersRef.value) map.setMarkers(markersRef.value);
     }, 1000);
   },
-  { deep: true, immediate: true },
+  { deep: true },
 );
-
-// extension: given a slot with none, one, or many elements, render them as markers
-// extension: unmount lifecycle
 
 /**
  * Overrides the default implementation
@@ -57,19 +54,22 @@ function setDefaultIconOptions() {
   // console.log('default options', L.Marker.prototype.options.icon?.options);
 }
 
-setDefaultIconOptions();
-
 onMounted(() => {
-  if (mapRef.value && markersRef.value) {
-    map.load(mapRef, props.features, props.center);
-    map.setMarkers(featuresRef.value, markersRef.value);
-  }
+  setDefaultIconOptions();
+  if (mapRef.value) map.load(mapRef, props.center);
+
+  // TODO: performance!
+  // we shouldn't need to render the markers directly onMounted here, as this becomes render blocking
+  // calling set markers with > 20 markers fails to load
+  // this is because we are generating N nodes in the DOM in the slot
+  // then cutting them and re-inserting them within the map (or rather Leaflet does once provided the HTML)
+  // if (markersRef.value) map.setMarkers(markersRef.value);
 });
 </script>
 
 <template>
   <div ref="mapRef" id="map">
-    <div v-for="index in [...Array(featuresRef.length).keys()]" :key="`marker-#${index}`" ref="markersRef"></div>
+    <slot name="markers" ref="markersRef" />
   </div>
 </template>
 

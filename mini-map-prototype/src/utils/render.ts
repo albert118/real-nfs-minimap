@@ -11,6 +11,9 @@ import { render, type AppContext, type DefineComponent } from 'vue';
 export function renderComponent(el: HTMLElement, component: DefineComponent<any, any, any>, key: string, appContext?: AppContext) {
   const vNode = h(component, { key });
   if (appContext) vNode.appContext = appContext;
+
+  // vNode.component is the component instance and probably needed...?
+
   render(vNode, el);
   return el;
 }

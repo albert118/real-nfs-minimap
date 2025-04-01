@@ -16,39 +16,29 @@ export class VueMarker implements VueMarkerType {
   coordinate: Coordinate;
   vueComponent: HTMLElement | undefined;
 
-  constructor(poi: PointOfInterest) {
+  constructor(poi: PointOfInterest, el: HTMLElement, appContext: AppContext) {
     this.name = this.getPoiName(poi);
     this.coordinate = poi.geometry.coordinates;
 
+    // this is fine for a key as a prototype, however the name + X-Y coords is not globally unique
+    const key = `vue-marker-${this.coordinate.x}-${this.coordinate.y}`;
+    this.vueComponent = renderComponent(el, MapMarker, key, appContext);
+    if (!this.vueComponent) throw new Error('Failed to render the MapMarker');
+
     // add a fake div marker to remove the default marker
-    // TODO: can we just unset the marker icon here? - no default is provided by Icon.Default implementation
-    // TODO: override Icon.Default.prototype.options.icon with undefined URL and hidden class
-    const fakeDivIcon = L.divIcon({
+    const markerDivIcon = L.divIcon({
+      // we must provide a custom classname here to override the default styling
       className: 'map--marker-icon',
+      html: this.vueComponent,
     });
 
     try {
       // to create the marker icon, this must be first added to a map otherwise no element will exist (yet)
-      this.marker = L.marker([this.coordinate.y, this.coordinate.x], { icon: fakeDivIcon });
+      this.marker = L.marker([this.coordinate.y, this.coordinate.x], { icon: markerDivIcon });
     } catch (error) {
       console.error(error);
       throw new Error('Failed to create Vue Marker');
     }
-  }
-
-  createMarkerIcon(appContext: AppContext) {
-    const el = this.marker.getElement();
-
-    if (!el) {
-      console.warn('failed to get element for marker: ', this.marker.toString());
-      throw new Error('Fuck the thing never made an element');
-    }
-
-    this.vueComponent = renderComponent(el, MapMarker, this.marker.toString(), appContext);
-
-    if (!this.vueComponent) throw new Error('Fuck the thing did not render');
-
-    return this.vueComponent;
   }
 
   get element() {

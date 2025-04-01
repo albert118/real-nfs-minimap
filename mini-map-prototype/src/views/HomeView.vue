@@ -12,7 +12,7 @@ const { enableDemoMode } = storeToRefs(settings);
 // load the demo-dataset...
 const arcadesDemo = useArcadesDemo();
 // ... and default to it immediately
-const features = ref<PointOfInterest[]>(arcadesDemo.features.slice(0, 1));
+const features = ref<PointOfInterest[]>(arcadesDemo.features.slice(0, 3));
 
 const isLoading = ref(true);
 
@@ -56,21 +56,13 @@ watch(coords, () => {
     id: '1722312876312',
   };
 
-  // console.log('currentPositionPoi.value', currentPositionPoi.value.geometry.coordinates);
-
   pause();
   isLoading.value = false;
 });
 
 const onToggleDemoMode = () => {
-  console.log('toggled demo mode!');
-
-  if (enableDemoMode.value) {
-    features.value = arcadesDemo.features.slice(0, 1);
-  } else {
-    features.value = [];
-  }
-
+  features.value = enableDemoMode.value ? arcadesDemo.features.slice(0, 3) : [];
+  console.log('toggled demo mode! New features count:', features.value.length);
   enableDemoMode.value = !enableDemoMode.value;
 };
 
@@ -92,7 +84,7 @@ onMounted(async () => {
   <main>
     <div class="stack">
       <SettingsCard :enable-demo="enableDemoMode" @update:enable-demo="onToggleDemoMode" />
-      <Map v-if="!isLoading" :zoom="6" :features="features" :center="center" />
+      <Map v-if="!isLoading" :zoom="6" :features="features" :center="center"> </Map>
     </div>
   </main>
 </template>

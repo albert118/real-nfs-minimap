@@ -63,7 +63,7 @@ export const useMap = defineStore('map', () => {
     });
 
     // first add the marker controls to the map
-    markers.value.forEach((m) => m.marker.addTo(builder!.map));
+    markers.value.forEach((m) => m.getMarker.addTo(builder!.map));
   }
 
   function setCenter(zoom: number, coordinate: Coordinate) {

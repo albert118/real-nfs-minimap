@@ -21,7 +21,7 @@ export class MapBuilder {
   }
 
   addMarkers(markers: Map<string, VueMarker>) {
-    markers.forEach((m) => m.marker.addTo(this._map));
+    markers.forEach((m) => m.getMarker.addTo(this._map));
     return this;
   }
 

@@ -22,7 +22,7 @@ export const useArcadesDemo = defineStore('arcadesDemo', () => {
   };
 
   // we can pre-compute this entire data set, but loading large sets will potentially create performance issues
-  const features = typedArcades.features.map((f: any) => ({
+  const features: PointOfInterest[] = typedArcades.features.map((f: any) => ({
     id: f.id,
     type: f.type,
     properties: f.properties,

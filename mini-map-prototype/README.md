@@ -17,3 +17,22 @@ This command will print out the PWA asset config needed for the Vite PWA plugin 
 `vite.config.ts`
 
 > Note that this will modify the `index.html` with the appropriate meta.
+
+## Drawbacks
+
+mount then resolve,
+
+- geo location
+- data wrangling
+- ref loading > prop mapping
+
+Map(markerRef, zoom) - figure out its centre-point - set its zoom - create the initial leaflet map DOM node and pipe config - create the tile layer
+for the map content - add marker content for points of interest, populating content onto the slot for markers
+
+other crap
+
+- setting default icon options
+- watching for changes to zoom
+- watching for changes to marker content
+- construct a map instance that attaches to a DOM node
+- given some markers, provide them to the leaflet map instance

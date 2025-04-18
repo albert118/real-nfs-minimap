@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory, type Router } from 'vue-router';
 import HomeView from '@views/HomeView.vue';
+import MiniMapView from '@views/MiniMapView.vue';
 import { RouteName } from './routes';
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -16,6 +17,11 @@ export const router = createRouter({
       path: '/',
       name: RouteName.Home,
       component: HomeView,
+    },
+    {
+      path: '/minimap',
+      name: RouteName.MiniMap,
+      component: MiniMapView,
     },
   ],
 });

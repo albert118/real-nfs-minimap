@@ -54,7 +54,10 @@ function setDefaultIconOptions() {
   // console.log('default options', L.Marker.prototype.options.icon?.options);
 }
 
-onMounted(() => {
+onMounted(async () => {
+  await nextTick();
+  // app context will be lost at this point
+
   setDefaultIconOptions();
   if (mapRef.value) map.load(mapRef, props.center);
 

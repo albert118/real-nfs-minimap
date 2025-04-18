@@ -8,8 +8,8 @@ import { render, type AppContext, type DefineComponent } from 'vue';
  * @param component The component to render
  * @param appContext Optional app context to provide injection keys, etc.
  */
-export function renderComponent(el: HTMLElement, component: DefineComponent<any, any, any>, key: string, appContext?: AppContext) {
-  const vNode = h(component, { key });
+export function renderComponent(el: HTMLElement, component: DefineComponent<any, any, any, any>, key: string, appContext?: AppContext) {
+  const vNode = h(component, { key, label: key });
   if (appContext) vNode.appContext = appContext;
 
   // vNode.component is the component instance and probably needed...?

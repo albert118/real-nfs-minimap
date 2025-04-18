@@ -50,11 +50,3 @@ onMounted(async () => {
     </div>
   </main>
 </template>
-
-<style lang="css">
-.stack {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-</style>

@@ -5,6 +5,10 @@
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
+
+  --primary: rgb(149, 231, 66);
+  --secondary: #b4a7a7;
+  --tertiary: lightseagreen;
 }
 
 a,
@@ -32,4 +36,10 @@ a,
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
   }
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }

@@ -1,14 +1,18 @@
 <script setup lang="ts">
+import type { MapMarker } from '@stores/MapMarker';
 import { MiniMap } from '@stores/MiniMap';
-import type { VueMarker } from '@stores/VueMarker';
 
+// TODO: render multiple marker variants
+//   - swap to a generic pattern, there will be lots of marker variants
+//   - some sort of template generic method would be good
 export interface MiniMapProps {
   center: Coordinate;
-  markers: Record<string, VueMarker>;
+  markers: Record<string, MapMarker>;
+  locationPins: Record<string, MapMarker>;
   zoom: number;
 }
 
-const { center, markers, zoom } = defineProps<MiniMapProps>();
+const { center, markers, locationPins, zoom } = defineProps<MiniMapProps>();
 
 const mapRef = useTemplateRef<HTMLElement>('mapRef');
 let miniMap: MiniMap | undefined = undefined;
@@ -16,20 +20,11 @@ let miniMap: MiniMap | undefined = undefined;
 const instance = getCurrentInstance();
 
 onMounted(async () => {
-  console.log('mouting minimap');
+  console.log('mounting minimap');
   await nextTick();
+  if (!assertRefsExist()) return;
 
-  if (!mapRef.value) {
-    console.log('missing map ref');
-    return;
-  }
-
-  if (!instance) {
-    console.log('missing instance ref');
-    return;
-  }
-
-  miniMap = new MiniMap(mapRef.value, { center, zoom, verbose: true });
+  miniMap = new MiniMap(mapRef.value!, { center, zoom, verbose: true });
 });
 
 onUnmounted(() => {
@@ -38,12 +33,19 @@ onUnmounted(() => {
 
 watch(
   () => markers,
-  (newValue, oldValue) => {
-    // TODO: hash comparison to prevent extraneous updates
-    // if (newValue === oldValue) return;
+  (newValue) => {
+    miniMap?.clearMarkers();
+    if (!assertRefsExist()) return;
+    miniMap?.addMarkers(newValue, mapRef.value!, instance!);
+  },
+);
 
-    clearMarkers();
-    addMarkers(newValue);
+watch(
+  () => locationPins,
+  (newValue) => {
+    miniMap?.clearLocationPins();
+    if (!assertRefsExist()) return;
+    miniMap?.addLocationPins(newValue, mapRef.value!, instance!);
   },
 );
 
@@ -51,28 +53,24 @@ watch([() => center, () => zoom], ([newCenter, newZoom]) => {
   miniMap?.setView(newCenter, newZoom);
 });
 
-const clearMarkers = () => {
-  miniMap?.clearMarkers();
-};
-
-const addMarkers = (newMarkers: Record<string, VueMarker>) => {
+const assertRefsExist = () => {
   if (!mapRef.value) {
     console.log('missing map ref');
-    return;
+    return false;
   }
 
   if (!instance) {
     console.log('missing instance ref');
-    return;
+    return false;
   }
 
-  miniMap?.addMarkers(newMarkers, mapRef.value, instance);
+  return true;
 };
 </script>
 
 <template>
   <div style="display: flex; gap: 2rem">
-    <button @click.prevent="clearMarkers">Clear markers</button>
+    <button @click.prevent="miniMap?.clearMarkers()">Clear markers</button>
   </div>
   <div ref="mapRef" id="map">
     <div class="arrow-up" style="position: relative; top: 0; left: 48%; z-index: 999" />

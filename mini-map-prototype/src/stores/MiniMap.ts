@@ -1,6 +1,8 @@
 import L from 'leaflet';
-import type { VueMarker } from './VueMarker';
 import type { ComponentInternalInstance } from 'vue';
+import type { MapMarker } from './MapMarker';
+import SimpleMarker from '@components/SimpleMarker.vue';
+import LocationPin from '@components/LocationPin.vue';
 
 export interface MiniMapOptions {
   center: Coordinate;
@@ -20,7 +22,8 @@ export class MiniMap {
   readonly attribution =
     '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
 
-  private markers: Record<string, VueMarker>;
+  private markers: Record<string, MapMarker>;
+  private locationPins: Record<string, MapMarker>;
 
   private readonly verbose: boolean;
 
@@ -28,6 +31,7 @@ export class MiniMap {
     const { center, zoom, verbose = false } = options;
     this.verbose = verbose;
     this.markers = {};
+    this.locationPins = {};
 
     setDefaultIconOptions();
 
@@ -44,25 +48,47 @@ export class MiniMap {
    * Clear any current markers.
    */
   clearMarkers() {
-    console.time('clearing markers');
+    this.verbose && console.time('clearing markers');
 
     Object.values(this.markers).forEach((m) => {
       m.marker && this.__map.removeLayer(m.marker);
       m.destroy();
     });
-    console.timeEnd('clearing markers');
+    this.verbose && console.timeEnd('clearing markers');
   }
 
-  addMarkers(markers: Record<string, VueMarker>, el: HTMLElement, instance: ComponentInternalInstance) {
+  clearLocationPins() {
+    this.verbose && console.time('clearing location pins');
+
+    Object.values(this.locationPins).forEach((m) => {
+      m.marker && this.__map.removeLayer(m.marker);
+      m.destroy();
+    });
+    this.verbose && console.timeEnd('clearing location pins');
+  }
+
+  addMarkers(markers: Record<string, MapMarker>, el: HTMLElement, instance: ComponentInternalInstance) {
     this.markers = markers;
     this.verbose && console.log('will attempt to render markers:', this.markers);
 
     // having rendered the map and awaited the component to render, now attempt to render the markers
     Object.entries(this.markers).forEach(([id, marker]) => {
-      marker.render(el, instance?.appContext);
+      marker.render(el, SimpleMarker, instance?.appContext, { label: marker.name });
       marker.marker?.addTo(this.__map);
     });
     console.timeEnd('adding markers');
+  }
+
+  addLocationPins(markers: Record<string, MapMarker>, el: HTMLElement, instance: ComponentInternalInstance) {
+    this.locationPins = markers;
+    this.verbose && console.log('will attempt to render location pins:', this.locationPins);
+
+    // having rendered the map and awaited the component to render, now attempt to render the markers
+    Object.entries(this.locationPins).forEach(([id, marker]) => {
+      marker.render(el, LocationPin, instance?.appContext, { label: marker.name });
+      marker.marker?.addTo(this.__map);
+    });
+    console.timeEnd('adding location pins');
   }
 
   setView(center: Coordinate, zoom: number) {

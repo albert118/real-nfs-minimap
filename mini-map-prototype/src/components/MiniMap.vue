@@ -4,10 +4,11 @@ import type { VueMarker } from '@stores/VueMarker';
 
 export interface MiniMapProps {
   center: Coordinate;
-  markers?: Record<string, VueMarker>;
+  markers: Record<string, VueMarker>;
+  zoom: number;
 }
 
-const { center, markers = {} } = defineProps<MiniMapProps>();
+const { center, markers, zoom } = defineProps<MiniMapProps>();
 
 const mapRef = useTemplateRef<HTMLElement>('mapRef');
 let miniMap: MiniMap | undefined = undefined;
@@ -28,18 +29,33 @@ onMounted(async () => {
     return;
   }
 
-  miniMap = new MiniMap(mapRef.value, instance, { center, zoom: 6, markers, verbose: true });
+  miniMap = new MiniMap(mapRef.value, { center, zoom, verbose: true });
 });
 
 onUnmounted(() => {
   miniMap?.destroy();
 });
 
+watch(
+  () => markers,
+  (newValue, oldValue) => {
+    // TODO: hash comparison to prevent extraneous updates
+    // if (newValue === oldValue) return;
+
+    clearMarkers();
+    addMarkers(newValue);
+  },
+);
+
+watch([() => center, () => zoom], ([newCenter, newZoom]) => {
+  miniMap?.setView(newCenter, newZoom);
+});
+
 const clearMarkers = () => {
   miniMap?.clearMarkers();
 };
 
-const addMarkers = () => {
+const addMarkers = (newMarkers: Record<string, VueMarker>) => {
   if (!mapRef.value) {
     console.log('missing map ref');
     return;
@@ -50,14 +66,13 @@ const addMarkers = () => {
     return;
   }
 
-  miniMap?.addMarkers(mapRef.value, instance);
+  miniMap?.addMarkers(newMarkers, mapRef.value, instance);
 };
 </script>
 
 <template>
   <div style="display: flex; gap: 2rem">
     <button @click.prevent="clearMarkers">Clear markers</button>
-    <button @click.prevent="addMarkers">Add markers</button>
   </div>
   <div ref="mapRef" id="map">
     <div class="arrow-up" style="position: relative; top: 0; left: 48%; z-index: 999" />

@@ -5,7 +5,6 @@ import type { ComponentInternalInstance } from 'vue';
 export interface MiniMapOptions {
   center: Coordinate;
   zoom: number;
-  markers: Record<string, VueMarker>;
   verbose?: boolean;
 }
 
@@ -21,28 +20,24 @@ export class MiniMap {
   readonly attribution =
     '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
 
-  private readonly markers: Record<string, VueMarker>;
+  private markers: Record<string, VueMarker>;
 
   private readonly verbose: boolean;
 
-  constructor(el: HTMLElement, instance: ComponentInternalInstance, options: MiniMapOptions) {
-    const { center, zoom, markers, verbose = false } = options;
+  constructor(el: HTMLElement, options: MiniMapOptions) {
+    const { center, zoom, verbose = false } = options;
     this.verbose = verbose;
+    this.markers = {};
 
     setDefaultIconOptions();
 
     this.__map = L.map(el);
     this.verbose && console.log('created and mounted map instance');
 
-    const { x, y } = center;
-    this.__map.setView([x, y], zoom);
-    this.verbose && console.log('set center-point and zoom level');
+    this.setView(center, zoom);
 
     L.tileLayer(this.urlTemplate, { attribution: this.attribution }).addTo(this.__map);
     this.verbose && console.log('added map layer');
-
-    this.markers = markers;
-    this.addMarkers(el, instance);
   }
 
   /**
@@ -58,10 +53,9 @@ export class MiniMap {
     console.timeEnd('clearing markers');
   }
 
-  addMarkers(el: HTMLElement, instance: ComponentInternalInstance) {
-    console.time('adding markers');
-
-    this.verbose && console.log('map ready - will attempt to render markers:', this.markers);
+  addMarkers(markers: Record<string, VueMarker>, el: HTMLElement, instance: ComponentInternalInstance) {
+    this.markers = markers;
+    this.verbose && console.log('will attempt to render markers:', this.markers);
 
     // having rendered the map and awaited the component to render, now attempt to render the markers
     Object.entries(this.markers).forEach(([id, marker]) => {
@@ -69,6 +63,13 @@ export class MiniMap {
       marker.marker?.addTo(this.__map);
     });
     console.timeEnd('adding markers');
+  }
+
+  setView(center: Coordinate, zoom: number) {
+    // stop any prior movement before moving to the next requrested coordinate
+    this.__map.stop();
+    this.verbose && console.log(`set center-point: ${JSON.stringify(center)} and zoom: ${zoom}`);
+    this.__map.setView([center.x, center.y], zoom);
   }
 
   /**

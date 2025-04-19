@@ -80,23 +80,6 @@ const addMarkers = (newMarkers: Record<string, VueMarker>) => {
 </template>
 
 <style lang="css">
-button {
-  width: fit-content;
-  display: flex;
-  gap: 8px;
-  border: 1px solid var(--secondary);
-  background-color: var(--color-background);
-  border-radius: 8px;
-  padding: 6px;
-  color: var(--primary);
-}
-
-button:hover {
-  background-color: var(--primary);
-  color: var(--color-background);
-  border: 1px solid var(--primary);
-}
-
 #map {
   height: 75vh;
   width: 75vw;

@@ -40,6 +40,7 @@
     "vite-plugin-vuetify": "^2.1.0",
     "vitest": "^3.0.8",
     "vue-tsc": "^2.2.8",
-    "vuetify": "^3.7.18"
+    "vuetify": "^3.7.18",
+    "unplugin-vue-components": "^28.4.1"
   }
 }

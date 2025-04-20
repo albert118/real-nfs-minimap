@@ -1,9 +1,9 @@
 import { defineStore } from 'pinia';
 import { useGeolocation } from '@vueuse/core';
 import { type Ref } from 'vue';
+import Logger from 'js-logger';
 
 export interface GlobalStoreState {
-  logger: Logger;
   currentLocation: Ref<Coordinate>;
   init: () => void;
 }
@@ -24,12 +24,12 @@ export const useGlobalStore = defineStore('globalStore', () => {
     resume();
 
     if (error.value) {
-      console.warn('failed to resolve position!');
-      console.error(error.value);
+      Logger.warn('Failed to resolve the current location!');
+      Logger.error(error.value);
     }
 
     if (coords.value.latitude === Infinity || coords.value.longitude === Infinity) {
-      console.error('failed to resolve position! lat/long was infinity');
+      Logger.error('Failed to resolve position! lat/long was infinity');
     }
 
     pause();
@@ -41,7 +41,12 @@ export const useGlobalStore = defineStore('globalStore', () => {
   };
 
   function init() {
+    Logger.setLevel(Logger.DEBUG);
+    Logger.time('Global store initialised');
+
     setCurrentLocation();
+
+    Logger.timeEnd('Global store initialised');
   }
 
   return {

@@ -1,18 +1,16 @@
 <script setup lang="ts">
-import type { MapMarker } from '@components/markers/MapMarker';
 import { MiniMap } from './MiniMap';
+import Logger from 'js-logger';
 
-// TODO: render multiple marker variants
-//   - swap to a generic pattern, there will be lots of marker variants
-//   - some sort of template generic method would be good
+const logger = Logger.get('MiniMap');
+
 export interface MiniMapProps {
   center: Coordinate;
-  markers: Record<string, MapMarker>;
-  locationPins: Record<string, MapMarker>;
   zoom: number;
+  markerFeatures: Set<MarkerFeature>;
 }
 
-const { center, markers, locationPins, zoom } = defineProps<MiniMapProps>();
+const { center, zoom, markerFeatures } = defineProps<MiniMapProps>();
 
 const mapRef = useTemplateRef<HTMLElement>('mapRef');
 let miniMap: MiniMap | undefined = undefined;
@@ -20,11 +18,14 @@ let miniMap: MiniMap | undefined = undefined;
 const instance = getCurrentInstance();
 
 onMounted(async () => {
-  console.log('mounting minimap');
+  logger.time('mounting minimap');
+
   await nextTick();
   if (!assertRefsExist()) return;
 
-  miniMap = new MiniMap(mapRef.value!, { center, zoom, verbose: true });
+  miniMap = new MiniMap(mapRef.value!, { center, zoom });
+
+  logger.timeEnd('mounting minimap');
 });
 
 onUnmounted(() => {
@@ -32,35 +33,38 @@ onUnmounted(() => {
 });
 
 watch(
-  () => markers,
-  (newValue) => {
-    miniMap?.clearMarkers();
+  () => markerFeatures,
+  (newMarkerFeatures, oldMarkerFeatures) => {
     if (!assertRefsExist()) return;
-    miniMap?.addMarkers(newValue, mapRef.value!, instance!);
-  },
-);
+    if (newMarkerFeatures === oldMarkerFeatures) {
+      logger.warn('no marker features have changed but the watcher fired, no changes will be evaluated');
+      return;
+    }
 
-watch(
-  () => locationPins,
-  (newValue) => {
-    miniMap?.clearLocationPins();
-    if (!assertRefsExist()) return;
-    miniMap?.addLocationPins(newValue, mapRef.value!, instance!);
+    miniMap?.removeMarkers(oldMarkerFeatures);
+    miniMap?.addMarkers(newMarkerFeatures, mapRef.value!, instance!);
   },
 );
 
 watch([() => center, () => zoom], ([newCenter, newZoom]) => {
+  logger.debug(`updated center and/or zoom to: ${JSON.stringify(newCenter)} | ${newZoom}`);
   miniMap?.setView(newCenter, newZoom);
 });
 
+const clearAllMarkers = () => {
+  if (!assertRefsExist()) return;
+  logger.info('clearing all markers');
+  miniMap?.removeMarkers(markerFeatures);
+};
+
 const assertRefsExist = () => {
   if (!mapRef.value) {
-    console.log('missing map ref');
+    logger.error('missing map ref');
     return false;
   }
 
   if (!instance) {
-    console.log('missing instance ref');
+    logger.error('missing instance ref');
     return false;
   }
 
@@ -70,7 +74,7 @@ const assertRefsExist = () => {
 
 <template>
   <div style="display: flex; gap: 2rem">
-    <button @click.prevent="miniMap?.clearMarkers()">Clear markers</button>
+    <button @click.prevent="clearAllMarkers()">Clear markers</button>
   </div>
   <div ref="mapRef" id="map">
     <div class="arrow-up" style="position: relative; top: 0; left: 48%; z-index: 999" />

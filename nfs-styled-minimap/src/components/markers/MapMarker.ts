@@ -36,7 +36,6 @@ export class MapMarker implements MapMarkerType {
     markerEl.id = 'map--marker';
     el.appendChild(markerEl);
 
-    // name as key is fine for the prototype, however it is not globally unique
     this.__component = renderComponent(markerEl, component, props, appContext);
     if (!this.__component) throw new Error(`Failed to render ${component.name ?? '<no component name resolved>'}`);
 
@@ -48,7 +47,7 @@ export class MapMarker implements MapMarkerType {
     });
 
     try {
-      this.__marker = L.marker([this.coordinate.y, this.coordinate.x], { icon: markerDivIcon });
+      this.__marker = L.marker([this.coordinate.x, this.coordinate.y], { icon: markerDivIcon });
     } catch (error) {
       console.error(error);
       throw new Error('Failed to create Map Marker');

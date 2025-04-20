@@ -22,7 +22,7 @@ export const useSpeedCamerasNsw = defineStore('speedCamerasNsw', () => {
   };
 
   // we can pre-compute this entire data set, but loading large sets will potentially create performance issues
-  const features: PointOfInterest[] = typedSpeedCameras.features.map((f: any) => ({
+  const features: Feature[] = typedSpeedCameras.features.map((f: any) => ({
     id: f.id,
     type: f.type,
     properties: f.properties,

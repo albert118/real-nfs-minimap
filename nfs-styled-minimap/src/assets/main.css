@@ -1,0 +1,45 @@
+@import './base.css';
+
+:root {
+  --primary: rgb(149, 231, 66);
+  --secondary: #b4a7a7;
+  --tertiary: lightseagreen;
+
+  button {
+    width: fit-content;
+    display: flex;
+    gap: 8px;
+    border: 1px solid var(--secondary);
+    background-color: var(--color-background);
+    border-radius: 8px;
+    padding: 6px;
+    color: var(--primary);
+  }
+
+  button:hover {
+    background-color: var(--primary);
+    color: var(--color-background);
+    border: 1px solid var(--primary);
+  }
+
+  .stack {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #app {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-weight: normal;
+    /* display: grid; */
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
+
+body {
+  display: flex;
+  place-items: center;
+}

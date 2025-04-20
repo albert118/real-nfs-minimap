@@ -41,6 +41,7 @@ export const useGlobalStore = defineStore('globalStore', () => {
   };
 
   function init() {
+    Logger.useDefaults();
     Logger.setLevel(Logger.DEBUG);
     Logger.time('Global store initialised');
 

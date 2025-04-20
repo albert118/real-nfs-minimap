@@ -6,6 +6,7 @@ import { useSpeedCamerasNsw } from '@stores/speedCamerasStore';
 import { storeToRefs } from 'pinia';
 import { useGlobalStore } from '@stores/globalStore';
 import Logger from 'js-logger';
+import { FeatureType } from '@stores/feature-types';
 
 const logger = Logger.get('Home View');
 

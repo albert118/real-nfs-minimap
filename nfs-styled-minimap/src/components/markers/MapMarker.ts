@@ -1,24 +1,9 @@
 import { renderComponent, type ComponentAlias } from '@utils/render';
 import type { Marker } from 'leaflet';
 import L from 'leaflet';
-import type { AppContext, DefineComponent } from 'vue';
+import type { AppContext } from 'vue';
 
-export type MapMarkerType = {
-  name: string;
-  marker: Marker<any> | undefined;
-  coordinate: Coordinate;
-  render: (
-    el: HTMLElement,
-    component: DefineComponent<any, any, any, any>,
-    appContext: AppContext,
-    props?: Record<string, any>,
-    className?: string,
-  ) => void;
-  toString: () => string;
-  destroy: () => void;
-};
-
-export class MapMarker implements MapMarkerType {
+export class MapMarker {
   readonly name: string;
   readonly coordinate: Coordinate;
 

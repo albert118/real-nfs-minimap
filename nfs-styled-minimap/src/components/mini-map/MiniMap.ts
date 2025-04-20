@@ -1,6 +1,8 @@
 import L from 'leaflet';
 import type { ComponentInternalInstance } from 'vue';
 import Logger from 'js-logger';
+import { FeatureType, FeatureTypeMap } from '@stores/feature-types';
+import type { MapMarker } from '@components/markers/MapMarker';
 
 export interface MiniMapOptions {
   center: Coordinate;
@@ -41,8 +43,10 @@ export class MiniMap {
   removeMarkers(toRemove: Set<MarkerFeature>) {
     this.__logger.time('removing markers');
 
-    toRemove.forEach(({ marker }) => {
-      this.__map.removeLayer(marker);
+    toRemove.forEach((value) => {
+      // typing must be reapplied here, otherwise we lose deep-typing of the attributes
+      const { marker }: { marker: MapMarker } = value;
+      marker.marker && this.__map.removeLayer(marker.marker);
       marker.destroy();
     });
 
@@ -52,9 +56,11 @@ export class MiniMap {
   addMarkers(toAdd: Set<MarkerFeature>, el: HTMLElement, instance: ComponentInternalInstance) {
     this.__logger.time('adding markers');
 
-    toAdd.forEach(({ type, props, marker }) => {
+    toAdd.forEach((value) => {
+      // typing must be reapplied here, otherwise we lose deep-typing of the attributes
+      const { type, props, marker }: { type: FeatureType; props: Partial<FeatureMetaData>; marker: MapMarker } = value;
       marker.render(el, FeatureTypeMap[type], instance?.appContext, props);
-      marker?.addTo(this.__map);
+      marker.marker?.addTo(this.__map);
     });
 
     this.__logger.timeEnd('adding markers');

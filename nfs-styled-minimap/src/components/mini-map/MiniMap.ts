@@ -1,6 +1,6 @@
 import L from 'leaflet';
 import type { ComponentInternalInstance } from 'vue';
-import type { MapMarker } from './MapMarker';
+import type { MapMarker } from '@components/markers/MapMarker';
 import SimpleMarker from '@components/markers/SimpleMarker.vue';
 import LocationPin from '@components/markers/LocationPin.vue';
 

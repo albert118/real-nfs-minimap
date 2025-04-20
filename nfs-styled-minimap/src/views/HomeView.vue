@@ -1,9 +1,8 @@
 <script setup lang="ts">
-import MiniMap from '@components/MiniMap.vue';
+import MiniMap from '@components/mini-map/MiniMap.vue';
 import { useArcadesDemo } from '@stores/arcadeStore';
-import { MapMarker } from '@stores/MapMarker';
+import { MapMarker } from '@components/markers/MapMarker';
 import { useSpeedCamerasNsw } from '@stores/speedCamerasStore';
-import { VueMarker } from '@stores/VueMarker';
 import { useGeolocation } from '@vueuse/core';
 
 // load the datasets

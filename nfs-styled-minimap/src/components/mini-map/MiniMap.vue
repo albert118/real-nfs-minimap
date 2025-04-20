@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { MapMarker } from '@stores/MapMarker';
-import { MiniMap } from '@stores/MiniMap';
+import type { MapMarker } from '@components/markers/MapMarker';
+import { MiniMap } from './MiniMap';
 
 // TODO: render multiple marker variants
 //   - swap to a generic pattern, there will be lots of marker variants

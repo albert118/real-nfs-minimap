@@ -14,7 +14,7 @@ defineProps<MapMarkerProps>();
 
 <style scoped lang="css">
 .marker {
-  border: 1px solid var(--primary);
+  border: 1px solid black;
   width: 10px;
   height: 10px;
 }
@@ -22,7 +22,7 @@ defineProps<MapMarkerProps>();
 .marker--label {
   display: flex;
   font-weight: 600;
-  color: var(--secondary);
+  color: darkblue;
   font-size: 12px;
   margin-top: 10px;
 }

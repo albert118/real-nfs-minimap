@@ -2,7 +2,13 @@ export {};
 
 declare global {
   export type Coordinate = {
+    /**
+     * Latitude
+     */
     x: number;
+    /**
+     * Longitude
+     */
     y: number;
   };
 

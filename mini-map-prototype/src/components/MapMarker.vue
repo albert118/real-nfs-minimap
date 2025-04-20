@@ -12,7 +12,7 @@ defineProps<MapMarkerProps>();
   </div>
 </template>
 
-<style lang="css">
+<style scoped lang="css">
 .marker {
   border: 1px solid var(--primary);
   width: 10px;

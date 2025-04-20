@@ -49,7 +49,6 @@ export class MapMarker implements MapMarkerType {
 
     try {
       this.__marker = L.marker([this.coordinate.y, this.coordinate.x], { icon: markerDivIcon });
-      console.log(this.__marker);
     } catch (error) {
       console.error(error);
       throw new Error('Failed to create Map Marker');

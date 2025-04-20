@@ -16,11 +16,18 @@ export interface MiniMapOptions {
 export class MiniMap {
   private __map: L.Map;
 
+  // tile servers: https://wiki.openstreetmap.org/wiki/Tile_servers
+  // tile providers: https://wiki.openstreetmap.org/wiki/Raster_tile_providers
+  // /** @internal */
+  // readonly urlTemplate = 'https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png';
   /** @internal */
-  readonly urlTemplate = 'https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png';
+  readonly urlTemplate = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png';
+  // /** @internal */
+  // readonly attribution =
+  //   '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
   /** @internal */
   readonly attribution =
-    '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
+    '&copy; <a href="https://osmfoundation.org/">OpenStreetMap Foundation</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
 
   private markers: Record<string, MapMarker>;
   private locationPins: Record<string, MapMarker>;

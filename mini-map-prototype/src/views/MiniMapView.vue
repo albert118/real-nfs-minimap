@@ -62,16 +62,21 @@ const selectJapData = () => {
   console.log('selecting JAP data');
   center.value = japCenter;
   zoom.value = japZoom;
-  locationPins.value = Object.fromEntries([['current-location-pin', new MapMarker(center.value)]]);
-  // markers.value = Object.fromEntries(arcadeFeatures.map((f) => [f.id, new MapMarker(f.geometry.coordinates)]));
+  // the coordinates for points need to be in [latitude, longitude] for markers
+  // however, all of the points are stored in JSON as [longitude, latitude]
+  // internally the marker swaps {x,y} to fix this, but the coordinate for center is stored correctly here
+  // so we double reverse it XD
+  locationPins.value = Object.fromEntries([['current-location-pin', new MapMarker({ y: japCenter.x, x: japCenter.y })]]);
+  markers.value = Object.fromEntries(arcadeFeatures.map((f) => [f.id, new MapMarker(f.geometry.coordinates)]));
 };
 
 const selectAusData = () => {
   console.log('selecting AUS data');
-  center.value = getCurrentCenter();
+  const currentCenter = getCurrentCenter();
+  center.value = currentCenter;
   zoom.value = 12;
-  locationPins.value = Object.fromEntries([['current-location-pin', new MapMarker(center.value)]]);
-  // markers.value = Object.fromEntries(speedCameraFeatures.map((f) => [f.id, new MapMarker(f.geometry.coordinates)]));
+  locationPins.value = Object.fromEntries([['current-location-pin', new MapMarker({ y: currentCenter.x, x: currentCenter.y })]]);
+  markers.value = Object.fromEntries(speedCameraFeatures.map((f) => [f.id, new MapMarker(f.geometry.coordinates)]));
 };
 </script>
 

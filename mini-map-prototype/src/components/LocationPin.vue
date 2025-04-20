@@ -3,7 +3,6 @@ export interface MapMarkerProps {
   label: string;
 }
 
-// TODO: this doesnt appear to render as expected?
 defineProps<MapMarkerProps>();
 </script>
 
@@ -25,7 +24,7 @@ defineProps<MapMarkerProps>();
 .location-pin--label {
   display: flex;
   font-weight: 600;
-  color: var(--secondary);
+  color: darkred;
   font-size: 12px;
   margin-top: 10px;
 }

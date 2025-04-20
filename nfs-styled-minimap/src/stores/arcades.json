@@ -19,7 +19,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/821386686",
         "check_date": "2023-01-02",
         "description": "ゲームセンター",
         "leisure": "amusement_arcade",
@@ -34,7 +33,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1309062098",
         "leisure": "amusement_arcade",
         "name": "Urban Square",
         "wheelchair": "yes"
@@ -48,7 +46,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1356125980",
         "disused:amenity": "game_centre",
         "leisure": "amusement_arcade",
         "name": "レアマトリX"
@@ -62,7 +59,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1608597731",
         "leisure": "amusement_arcade",
         "name": "SEGA",
         "name:en": "SEGA",
@@ -78,7 +74,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1669670165",
         "leisure": "amusement_arcade",
         "name": "CLUB SEGA",
         "source": "survey"
@@ -92,7 +87,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1681588662",
         "leisure": "amusement_arcade",
         "name": "ハイテクランド SEGA EST",
         "name:en": "SEGA EST",
@@ -109,7 +103,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1739357833",
         "leisure": "amusement_arcade",
         "name": "SEGA WORLD"
       },
@@ -122,7 +115,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1883427728",
         "leisure": "amusement_arcade",
         "name": "フロンティア 小作店"
       },
@@ -135,7 +127,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1883487674",
         "leisure": "amusement_arcade",
         "name": "ハイテクランドセガ",
         "name:en": "High-tech land SEGA"
@@ -149,7 +140,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1900408945",
         "leisure": "amusement_arcade",
         "source": "image;Bing,2007-03-28"
       },
@@ -162,7 +152,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1915127703",
         "leisure": "amusement_arcade",
         "name": "GIGO 秋葉原1号館"
       },
@@ -175,7 +164,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1915268184",
         "addr:block_number": "10",
         "addr:city": "千代田区",
         "addr:housenumber": "5",
@@ -201,7 +189,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1923592445",
         "brand": "アドアーズ",
         "brand:en": "Adores",
         "brand:ja": "アドアーズ",
@@ -221,7 +208,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1923592468",
         "branch": "千葉店",
         "brand": "ラッキー",
         "leisure": "amusement_arcade",
@@ -238,7 +224,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1928575946",
         "leisure": "amusement_arcade",
         "name": "Aivis",
         "source": "Bing, Aug/2006"
@@ -252,7 +237,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1978813606",
         "leisure": "amusement_arcade",
         "name": "GiGO 米子",
         "website": "https://tempo.gendagigo.jp/am/yonago"
@@ -266,7 +250,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2087963744",
         "leisure": "amusement_arcade",
         "name": "プラット"
       },
@@ -279,7 +262,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2109008159",
         "alt_name": "セガワールド",
         "alt_name:en": "Sega World",
         "brand": "クラブセガ",
@@ -300,7 +282,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2127045737",
         "branch": "和光店",
         "leisure": "amusement_arcade",
         "name": "タイトーステーション",
@@ -319,7 +300,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2130040686",
         "leisure": "amusement_arcade"
       },
       "geometry": {
@@ -331,7 +311,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2183120265",
         "leisure": "amusement_arcade",
         "name": "GiGO 新居浜"
       },
@@ -344,7 +323,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2197500913",
         "brand": "タイトーステーション",
         "brand:en": "Taito Station",
         "brand:ja": "タイトーステーション",
@@ -365,7 +343,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2204415910",
         "leisure": "amusement_arcade",
         "name": "快活CLUB"
       },
@@ -378,7 +355,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2218464025",
         "leisure": "amusement_arcade",
         "name": "SAP"
       },
@@ -391,7 +367,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2247611123",
         "fixme": "ゲームセンター",
         "leisure": "amusement_arcade",
         "name": "サン アミューズ"
@@ -405,7 +380,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2273425631",
         "leisure": "amusement_arcade",
         "name": "まあじゃん ひかり"
       },
@@ -418,7 +392,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2280501076",
         "brand": "タイトーステーション",
         "brand:en": "Taito Station",
         "brand:ja": "タイトーステーション",
@@ -438,7 +411,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2293271676",
         "branch": "川越店",
         "leisure": "amusement_arcade",
         "name": "アミューズランド モナコ"
@@ -452,7 +424,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2293447277",
         "leisure": "amusement_arcade",
         "name": "namco",
         "name:en": "namco",
@@ -467,7 +438,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2293447295",
         "leisure": "amusement_arcade",
         "name": "アテナ",
         "source": "Bing"
@@ -481,7 +451,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2293447410",
         "leisure": "amusement_arcade",
         "name": "メモリアルロード きらめき",
         "name:en": "Memorial Road Kirameki",
@@ -496,7 +465,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2296860546",
         "addr:block_number": "3",
         "addr:city": "大阪市",
         "addr:housenumber": "15",
@@ -523,7 +491,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2308950377",
         "leisure": "amusement_arcade",
         "name": "ABC"
       },
@@ -536,7 +503,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2331413818",
         "leisure": "amusement_arcade",
         "name": "TAITO"
       },
@@ -549,7 +515,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2332488205",
         "leisure": "amusement_arcade",
         "name": "エム",
         "source": "Bing"
@@ -563,7 +528,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2403561341",
         "leisure": "amusement_arcade",
         "name": "SAM'S TOWN"
       },
@@ -576,7 +540,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2426764256",
         "leisure": "amusement_arcade",
         "name": "AZ.Place"
       },
@@ -589,7 +552,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2651213703",
         "branch": "浜松店",
         "brand": "アピナ",
         "brand:en": "Apina",
@@ -609,7 +571,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2735677005",
         "leisure": "amusement_arcade",
         "name": "ゲームタウン西東京"
       },
@@ -622,7 +583,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2924130601",
         "leisure": "amusement_arcade",
         "name": "シルクハット八王子店"
       },
@@ -635,7 +595,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2924130845",
         "branch": "八王子店",
         "brand": "アドアーズ",
         "brand:en": "Adores",
@@ -656,7 +615,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2934986729",
         "leisure": "amusement_arcade",
         "name": "YAZワールド八王子みなみ野店",
         "opening_hours": "10:00-24:00"
@@ -670,7 +628,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3078486068",
         "branch": "二俣川店",
         "leisure": "amusement_arcade",
         "level": "4",
@@ -688,7 +645,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3088721587",
         "leisure": "amusement_arcade",
         "name": "ゲームステーション キャメル",
         "name:en": "Gamestation CAMEL",
@@ -703,7 +659,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3123975230",
         "leisure": "amusement_arcade",
         "name": "Game Fuji",
         "name:ja": "Game Fuji"
@@ -717,7 +672,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3279845496",
         "leisure": "amusement_arcade",
         "name": "WIN プレイステーション",
         "source": "水戸中心商店街マップ14"
@@ -731,7 +685,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3282478207",
         "leisure": "amusement_arcade",
         "level": "0",
         "name": "サンゲームス",
@@ -746,7 +699,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3298002961",
         "fixme": "level=2",
         "leisure": "amusement_arcade",
         "name": "アクアワールド",
@@ -761,7 +713,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3388749702",
         "leisure": "amusement_arcade",
         "name": "APINA"
       },
@@ -774,7 +725,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3437548383",
         "branch": "船橋店",
         "brand": "アドアーズ",
         "brand:en": "Adores",
@@ -798,7 +748,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3476039933",
         "leisure": "amusement_arcade",
         "name": "ゲームプラザセントラル八王子店"
       },
@@ -811,7 +760,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3686513525",
         "leisure": "amusement_arcade",
         "name": "Vegagio",
         "wheelchair": "limited"
@@ -825,7 +773,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3688648541",
         "addr:city": "室蘭市",
         "addr:postcode": "050-0075",
         "addr:province": "北海道",
@@ -847,7 +794,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3690992658",
         "leisure": "amusement_arcade",
         "name": "SEGA"
       },
@@ -860,7 +806,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3747832568",
         "leisure": "amusement_arcade",
         "level": "0",
         "name": "GREA",
@@ -875,7 +820,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3783030227",
         "leisure": "amusement_arcade",
         "name": "ラウンドワン",
         "source": "survey"
@@ -889,7 +833,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3914316025",
         "leisure": "amusement_arcade",
         "name": "イミグランデ",
         "source": "survey"
@@ -903,7 +846,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3928333157",
         "leisure": "amusement_arcade",
         "name": "ロイヤルプラザ"
       },
@@ -916,7 +858,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3977603523",
         "leisure": "amusement_arcade",
         "level": "2",
         "name": "プレイランド",
@@ -931,7 +872,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4069459648",
         "description": "遊戯場",
         "leisure": "amusement_arcade",
         "level": "0",
@@ -947,7 +887,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4069891607",
         "brand": "アピナ",
         "brand:en": "Apina",
         "brand:ja": "アピナ",
@@ -967,7 +906,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4071143420",
         "leisure": "amusement_arcade",
         "name": "ビッグバン",
         "source": "survey"
@@ -981,7 +919,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4167164222",
         "brand": "タイトーステーション",
         "brand:en": "Taito Station",
         "brand:ja": "タイトーステーション",
@@ -1002,7 +939,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4167164256",
         "brand": "アドアーズ",
         "brand:en": "Adores",
         "brand:ja": "アドアーズ",
@@ -1023,7 +959,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4235132662",
         "leisure": "amusement_arcade",
         "level": "1"
       },
@@ -1036,7 +971,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4374202105",
         "leisure": "amusement_arcade",
         "level": "0",
         "name": "GiGO",
@@ -1051,7 +985,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4450660937",
         "branch": "水戸店",
         "leisure": "amusement_arcade",
         "level": "2",
@@ -1067,7 +1000,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4459519589",
         "brand": "アドアーズ",
         "brand:en": "Adores",
         "brand:ja": "アドアーズ",
@@ -1090,7 +1022,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4462930002",
         "leisure": "amusement_arcade",
         "name": "ピタゴラス"
       },
@@ -1103,7 +1034,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4462937354",
         "branch": "和歌山店",
         "leisure": "amusement_arcade",
         "name": "ラウンドワンスタジアム",
@@ -1118,7 +1048,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4462975726",
         "leisure": "amusement_arcade",
         "name": "YOU'S LAND",
         "tourism_1": "game_center"
@@ -1132,7 +1061,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4520313134",
         "leisure": "amusement_arcade",
         "name": "THE 3RD PLANET"
       },
@@ -1145,7 +1073,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4538596389",
         "leisure": "amusement_arcade",
         "name": "スーパーノバ仙台中山店"
       },
@@ -1158,7 +1085,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4553422390",
         "leisure": "amusement_arcade",
         "level": "0;4",
         "name": "セガ 秋葉原4号館",
@@ -1173,7 +1099,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4561715996",
         "addr:block_number": "3",
         "addr:city": "広島市",
         "addr:housenumber": "11",
@@ -1199,7 +1124,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4691022889",
         "leisure": "amusement_arcade",
         "name": "高田馬場ゲーセンミカド",
         "name:en": "Takadanobaba Game Centre Mikado",
@@ -1218,7 +1142,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4717783634",
         "brand": "ナムコ",
         "brand:en": "NAMCO",
         "brand:ja": "ナムコ",
@@ -1238,7 +1161,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4801396949",
         "leisure": "amusement_arcade",
         "name": "UFOキャッチャー専門店"
       },
@@ -1251,7 +1173,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4803484841",
         "leisure": "amusement_arcade",
         "name": "ピロピロ"
       },
@@ -1264,7 +1185,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4803599561",
         "leisure": "amusement_arcade",
         "name": "namco"
       },
@@ -1277,7 +1197,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4803599564",
         "leisure": "amusement_arcade",
         "name": "St. Tropez",
         "name:ja": "サントロペ"
@@ -1291,7 +1210,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4807760609",
         "leisure": "amusement_arcade",
         "level": "2",
         "name": "SEGA"
@@ -1305,7 +1223,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4811257542",
         "leisure": "amusement_arcade",
         "level": "2",
         "name": "ENTERTAINMENT FIELD"
@@ -1319,7 +1236,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4836770335",
         "branch": "行田店",
         "leisure": "amusement_arcade",
         "name": "エブリデイ"
@@ -1333,7 +1249,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4879583031",
         "leisure": "amusement_arcade",
         "name": "スポーツウェーブ鉄腕24 稲毛長沼店",
         "name:en": "Sports Wave Tetsuwan 24 Inage Naganuma",
@@ -1349,7 +1264,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4905603599",
         "leisure": "amusement_arcade",
         "name": "NAMCOLAND"
       },
@@ -1362,7 +1276,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4907407544",
         "leisure": "amusement_arcade",
         "name": "Bb（ビィビィ）"
       },
@@ -1375,7 +1288,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4914807571",
         "leisure": "amusement_arcade",
         "name": "ゲームイミグランデ"
       },
@@ -1388,7 +1300,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4957686538",
         "alt_name": "セガワールド",
         "alt_name:en": "Sega World",
         "brand": "クラブセガ",
@@ -1410,7 +1321,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4987989062",
         "leisure": "amusement_arcade",
         "name": "RIBBON"
       },
@@ -1423,7 +1333,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5022231122",
         "addr:block_number": "3",
         "addr:city": "広島市",
         "addr:housenumber": "5",
@@ -1454,7 +1363,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5031844949",
         "leisure": "amusement_arcade",
         "level": "0",
         "name": "ソユーゲームフィールド",
@@ -1471,7 +1379,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5123631888",
         "leisure": "amusement_arcade",
         "level": "1",
         "name": "UFO",
@@ -1486,7 +1393,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5124057833",
         "addr:block_number": "55",
         "addr:city": "利府町",
         "addr:county": "宮城郡",
@@ -1511,7 +1417,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5138773224",
         "description": "ゲームセンター",
         "leisure": "amusement_arcade",
         "name": "SEGAワールド"
@@ -1525,7 +1430,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5141050320",
         "brand": "アドアーズ",
         "brand:en": "Adores",
         "brand:ja": "アドアーズ",
@@ -1546,7 +1450,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5141051822",
         "leisure": "amusement_arcade",
         "name": "Taito Station"
       },
@@ -1559,7 +1462,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5205810133",
         "addr:block_number": "24",
         "addr:city": "仙台市",
         "addr:housenumber": "1",
@@ -1587,7 +1489,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5285397821",
         "leisure": "amusement_arcade",
         "name": "ペニーポット 秋田店"
       },
@@ -1600,7 +1501,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5291413150",
         "branch": "阪急茨木",
         "leisure": "amusement_arcade",
         "name": "ゲームディーノ"
@@ -1614,7 +1514,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5293233771",
         "leisure": "amusement_arcade",
         "name": "ゲームセンター",
         "opening_hours": "Mo-Su 09:00-21:00"
@@ -1628,7 +1527,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5295380536",
         "leisure": "amusement_arcade",
         "level": "0",
         "name": "GAME INN FIRST"
@@ -1642,7 +1540,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5301524421",
         "branch": "阪急茨木店",
         "leisure": "amusement_arcade",
         "name": "ジャンカラ"
@@ -1656,7 +1553,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5303915549",
         "leisure": "amusement_arcade",
         "name": "ファンタジープラザ"
       },
@@ -1669,7 +1565,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5319926231",
         "addr:block_number": "58",
         "addr:city": "仙台市",
         "addr:housenumber": "1",
@@ -1693,7 +1588,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5336219481",
         "leisure": "amusement_arcade",
         "level": "-1;0;1",
         "name": "Sam's Town"
@@ -1707,7 +1601,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5350733335",
         "leisure": "amusement_arcade",
         "name": "モーリーファンタジー"
       },
@@ -1720,7 +1613,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5374535180",
         "alt_name": "セガワールド",
         "alt_name:en": "Sega World",
         "brand": "クラブセガ",
@@ -1742,7 +1634,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5400775181",
         "leisure": "amusement_arcade",
         "level": "1",
         "name": "タイトーステーション"
@@ -1756,7 +1647,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5456545468",
         "leisure": "amusement_arcade",
         "name": "セガワールド"
       },
@@ -1769,7 +1659,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5468546327",
         "leisure": "amusement_arcade",
         "name": "TAITO Station"
       },
@@ -1782,7 +1671,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5520541735",
         "leisure": "amusement_arcade",
         "name": "タイトーステーション 府中くるる店",
         "opening_hours": "Mo-Su 10:00-23:00"
@@ -1796,7 +1684,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5533245321",
         "alt_name": "セガワールド",
         "alt_name:en": "Sega World",
         "brand": "クラブセガ",
@@ -1818,7 +1705,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5577034008",
         "branch": "横手南店",
         "brand": "G3POROS",
         "leisure": "amusement_arcade",
@@ -1836,7 +1722,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5580363514",
         "branch": "神戸umieサウスモール",
         "leisure": "amusement_arcade",
         "name": "セガ",
@@ -1852,7 +1737,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5581879772",
         "leisure": "amusement_arcade",
         "name": "楽市楽座210トリアス店"
       },
@@ -1865,7 +1749,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5584442707",
         "leisure": "amusement_arcade",
         "level": "2",
         "name": "SEGA"
@@ -1879,7 +1762,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5591550723",
         "leisure": "amusement_arcade",
         "name": "GEO若葉店"
       },
@@ -1892,7 +1774,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5596005799",
         "leisure": "amusement_arcade",
         "name": "ミリアンパーク"
       },
@@ -1905,7 +1786,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5606556025",
         "leisure": "amusement_arcade",
         "name": "ハローズ"
       },
@@ -1918,7 +1798,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5609111832",
         "leisure": "amusement_arcade"
       },
       "geometry": {
@@ -1930,7 +1809,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5649326902",
         "alt_name": "セガワールド",
         "alt_name:en": "Sega World",
         "brand": "クラブセガ",
@@ -1952,7 +1830,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5709221485",
         "leisure": "amusement_arcade",
         "name": "ゲームヴィクト盛岡"
       },
@@ -1965,7 +1842,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5714822695",
         "leisure": "amusement_arcade",
         "level": "0.5",
         "name": "HALOS GARDEN",
@@ -1980,7 +1856,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5738431674",
         "leisure": "amusement_arcade",
         "level": "2",
         "name": "BIG ECHO"
@@ -1994,7 +1869,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5745365754",
         "leisure": "amusement_arcade",
         "name": "サンゲームス"
       },
@@ -2007,7 +1881,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5760263315",
         "leisure": "amusement_arcade",
         "name": "東京レジャーランド秋葉原2号店",
         "name:ko": "도쿄 레저랜드 아키하바라 2호점",
@@ -2023,7 +1896,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5762118421",
         "leisure": "amusement_arcade",
         "name": "SEGA",
         "payment:cash": "yes",
@@ -2039,7 +1911,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5775252647",
         "leisure": "amusement_arcade",
         "name": "アドアーズ新習志野店"
       },
@@ -2052,7 +1923,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5813719925",
         "leisure": "amusement_arcade",
         "name": "カラオケ"
       },
@@ -2065,7 +1935,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5817443390",
         "leisure": "amusement_arcade",
         "name": "Sunny"
       },
@@ -2078,7 +1947,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5817443394",
         "leisure": "amusement_arcade",
         "name": "Kikona",
         "opening_hours:covid19": "off",
@@ -2093,7 +1961,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5817811787",
         "leisure": "amusement_arcade",
         "name": "ビリヤードDAN"
       },
@@ -2106,7 +1973,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5828409196",
         "leisure": "amusement_arcade",
         "name": "樹林",
         "note": "囲碁将棋"
@@ -2120,7 +1986,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5837634533",
         "leisure": "amusement_arcade",
         "name": "パチンコ キング"
       },
@@ -2133,7 +1998,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5842065958",
         "leisure": "amusement_arcade",
         "name": "パームトップスSEGA厚木"
       },
@@ -2146,7 +2010,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5871096300",
         "leisure": "amusement_arcade",
         "name": "PIA"
       },
@@ -2159,7 +2022,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5898524117",
         "alt_name": "セガワールド",
         "alt_name:en": "Sega World",
         "brand": "クラブセガ",
@@ -2181,7 +2043,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5980840225",
         "leisure": "amusement_arcade",
         "level": "1",
         "name": "Sega"
@@ -2195,7 +2056,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6006879273",
         "leisure": "amusement_arcade",
         "name": "プレイランドサーカス"
       },
@@ -2208,7 +2068,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6011377718",
         "leisure": "amusement_arcade",
         "name": "AMUSEMENT TATSUMI"
       },
@@ -2221,7 +2080,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6033198049",
         "leisure": "amusement_arcade",
         "name": "ゲーム戦隊アマレンジャー"
       },
@@ -2234,7 +2092,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6041303498",
         "leisure": "amusement_arcade",
         "name": "セガワールド白河"
       },
@@ -2247,7 +2104,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6050994301",
         "branch": "篠原店",
         "leisure": "amusement_arcade",
         "name": "アミューズメント・スポット"
@@ -2261,7 +2117,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6132396101",
         "leisure": "amusement_arcade",
         "name": "旭遊技場"
       },
@@ -2274,7 +2129,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6138055942",
         "branch": "池袋",
         "branch:en": "Ikebukuro",
         "branch:ja": "池袋",
@@ -2296,7 +2150,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6139862290",
         "brand": "タイトーステーション",
         "brand:en": "Taito Station",
         "brand:ja": "タイトーステーション",
@@ -2316,7 +2169,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6167405837",
         "leisure": "amusement_arcade",
         "name": "セガ",
         "name:en": "Sega",
@@ -2331,7 +2183,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6168025601",
         "addr:block_number": "1",
         "addr:city": "筑紫野市",
         "addr:country": "JP",
@@ -2358,7 +2209,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6168094685",
         "leisure": "amusement_arcade",
         "name": "SEGA"
       },
@@ -2371,7 +2221,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6168545756",
         "addr:block_number": "1",
         "addr:city": "高松市",
         "addr:neighbourhood": "1",
@@ -2397,7 +2246,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6174366668",
         "addr:city": "伊勢市",
         "addr:neighbourhood": "538",
         "addr:province": "三重県",
@@ -2419,7 +2267,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6174447919",
         "addr:block_number": "1",
         "addr:city": "鈴鹿市",
         "addr:country": "JP",
@@ -2442,7 +2289,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6215501351",
         "leisure": "amusement_arcade",
         "name": "スペースファンタジー インフィニ"
       },
@@ -2455,7 +2301,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6220778086",
         "alt_name": "セガワールド",
         "alt_name:en": "Sega World",
         "brand": "クラブセガ",
@@ -2477,7 +2322,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6243051855",
         "brand": "アドアーズ",
         "brand:en": "Adores",
         "brand:ja": "アドアーズ",
@@ -2497,7 +2341,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6297092223",
         "leisure": "amusement_arcade",
         "name": "SEGA"
       },
@@ -2510,7 +2353,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6312688475",
         "leisure": "amusement_arcade",
         "name": "MG"
       },
@@ -2523,7 +2365,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6318208300",
         "addr:block_number": "18",
         "addr:city": "海老名市",
         "addr:housenumber": "1",
@@ -2556,7 +2397,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6332667388",
         "leisure": "amusement_arcade",
         "name": "アミューズメントパーク　ウエアハウス"
       },
@@ -2569,7 +2409,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6361691016",
         "addr:block_number": "4",
         "addr:city": "海老名市",
         "addr:housenumber": "31",
@@ -2596,7 +2435,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6362659613",
         "leisure": "amusement_arcade",
         "name": "PIA"
       },
@@ -2609,7 +2447,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6370276354",
         "alt_name": "セガワールド",
         "alt_name:en": "Sega World",
         "brand": "クラブセガ",
@@ -2634,7 +2471,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6382982889",
         "branch": "多賀店",
         "leisure": "amusement_arcade",
         "level": "0",
@@ -2650,7 +2486,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6388852865",
         "leisure": "amusement_arcade"
       },
       "geometry": {
@@ -2662,7 +2497,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6423523588",
         "leisure": "amusement_arcade",
         "level": "2",
         "name": "八王子N広場"
@@ -2676,7 +2510,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6428493922",
         "branch": "豊田店",
         "leisure": "amusement_arcade",
         "name": "エムズパーク"
@@ -2690,7 +2523,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6442971230",
         "leisure": "amusement_arcade",
         "name": "ドラマ 瑞穂店"
       },
@@ -2703,7 +2535,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6500518594",
         "leisure": "amusement_arcade",
         "name": "ウェアハウス"
       },
@@ -2716,7 +2547,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6563011914",
         "alt_name": "セガワールド",
         "alt_name:en": "Sega World",
         "brand": "クラブセガ",
@@ -2738,7 +2568,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6569059416",
         "leisure": "amusement_arcade"
       },
       "geometry": {
@@ -2750,7 +2579,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6579722384",
         "leisure": "amusement_arcade",
         "name": "クレーンゲーム専門店"
       },
@@ -2763,7 +2591,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6579735698",
         "leisure": "amusement_arcade",
         "name": "GAME MAGMAX!"
       },
@@ -2776,7 +2603,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6585208664",
         "leisure": "amusement_arcade",
         "name": "神奈川レジャーランド"
       },
@@ -2789,7 +2615,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6631063209",
         "branch": "池袋2号館",
         "branch:en": "Ikebukuro Store 2",
         "branch:ja": "池袋2号館",
@@ -2805,7 +2630,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6631063210",
         "addr:block_number": "14",
         "addr:country": "JP",
         "addr:housename": "Mixalive TOKYO",
@@ -2829,7 +2653,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6631063211",
         "addr:block_number": "29",
         "addr:country": "JP",
         "addr:housename": "池袋ビル",
@@ -2854,7 +2677,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6631063212",
         "branch": "池袋1号館",
         "branch:en": "Ikebukuro Store 1",
         "branch:ja": "池袋1号館",
@@ -2871,7 +2693,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6631225911",
         "leisure": "amusement_arcade",
         "name": "ADORES",
         "name:en": "ADORES",
@@ -2886,7 +2707,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6657638108",
         "leisure": "amusement_arcade",
         "level": "2",
         "name": "Play Land 54 street 草加松原店"
@@ -2900,7 +2720,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6661636329",
         "leisure": "amusement_arcade",
         "name": "ディスコ",
         "name:ja": "ディスコゲームセンター"
@@ -2914,7 +2733,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6756080635",
         "leisure": "amusement_arcade",
         "name": "namco"
       },
@@ -2927,7 +2745,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6780098277",
         "leisure": "amusement_arcade",
         "name": "TAITO STATION",
         "name:en": "TAITO STATION",
@@ -2942,7 +2759,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6794463087",
         "leisure": "amusement_arcade",
         "name": "アドアース"
       },
@@ -2955,7 +2771,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6821551699",
         "leisure": "amusement_arcade",
         "name": "タイトーステーション"
       },
@@ -2968,7 +2783,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6846408479",
         "addr:city": "栃木県小山市中央町３丁目６−７",
         "addr:province": "栃木県",
         "air_conditioning": "yes",
@@ -2985,7 +2799,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6926073710",
         "addr:block_number": "103",
         "addr:city": "横浜市",
         "addr:housenumber": "2",
@@ -3009,7 +2822,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6926374706",
         "leisure": "amusement_arcade",
         "name": "ストライクス"
       },
@@ -3022,7 +2834,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6943084137",
         "leisure": "amusement_arcade",
         "name": "ソユーゲームフィールド"
       },
@@ -3035,7 +2846,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/7039846501",
         "leisure": "amusement_arcade",
         "level": "0",
         "name": "APINA",
@@ -3051,7 +2861,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/7083429823",
         "leisure": "amusement_arcade"
       },
       "geometry": {
@@ -3063,7 +2872,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/7083429842",
         "leisure": "amusement_arcade"
       },
       "geometry": {
@@ -3075,7 +2883,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/7083429852",
         "leisure": "amusement_arcade"
       },
       "geometry": {
@@ -3087,7 +2894,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/7086170466",
         "leisure": "amusement_arcade",
         "name": "タイトーFステーション 八戸店"
       },
@@ -3100,7 +2906,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/7127428157",
         "alt_name": "セガワールド",
         "alt_name:en": "Sega World",
         "brand": "クラブセガ",
@@ -3122,7 +2927,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/7142180415",
         "leisure": "amusement_arcade"
       },
       "geometry": {
@@ -3134,7 +2938,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/7196075684",
         "addr:block_number": "9",
         "addr:city": "広島市",
         "addr:housenumber": "30",
@@ -3166,7 +2969,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/7221558306",
         "leisure": "amusement_arcade",
         "name": "THE 3RD PLANET"
       },
@@ -3179,7 +2981,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/7235658866",
         "leisure": "amusement_arcade",
         "name": "ウェアハウス"
       },
@@ -3192,7 +2993,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/7236168202",
         "leisure": "amusement_arcade",
         "name": "ゲームファンタジアン岡崎店"
       },
@@ -3205,7 +3005,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/7289015887",
         "leisure": "amusement_arcade",
         "level": "2",
         "name": "モーリーファンタジー"
@@ -3219,7 +3018,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/7512323333",
         "leisure": "amusement_arcade",
         "name": "淡路棋院"
       },
@@ -3232,7 +3030,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/7559921935",
         "leisure": "amusement_arcade",
         "level": "0;1;2",
         "name": "タイトーステーション",
@@ -3248,7 +3045,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/7597259385",
         "leisure": "amusement_arcade",
         "level": "2;3",
         "name": "セガワールドアポロ",
@@ -3263,7 +3059,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/7607443184",
         "leisure": "amusement_arcade",
         "name": "GIGO"
       },
@@ -3276,7 +3071,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/7615827048",
         "brand": "ナムコ",
         "brand:en": "NAMCO",
         "brand:ja": "ナムコ",
@@ -3296,7 +3090,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/7616781930",
         "leisure": "amusement_arcade",
         "name": "キッズパーク"
       },
@@ -3309,7 +3102,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/7653146568",
         "leisure": "amusement_arcade",
         "name": "GiGO"
       },
@@ -3322,7 +3114,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/7656396948",
         "leisure": "amusement_arcade",
         "name": "GIGO5号館"
       },
@@ -3335,7 +3126,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/7693724551",
         "leisure": "amusement_arcade",
         "level": "1",
         "name": "Gパラ"
@@ -3349,7 +3139,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/7695307121",
         "leisure": "amusement_arcade",
         "name": "テクモピア"
       },
@@ -3362,7 +3151,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/7698425122",
         "leisure": "amusement_arcade",
         "name": "ベガジオ 美しが丘店"
       },
@@ -3375,7 +3163,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/7816794854",
         "addr:block_number": "14",
         "addr:city": "町田市",
         "addr:housenumber": "1",
@@ -3397,7 +3184,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/7843970878",
         "addr:block_number": "1",
         "addr:city": "浜松市",
         "addr:housenumber": "2",
@@ -3417,7 +3203,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/7850149929",
         "leisure": "amusement_arcade",
         "name": "GAME IMMIGRANT?"
       },
@@ -3430,7 +3215,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/7926847302",
         "leisure": "amusement_arcade",
         "name": "アミューズメントPLABI"
       },
@@ -3443,7 +3227,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/7936698568",
         "leisure": "amusement_arcade",
         "name": "GAME PANIC堺"
       },
@@ -3456,7 +3239,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/7961272053",
         "leisure": "amusement_arcade",
         "level": "3",
         "name": "モーリーファンタジーf"
@@ -3470,7 +3252,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/7983266591",
         "leisure": "amusement_arcade",
         "name": "The 3rd Planet",
         "name:ja": "サードプラネット"
@@ -3484,7 +3265,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/8200255999",
         "brand": "タイトーステーション",
         "brand:en": "Taito Station",
         "brand:ja": "タイトーステーション",
@@ -3507,7 +3287,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/8200513975",
         "brand": "タイトーステーション",
         "brand:en": "Taito Station",
         "brand:ja": "タイトーステーション",
@@ -3527,7 +3306,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/8202040720",
         "brand": "ナムコ",
         "brand:en": "NAMCO",
         "brand:ja": "ナムコ",
@@ -3547,7 +3325,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/8205308003",
         "leisure": "amusement_arcade",
         "name": "ゲームコーナー",
         "name:en": "Space Train"
@@ -3561,7 +3338,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/8209534555",
         "leisure": "amusement_arcade",
         "level": "0",
         "name": "キキトコ"
@@ -3575,7 +3351,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/8494485046",
         "leisure": "amusement_arcade",
         "name": "在日米軍針尾ゲーミングルーム(Gamimg room)"
       },
@@ -3588,7 +3363,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/8627358143",
         "leisure": "amusement_arcade",
         "name": "ゲームポイント シャトーEX"
       },
@@ -3601,7 +3375,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/8627358144",
         "leisure": "amusement_arcade",
         "name": "うたっちゃえ カラオケシャトー"
       },
@@ -3614,7 +3387,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/8668800005",
         "brand": "タイトーステーション",
         "brand:en": "Taito Station",
         "brand:ja": "タイトーステーション",
@@ -3633,7 +3405,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/8694987185",
         "addr:block_number": "21",
         "addr:city": "広島市",
         "addr:housenumber": "1-7F",
@@ -3659,7 +3430,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/8878597301",
         "brand": "ナムコ",
         "brand:en": "NAMCO",
         "brand:ja": "ナムコ",
@@ -3680,7 +3450,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/8879083318",
         "leisure": "amusement_arcade",
         "level": "-1",
         "name": "namco"
@@ -3694,7 +3463,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/8920896084",
         "leisure": "amusement_arcade",
         "level": "1",
         "name": "バナナパーティーガチャ 長浜店"
@@ -3708,7 +3476,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/8962134224",
         "leisure": "amusement_arcade",
         "name": "バギバギ"
       },
@@ -3721,7 +3488,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9061002790",
         "brand": "アピナ",
         "brand:en": "Apina",
         "brand:ja": "アピナ",
@@ -3741,7 +3507,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9061455502",
         "leisure": "amusement_arcade",
         "level": "0",
         "name": "メトロポリス"
@@ -3755,7 +3520,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9081875345",
         "leisure": "amusement_arcade",
         "name": "楽市楽座"
       },
@@ -3768,7 +3532,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9092366621",
         "addr:block_number": "1",
         "addr:city": "利府町",
         "addr:county": "宮城郡",
@@ -3791,7 +3554,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9092366622",
         "addr:block_number": "1",
         "addr:city": "利府町",
         "addr:county": "宮城郡",
@@ -3816,7 +3578,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9116189362",
         "alt_name": "セガワールド",
         "alt_name:en": "Sega World",
         "brand": "クラブセガ",
@@ -3839,7 +3600,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9136704032",
         "leisure": "amusement_arcade",
         "name": "モナコ"
       },
@@ -3852,7 +3612,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9157799706",
         "leisure": "amusement_arcade"
       },
       "geometry": {
@@ -3864,7 +3623,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9219283267",
         "leisure": "amusement_arcade",
         "level": "6",
         "name": "namco博多バスターミナル店"
@@ -3878,7 +3636,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9224019815",
         "description": "村松旅館ロビー転用",
         "leisure": "amusement_arcade",
         "name": "射的場　えびす屋　段べえ"
@@ -3892,7 +3649,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9301640775",
         "leisure": "amusement_arcade",
         "name": "フィーバー黒磯"
       },
@@ -3905,7 +3661,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9301805865",
         "leisure": "amusement_arcade",
         "name": "パチンコ&スロット ZAPP"
       },
@@ -3918,7 +3673,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9301852944",
         "leisure": "amusement_arcade",
         "name": "Amusement Park ダイナム"
       },
@@ -3931,7 +3685,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9314626384",
         "leisure": "amusement_arcade",
         "name": "パチンコ夢屋 黒磯店"
       },
@@ -3944,7 +3697,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9333988510",
         "leisure": "amusement_arcade",
         "name": "シルクハット本厚木"
       },
@@ -3957,7 +3709,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9365151082",
         "leisure": "amusement_arcade",
         "level": "4",
         "name": "CQB Limited"
@@ -3971,7 +3722,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9385832395",
         "branch": "BiVi仙台店",
         "leisure": "amusement_arcade",
         "level": "1",
@@ -3991,7 +3741,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9389718961",
         "addr:floor": "2",
         "leisure": "amusement_arcade",
         "name": "Silk Hat"
@@ -4005,7 +3754,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9401720638",
         "access": "customers",
         "addr:city": "八街市",
         "addr:housenumber": "301",
@@ -4030,7 +3778,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9404028088",
         "alt_name": "セガワールド",
         "alt_name:en": "Sega World",
         "brand": "クラブセガ",
@@ -4052,7 +3799,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9404247788",
         "leisure": "amusement_arcade",
         "name": "ソーユー"
       },
@@ -4065,7 +3811,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9448822850",
         "leisure": "amusement_arcade"
       },
       "geometry": {
@@ -4077,7 +3822,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9491930562",
         "leisure": "amusement_arcade",
         "level": "3;4",
         "name": "ATCあそびマーレ"
@@ -4091,7 +3835,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9498222286",
         "leisure": "amusement_arcade",
         "name": "群馬レジャーランド藤岡店"
       },
@@ -4104,7 +3847,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9502630815",
         "leisure": "amusement_arcade"
       },
       "geometry": {
@@ -4116,7 +3858,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9568802310",
         "leisure": "amusement_arcade",
         "name": "ムー大陸"
       },
@@ -4129,7 +3870,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9589548413",
         "leisure": "amusement_arcade",
         "level": "1",
         "name": "BRAVO"
@@ -4143,7 +3883,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9604630537",
         "brand": "セガ",
         "leisure": "amusement_arcade",
         "name": "セガ幕張",
@@ -4158,7 +3897,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9611989582",
         "leisure": "amusement_arcade",
         "name": "有楽会館 黒磯店"
       },
@@ -4171,7 +3909,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9635041805",
         "leisure": "amusement_arcade",
         "name": "ピンクボム　藤岡店"
       },
@@ -4184,7 +3921,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9635184958",
         "leisure": "amusement_arcade",
         "name": "ゲームパーク"
       },
@@ -4197,7 +3933,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9692611391",
         "check_date": "2022-11-03",
         "leisure": "amusement_arcade",
         "level": "0",
@@ -4213,7 +3948,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9722368481",
         "leisure": "amusement_arcade",
         "name": "FUNFUN"
       },
@@ -4226,7 +3960,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9724038469",
         "leisure": "amusement_arcade",
         "name": "マルハン黒磯店"
       },
@@ -4239,7 +3972,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9730047546",
         "leisure": "amusement_arcade",
         "name": "ザリガニ"
       },
@@ -4252,7 +3984,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9740954170",
         "addr:block_number": "7",
         "addr:city": "仙台市",
         "addr:housenumber": "13",
@@ -4283,7 +4014,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9796129027",
         "leisure": "amusement_arcade",
         "name": "ゲーム半田メトロポリス"
       },
@@ -4296,7 +4026,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9880819679",
         "addr:city": "旭川市",
         "addr:neighbourhood": "7丁目",
         "addr:postcode": "070-0030",
@@ -4315,7 +4044,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9892845482",
         "description": "レーシングシミュレーター屋",
         "leisure": "amusement_arcade",
         "name": "DareDemoRacer",
@@ -4330,7 +4058,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9916988373",
         "leisure": "amusement_arcade",
         "name": "スマートボール"
       },
@@ -4343,7 +4070,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9931815708",
         "contact:twitter": "https://twitter.com/GiGO_koshigaya",
         "internet_access": "no",
         "leisure": "amusement_arcade",
@@ -4365,7 +4091,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9932028074",
         "leisure": "amusement_arcade",
         "level": "2",
         "name": "らら",
@@ -4382,7 +4107,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9964186036",
         "alt_name": "セガワールド",
         "alt_name:en": "Sega World",
         "brand": "クラブセガ",
@@ -4403,7 +4127,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10036548442",
         "leisure": "amusement_arcade",
         "level": "2",
         "name": "ラウンドワン"
@@ -4417,7 +4140,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10095172266",
         "leisure": "amusement_arcade",
         "name": "セガ海田",
         "name:en": "SEGA_Kaita"
@@ -4431,7 +4153,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10117757578",
         "leisure": "amusement_arcade",
         "name": "安城メトロポリス"
       },
@@ -4444,7 +4165,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10120440600",
         "check_date": "2022-10-22",
         "leisure": "amusement_arcade",
         "name": "Game! Medal Arcade Video",
@@ -4459,7 +4179,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10132699020",
         "leisure": "amusement_arcade",
         "name": "Gigo"
       },
@@ -4472,7 +4191,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10139089449",
         "brand": "タイトーステーション",
         "brand:en": "Taito Station",
         "brand:ja": "タイトーステーション",
@@ -4492,7 +4210,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10164714472",
         "leisure": "amusement_arcade",
         "level": "1",
         "name": "エンジョイパラダイス"
@@ -4506,7 +4223,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10178443084",
         "leisure": "amusement_arcade",
         "name": "GiGO"
       },
@@ -4519,7 +4235,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10178443089",
         "leisure": "amusement_arcade",
         "name": "GiGO"
       },
@@ -4532,7 +4247,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10182453553",
         "leisure": "amusement_arcade",
         "name": "コパⅢ",
         "wheelchair": "no"
@@ -4546,7 +4260,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10189051792",
         "leisure": "amusement_arcade"
       },
       "geometry": {
@@ -4558,7 +4271,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10216671338",
         "brand": "タイトーステーション",
         "brand:en": "Taito Station",
         "brand:ja": "タイトーステーション",
@@ -4577,7 +4289,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10246429553",
         "leisure": "amusement_arcade",
         "name": "アミパラ 丸亀店"
       },
@@ -4590,7 +4301,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10271342785",
         "brand": "タイトーステーション",
         "brand:en": "Taito Station",
         "brand:ja": "タイトーステーション",
@@ -4610,7 +4320,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10271365974",
         "addr:block_number": "2",
         "addr:city": "横浜市",
         "addr:housenumber": "1",
@@ -4640,7 +4349,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10271374220",
         "addr:block_number": "2",
         "addr:city": "福岡市",
         "addr:country": "JP",
@@ -4671,7 +4379,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10275133193",
         "leisure": "amusement_arcade",
         "name": "バンバン衣山"
       },
@@ -4684,7 +4391,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10290750413",
         "leisure": "amusement_arcade",
         "name": "スマイルパーク多度津"
       },
@@ -4697,7 +4403,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10292821101",
         "leisure": "amusement_arcade",
         "name": "マルゲ",
         "name:en": "Maruge"
@@ -4711,7 +4416,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10294686811",
         "leisure": "amusement_arcade",
         "name": "パスカ",
         "name:en": "Passca"
@@ -4725,7 +4429,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10298151594",
         "leisure": "amusement_arcade",
         "name": "アミューズスペース ミール(MiR)"
       },
@@ -4738,7 +4441,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10301988917",
         "internet_access": "no",
         "leisure": "amusement_arcade",
         "opening_hours": "24/7"
@@ -4752,7 +4454,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10312327885",
         "leisure": "amusement_arcade",
         "name": "ゲームフィールド",
         "name:en": "Game Field",
@@ -4769,7 +4470,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10312922781",
         "leisure": "amusement_arcade",
         "level": "3",
         "name": "アドアーズ"
@@ -4783,7 +4483,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10313536329",
         "leisure": "amusement_arcade",
         "name": "Shinjuku Sports Land"
       },
@@ -4796,7 +4495,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10313541064",
         "leisure": "amusement_arcade",
         "name": "Natsuge Museum"
       },
@@ -4809,7 +4507,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10536645474",
         "leisure": "amusement_arcade",
         "name": "Amusement Park MG inn Shido"
       },
@@ -4822,7 +4519,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10539040807",
         "leisure": "amusement_arcade",
         "name": "GIGO"
       },
@@ -4835,7 +4531,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10585412581",
         "leisure": "amusement_arcade",
         "name": "ドライブインダルマ"
       },
@@ -4848,7 +4543,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10598175517",
         "leisure": "amusement_arcade",
         "name": "プレイランド"
       },
@@ -4861,7 +4555,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10600358295",
         "check_date": "2023-02-02",
         "leisure": "amusement_arcade",
         "name": "UFOキャッチャー専門店"
@@ -4875,7 +4568,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10600379694",
         "check_date": "2023-02-02",
         "description": "2階にUFOキャッチャーあり",
         "leisure": "amusement_arcade",

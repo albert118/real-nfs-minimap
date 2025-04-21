@@ -21,7 +21,6 @@ defineProps<Partial<FeatureMetaData>>();
 
 <style scoped lang="css">
 .marker {
-  opacity: 0;
   border: 1px solid black;
   width: 10px;
   height: 10px;

@@ -30,8 +30,8 @@ export const useSpeedCamerasNsw = defineStore('speedCamerasNsw', () => {
     geometry: {
       type: 'Point',
       coordinates: {
-        x: f.geometry.coordinates[0],
-        y: f.geometry.coordinates[1],
+        y: f.geometry.coordinates[0],
+        x: f.geometry.coordinates[1],
       } as Coordinate,
     },
   }));

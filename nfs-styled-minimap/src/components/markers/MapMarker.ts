@@ -25,7 +25,7 @@ export class MapMarker {
     el.appendChild(markerEl);
 
     this.__component = renderComponent(markerEl, component, props, appContext);
-    this.__logger.debug('rendered component:', this.__component);
+    this.__logger.trace('rendered component:', this.__component);
 
     if (!this.__component) throw new Error(`Failed to render ${component.name ?? '<no component name resolved>'}`);
 

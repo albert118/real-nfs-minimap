@@ -4,6 +4,11 @@ import { type Ref } from 'vue';
 import Logger from 'js-logger';
 
 export interface GlobalStoreState {
+  /**
+   * This should only be called off of a user interaction (ie. button click), otherwise it will throw a Violation warning and
+   * fail to resolve the current location.
+   */
+  setCurrentLocation: () => void;
   currentLocation: Ref<Coordinate>;
   init: () => void;
 }
@@ -42,15 +47,14 @@ export const useGlobalStore = defineStore('globalStore', () => {
 
   function init() {
     Logger.useDefaults();
-    Logger.setLevel(Logger.WARN);
+    Logger.setLevel(Logger.DEBUG);
     Logger.time('Global store initialised');
-
-    setCurrentLocation();
 
     Logger.timeEnd('Global store initialised');
   }
 
   return {
+    setCurrentLocation,
     currentLocation,
     init,
   } as GlobalStoreState;

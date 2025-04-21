@@ -52,6 +52,8 @@ const selectJapData = () => {
 };
 
 const selectAusData = () => {
+  globalStore.setCurrentLocation();
+
   if (!currentLocation.value) return;
 
   logger.log('selecting AUS data');

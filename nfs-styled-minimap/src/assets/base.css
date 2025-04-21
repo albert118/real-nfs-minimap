@@ -1,7 +1,7 @@
 :root {
-  --primary: rgb(149, 231, 66);
-  --secondary: #b4a7a7;
-  --tertiary: lightseagreen;
+  --primary: #16e05d;
+  --secondary: #2e3e3e;
+  --tertiary: #0a9157;
   --color-background: #181818;
   --color-text: rgba(235, 235, 235, 0.64);
 }

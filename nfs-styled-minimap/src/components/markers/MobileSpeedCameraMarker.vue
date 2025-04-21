@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { mdiCameraEnhance } from '@mdi/js';
+
 // this shoudl be resolved from the global type declarations but isn't recognised for some reason
 // global typing seems broken in this prototype
 export interface FeatureMetaData {
@@ -15,15 +17,26 @@ defineProps<Partial<FeatureMetaData>>();
 
 <template>
   <div class="mobile-speed-camera-marker">
-    <div class="marker-label" style="color: #124783">{{ name }}</div>
+    <v-icon :icon="mdiCameraEnhance" size="x-large" :label="name" />
+    <span> {{ name }}</span>
   </div>
 </template>
 
 <style scoped lang="css">
 .mobile-speed-camera-marker {
-  border: 1px solid #124783;
-  width: 10px;
-  height: 10px;
-  border-radius: 999px;
+  --color: #124783;
+
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--color);
+  font-size: 16px;
+
+  span {
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--color);
+  }
 }
 </style>

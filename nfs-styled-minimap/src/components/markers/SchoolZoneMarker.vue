@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { mdiHumanMaleFemaleChild } from '@mdi/js';
+
 // this shoudl be resolved from the global type declarations but isn't recognised for some reason
 // global typing seems broken in this prototype
 export interface FeatureMetaData {
@@ -15,15 +17,26 @@ defineProps<Partial<FeatureMetaData>>();
 
 <template>
   <div class="school-zone-marker">
-    <div class="marker-label" style="color: #dcd90d">{{ name }}</div>
+    <v-icon :icon="mdiHumanMaleFemaleChild" size="x-large" :label="name" />
+    <span> {{ name }}</span>
   </div>
 </template>
 
 <style scoped lang="css">
 .school-zone-marker {
-  border: 1px solid #dcd90d;
-  width: 10px;
-  height: 10px;
-  border-radius: 999px;
+  --color: #caca11;
+
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--color);
+  font-size: 16px;
+
+  span {
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--color);
+  }
 }
 </style>

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { mdiMapMarker } from '@mdi/js';
+
 // this shoudl be resolved from the global type declarations but isn't recognised for some reason
 // global typing seems broken in this prototype
 export interface FeatureMetaData {
@@ -15,22 +17,26 @@ defineProps<Partial<FeatureMetaData>>();
 
 <template>
   <div class="marker">
-    <span class="marker--label">{{ name }}</span>
+    <v-icon class="" :icon="mdiMapMarker" size="x-large" :label="name" />
+    <span> {{ name }}</span>
   </div>
 </template>
 
 <style scoped lang="css">
 .marker {
-  border: 1px solid black;
-  width: 10px;
-  height: 10px;
-}
+  --color: darkblue;
 
-.marker--label {
   display: flex;
-  font-weight: 600;
-  color: darkblue;
-  font-size: 12px;
-  margin-top: 10px;
+  align-items: center;
+  gap: 4px;
+  color: var(--color);
+  font-size: 10px;
+
+  span {
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--color);
+  }
 }
 </style>

@@ -58,7 +58,7 @@ const selectAusData = () => {
 
   logger.log('selecting AUS data');
 
-  center.value = currentLocation.value;
+  center.value = { y: 151.02, x: -33.81 };
   zoom.value = 12;
   markerFeatures.value = new Set(createMarkerFeatures(speedCameraFeatures));
   markerFeatures.value.add({

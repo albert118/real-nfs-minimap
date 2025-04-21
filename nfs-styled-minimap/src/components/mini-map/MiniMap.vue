@@ -47,7 +47,6 @@ watch(
 );
 
 watch([() => center, () => zoom], ([newCenter, newZoom]) => {
-  logger.debug(`updated center and/or zoom to: ${JSON.stringify(newCenter)} | ${newZoom}`);
   miniMap?.setView(newCenter, newZoom);
 });
 

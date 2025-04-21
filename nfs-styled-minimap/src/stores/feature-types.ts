@@ -2,6 +2,9 @@
 // once it's in there, idky
 import SimpleMarker from '@components/markers/SimpleMarker.vue';
 import LocationPin from '@components/markers/LocationPin.vue';
+import RedLightMarker from '@components/markers/RedLightMarker.vue';
+import MobileSpeedCameraMarker from '@components/markers/MobileSpeedCameraMarker.vue';
+import SchoolZoneMarker from '@components/markers/SchoolZoneMarker.vue';
 
 export enum FeatureType {
   Feature = 'Feature',
@@ -26,9 +29,9 @@ export enum FeatureType {
 // every feature type can potenially resolve a component to render it
 export const FeatureTypeMap = {
   [FeatureType.Feature]: SimpleMarker,
-  [FeatureType.RedLightCamera]: SimpleMarker,
-  [FeatureType.MobileSpeedCamera]: SimpleMarker,
-  [FeatureType.SchoolZone]: SimpleMarker,
+  [FeatureType.RedLightCamera]: RedLightMarker,
+  [FeatureType.MobileSpeedCamera]: MobileSpeedCameraMarker,
+  [FeatureType.SchoolZone]: SchoolZoneMarker,
   [FeatureType.SafeTCam]: SimpleMarker,
   [FeatureType.SpeedTrap]: SimpleMarker,
   [FeatureType.NoiseCamera]: SimpleMarker,

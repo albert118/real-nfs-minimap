@@ -2,11 +2,11 @@
     "type": "FeatureCollection",
     "generator": "python-json-converter",
     "copyright": "",
-    "timestamp": "2025-04-19T15:59:37.166222",
+    "timestamp": "2025-04-21T16:03:31.202512",
     "features": [
         {
             "id": "feature-146.9254257--36.0752574",
-            "type": "Feature",
+            "type": "School Zone",
             "properties": {
                 "name": "Albury: School Zone RLSC",
                 "description": "Variable Speed Limit Enforced.",
@@ -22,7 +22,7 @@
         },
         {
             "id": "feature-151.2011517--33.9014752",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Alexandria: Red-Light Speed Cameras",
                 "description": "",
@@ -38,7 +38,7 @@
         },
         {
             "id": "feature-151.202838--33.905526",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Alexandria: Red-Light Speed Camera",
                 "description": "",
@@ -54,7 +54,7 @@
         },
         {
             "id": "feature-151.122571--33.978499",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Allawah: Red-Light Speed Camera",
                 "description": "",
@@ -70,7 +70,7 @@
         },
         {
             "id": "feature-151.1174803--33.8884728",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Ashfield: Red-Light Speed Camera",
                 "description": "",
@@ -86,7 +86,7 @@
         },
         {
             "id": "feature-151.0214619--33.8481914",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Auburn: Red-Light Speed Camera",
                 "description": "",
@@ -102,7 +102,7 @@
         },
         {
             "id": "feature-151.0333228--33.849216",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Auburn: Red-Light Speed Camera",
                 "description": "",
@@ -118,7 +118,7 @@
         },
         {
             "id": "feature-151.0346769--33.8499838",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Auburn: Red-Light Speed Camera",
                 "description": "",
@@ -134,7 +134,7 @@
         },
         {
             "id": "feature-151.2146643--33.9618466",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Banksmeadow: Red-Light Speed Cameras",
                 "description": "",
@@ -150,7 +150,7 @@
         },
         {
             "id": "feature-151.033325--33.907354",
-            "type": "Feature",
+            "type": "School Zone",
             "properties": {
                 "name": "Bankstown: School Zone RLSC",
                 "description": "Variable Speed Limit Enforced.",
@@ -166,7 +166,7 @@
         },
         {
             "id": "feature-151.04012--33.906121",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Bankstown: Red-Light Speed Camera",
                 "description": "",
@@ -182,7 +182,7 @@
         },
         {
             "id": "feature-150.9964398--33.8989837",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Bass Hill: Red-Light Speed Camera",
                 "description": "",
@@ -198,7 +198,7 @@
         },
         {
             "id": "feature-149.5729169--33.4151156",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Bathurst: Red-Light Speed Camera",
                 "description": "",
@@ -214,7 +214,7 @@
         },
         {
             "id": "feature-149.5851002--33.4175312",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Bathurst: Red-Light Speed Camera",
                 "description": "",
@@ -230,7 +230,7 @@
         },
         {
             "id": "feature-150.992891--33.761912",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Baulkham Hills: Red-Light Speed Cameras",
                 "description": "",
@@ -246,7 +246,7 @@
         },
         {
             "id": "feature-151.197568--33.911546",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Beaconsfield: Red-Light Speed Camera",
                 "description": "",
@@ -262,7 +262,7 @@
         },
         {
             "id": "feature-151.083595--33.902145",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Belfield: Red-Light Speed Camera",
                 "description": "",
@@ -278,7 +278,7 @@
         },
         {
             "id": "feature-151.098562--33.929325",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Belmore: Red-Light Speed Camera",
                 "description": "",
@@ -294,7 +294,7 @@
         },
         {
             "id": "feature-151.127873--33.948211",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Bexley: Red-Light Speed Camera",
                 "description": "",
@@ -310,7 +310,7 @@
         },
         {
             "id": "feature-151.131843--33.952823",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Bexley: Red-Light Speed Camera",
                 "description": "",
@@ -326,7 +326,7 @@
         },
         {
             "id": "feature-150.8971203--33.798158",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Blacktown: Red-Light Speed Camera",
                 "description": "",
@@ -342,7 +342,7 @@
         },
         {
             "id": "feature-150.9015786--33.7765792",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Blacktown: Red-Light Speed Camera",
                 "description": "",
@@ -358,7 +358,7 @@
         },
         {
             "id": "feature-150.892408--33.769152",
-            "type": "Feature",
+            "type": "School Zone",
             "properties": {
                 "name": "Blacktown: School Zone RLSC",
                 "description": "Variable Speed Limit Enforced.",
@@ -374,7 +374,7 @@
         },
         {
             "id": "feature-150.908042--33.773422",
-            "type": "Feature",
+            "type": "School Zone",
             "properties": {
                 "name": "Blacktown: School Zone RLSC",
                 "description": "Variable Speed Limit Enforced.",
@@ -390,7 +390,7 @@
         },
         {
             "id": "feature-150.919112--33.7926928",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Blacktown: Red-Light Speed Camera",
                 "description": "Prospect Highway / Blacktown Road",
@@ -406,7 +406,7 @@
         },
         {
             "id": "feature-150.91161--33.771875",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Blacktown: Red-Light Speed Camera",
                 "description": "",
@@ -422,7 +422,7 @@
         },
         {
             "id": "feature-150.9052661--33.7668378",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Blacktown: Red-Light Speed Camera",
                 "description": "",
@@ -438,7 +438,7 @@
         },
         {
             "id": "feature-150.911044--33.765594",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Blacktown: Red-Light Speed Camera",
                 "description": "",
@@ -454,7 +454,7 @@
         },
         {
             "id": "feature-151.1092186--33.9834118",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Blakehurst: Red-Light Speed Camera",
                 "description": "",
@@ -470,7 +470,7 @@
         },
         {
             "id": "feature-151.2534921--33.8909801",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Bondi Junction: Red-Light Speed Camera",
                 "description": "",
@@ -486,7 +486,7 @@
         },
         {
             "id": "feature-151.105418--33.868908",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Burwood: Red-Light Speed Cameras",
                 "description": "",
@@ -502,7 +502,7 @@
         },
         {
             "id": "feature-151.103696--33.877435",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Burwood: Red-Light Speed Camera",
                 "description": "",
@@ -518,7 +518,7 @@
         },
         {
             "id": "feature-150.919171--33.899445",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Cabramatta West: Red-Light Speed Cameras",
                 "description": "",
@@ -534,7 +534,7 @@
         },
         {
             "id": "feature-150.81962--34.06657",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Campbelltown: Red-Light Speed Cameras",
                 "description": "",
@@ -550,7 +550,7 @@
         },
         {
             "id": "feature-150.805555--34.072193",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Campbelltown: Red-Light Speed Cameras",
                 "description": "",
@@ -566,7 +566,7 @@
         },
         {
             "id": "feature-150.808342--34.074904",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Campbelltown: Red-Light Speed Camera",
                 "description": "",
@@ -582,7 +582,7 @@
         },
         {
             "id": "feature-151.10442--33.918239",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Campsie: Red-Light Speed Camera",
                 "description": "",
@@ -598,7 +598,7 @@
         },
         {
             "id": "feature-151.099638--33.920186",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Campsie: Red-Light Speed Camera",
                 "description": "",
@@ -614,7 +614,7 @@
         },
         {
             "id": "feature-150.9238136--33.8836387",
-            "type": "Feature",
+            "type": "School Zone",
             "properties": {
                 "name": "Canley Heights: School Zone RLSC",
                 "description": "",
@@ -630,7 +630,7 @@
         },
         {
             "id": "feature-150.922894--33.888277",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Canley Heights: Red-Light Speed Camera",
                 "description": "",
@@ -646,7 +646,7 @@
         },
         {
             "id": "feature-150.937021--33.885509",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Canley Vale: Red-Light Speed Camera",
                 "description": "",
@@ -662,7 +662,7 @@
         },
         {
             "id": "feature-151.132919--34.045677",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Caringbah: Red-Light Speed Camera",
                 "description": "",
@@ -678,7 +678,7 @@
         },
         {
             "id": "feature-150.976865--33.724915",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Castle Hill: Red-Light Speed Camera",
                 "description": "",
@@ -694,7 +694,7 @@
         },
         {
             "id": "feature-151.004191--33.731204",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Castle Hill: Red-Light Speed Camera",
                 "description": "",
@@ -710,7 +710,7 @@
         },
         {
             "id": "feature-151.6866446--32.9567081",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Charlestown: Red-Light Speed Camera",
                 "description": "",
@@ -726,7 +726,7 @@
         },
         {
             "id": "feature-151.006726--33.883728",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Chester Hill: Red-Light Speed Cameras",
                 "description": "",
@@ -742,7 +742,7 @@
         },
         {
             "id": "feature-151.1985978--33.8843445",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Chippendale: Red-Light Speed Camera",
                 "description": "",
@@ -758,7 +758,7 @@
         },
         {
             "id": "feature-151.0387301--33.8917256",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Chullora: Red-Light Speed Camera",
                 "description": "",
@@ -774,7 +774,7 @@
         },
         {
             "id": "feature-151.0538675--33.8940975",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Chullora/Greenacre: Red-Light Speed Camera",
                 "description": "",
@@ -790,7 +790,7 @@
         },
         {
             "id": "feature-150.7579001--33.7683334",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Claremont Meadows: Red-Light Speed Camera",
                 "description": "",
@@ -806,7 +806,7 @@
         },
         {
             "id": "feature-153.1266609--30.2836728",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Coffs Harbour: Red-Light Speed Camera",
                 "description": "Pacific Highway / Bray Street.",
@@ -822,7 +822,7 @@
         },
         {
             "id": "feature-153.110624--30.3007834",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Coffs Harbour: Red-Light Speed Camera",
                 "description": "",
@@ -838,7 +838,7 @@
         },
         {
             "id": "feature-151.106013--33.861634",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Concord: Red-Light Speed Camera",
                 "description": "",
@@ -854,7 +854,7 @@
         },
         {
             "id": "feature-151.014054--33.916129",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Condell Park: Red-Light Speed Camera",
                 "description": "",
@@ -870,7 +870,7 @@
         },
         {
             "id": "feature-150.875883--34.446087",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Coniston: Red-Light Speed Cameras",
                 "description": "All lanes monitored, additional cameras installed for Right-Turn.",
@@ -886,7 +886,7 @@
         },
         {
             "id": "feature-150.9006775--34.3735603",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Corrimal: Red-Light Speed Camera",
                 "description": "",
@@ -902,7 +902,7 @@
         },
         {
             "id": "feature-151.199234--33.826128",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Crows Nest: Red-Light Speed Camera",
                 "description": "",
@@ -918,7 +918,7 @@
         },
         {
             "id": "feature-151.111131--33.894669",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Croydon Park: Red-Light Speed Camera",
                 "description": "",
@@ -934,7 +934,7 @@
         },
         {
             "id": "feature-151.2151976--33.8792117",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Darlinghurst: Red-Light Speed Cameras",
                 "description": "",
@@ -950,7 +950,7 @@
         },
         {
             "id": "feature-151.280593--33.758583",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Dee Why: Red-Light Speed Camera",
                 "description": "",
@@ -966,7 +966,7 @@
         },
         {
             "id": "feature-151.1545171--33.8510693",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Drummoyne: Red-Light Speed Camera",
                 "description": "",
@@ -982,7 +982,7 @@
         },
         {
             "id": "feature-151.108907--33.927734",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Earlwood: Red-Light Speed Camera",
                 "description": "",
@@ -998,7 +998,7 @@
         },
         {
             "id": "feature-150.8542961--33.7887154",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Eastern Creek: Red-Light Speed Camera",
                 "description": "",
@@ -1014,7 +1014,7 @@
         },
         {
             "id": "feature-151.085717--33.788515",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Eastwood: Red-Light Speed Camera",
                 "description": "",
@@ -1030,7 +1030,7 @@
         },
         {
             "id": "feature-151.077665--33.793506",
-            "type": "Feature",
+            "type": "School Zone",
             "properties": {
                 "name": "Eastwood: School Zone RLSC",
                 "description": "Variable Speed Limit Enforced.",
@@ -1046,7 +1046,7 @@
         },
         {
             "id": "feature-151.080294--33.771137",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Epping: Red-Light Speed Camera",
                 "description": "",
@@ -1062,7 +1062,7 @@
         },
         {
             "id": "feature-151.056226--33.814345",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Ermington: Red-Light Speed Camera",
                 "description": "",
@@ -1078,7 +1078,7 @@
         },
         {
             "id": "feature-150.954289--33.863972",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Fairfield: Red-Light Speed Camera",
                 "description": "",
@@ -1094,7 +1094,7 @@
         },
         {
             "id": "feature-150.9454697--33.8729143",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Fairfield: Red-Light Speed Camera",
                 "description": "",
@@ -1110,7 +1110,7 @@
         },
         {
             "id": "feature-150.937005--33.872317",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Fairfield Heights: Red-Light Speed Camera",
                 "description": "",
@@ -1126,7 +1126,7 @@
         },
         {
             "id": "feature-150.857987--34.438847",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Figtree: Red-Light Speed Camera",
                 "description": "",
@@ -1142,7 +1142,7 @@
         },
         {
             "id": "feature-151.126074--33.873061",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Five Dock: Red-Light Speed Camera",
                 "description": "",
@@ -1158,7 +1158,7 @@
         },
         {
             "id": "feature-151.130939--33.870133",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Five Dock: Red-Light Speed Camera",
                 "description": "",
@@ -1174,7 +1174,7 @@
         },
         {
             "id": "feature-151.132913--33.824232",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Gladesville: Red-Light Speed Camera",
                 "description": "",
@@ -1190,7 +1190,7 @@
         },
         {
             "id": "feature-151.012217--33.830636",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Granville: Red-Light Speed Camera",
                 "description": "",
@@ -1206,7 +1206,7 @@
         },
         {
             "id": "feature-151.004787--33.827735",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Granville: Red-Light Speed Camera",
                 "description": "",
@@ -1222,7 +1222,7 @@
         },
         {
             "id": "feature-151.0643399--33.9077726",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Greenacre: Red-Light Speed Camera",
                 "description": "",
@@ -1238,7 +1238,7 @@
         },
         {
             "id": "feature-151.0579145--33.9028132",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Greenacre: Red-Light Speed Camera",
                 "description": "",
@@ -1254,7 +1254,7 @@
         },
         {
             "id": "feature-151.0629607--33.9154636",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Greenacre: Red-Light Speed Camera",
                 "description": "",
@@ -1270,7 +1270,7 @@
         },
         {
             "id": "feature-150.8999749--33.8726931",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Greenfield Park: Red-Light Speed Camera",
                 "description": "",
@@ -1286,7 +1286,7 @@
         },
         {
             "id": "feature-150.9603345--33.8302749",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Greystanes: Red-Light Speed Camera",
                 "description": "This camera has been re-activated due to the completion of road works.",
@@ -1302,7 +1302,7 @@
         },
         {
             "id": "feature-150.995066--33.855751",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Guildford: Red-Light Speed Camera",
                 "description": "",
@@ -1318,7 +1318,7 @@
         },
         {
             "id": "feature-151.141993--33.870808",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Haberfield: Red-Light Speed Camera",
                 "description": "",
@@ -1334,7 +1334,7 @@
         },
         {
             "id": "feature-151.141781--33.887562",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Haberfield: Red-Light Speed Camera",
                 "description": "",
@@ -1350,7 +1350,7 @@
         },
         {
             "id": "feature-151.134388--33.874943",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Haberfield: Red-Light Speed Camera",
                 "description": "",
@@ -1366,7 +1366,7 @@
         },
         {
             "id": "feature-151.746879--32.924064",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Hamilton: Red-Light Speed Camera",
                 "description": "",
@@ -1382,7 +1382,7 @@
         },
         {
             "id": "feature-151.7477951--32.9197767",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Hamilton: Red-Light Speed Camera",
                 "description": "",
@@ -1398,7 +1398,7 @@
         },
         {
             "id": "feature-151.7579994--32.9267316",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Hamilton East: Red-Light Speed Camera",
                 "description": "",
@@ -1414,7 +1414,7 @@
         },
         {
             "id": "feature-151.2042061--33.8828213",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Haymarket: Red-Light Speed Cameras",
                 "description": "",
@@ -1430,7 +1430,7 @@
         },
         {
             "id": "feature-151.0834828--33.8644557",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Homebush: Red-Light Speed Camera",
                 "description": "",
@@ -1446,7 +1446,7 @@
         },
         {
             "id": "feature-151.0723222--33.8558361",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Homebush West: Red-Light Speed Camera",
                 "description": "",
@@ -1462,7 +1462,7 @@
         },
         {
             "id": "feature-151.064225--33.867812",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Homebush West: Red-Light Speed Camera",
                 "description": "",
@@ -1478,7 +1478,7 @@
         },
         {
             "id": "feature-150.8485924--33.9246528",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Hoxton Park: Red-Light Speed Camera",
                 "description": "",
@@ -1494,7 +1494,7 @@
         },
         {
             "id": "feature-151.2231854--33.9100346",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Kensington: Red-Light Speed Camera",
                 "description": "",
@@ -1510,7 +1510,7 @@
         },
         {
             "id": "feature-151.091795--33.9512199",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Kingsgrove: Red-Light Speed Camera",
                 "description": "",
@@ -1526,7 +1526,7 @@
         },
         {
             "id": "feature-151.0662921--34.0350794",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Kirrawee: Red-Light Speed Camera",
                 "description": "",
@@ -1542,7 +1542,7 @@
         },
         {
             "id": "feature-151.6881333--32.9405384",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Kotara: Red-Light Speed Camera",
                 "description": "",
@@ -1558,7 +1558,7 @@
         },
         {
             "id": "feature-151.712345--32.940637",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Kotara: Red-Light Speed Camera",
                 "description": "",
@@ -1574,7 +1574,7 @@
         },
         {
             "id": "feature-151.072969--33.91145",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Lakemba: Red-Light Speed Camera",
                 "description": "",
@@ -1590,7 +1590,7 @@
         },
         {
             "id": "feature-151.725636--32.915148",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Lambton: Red-Light Speed Camera",
                 "description": "",
@@ -1622,7 +1622,7 @@
         },
         {
             "id": "feature-151.1636351--33.810737",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Lane Cove North: Red-Light Speed Camera",
                 "description": "",
@@ -1638,7 +1638,7 @@
         },
         {
             "id": "feature-150.973139--33.889588",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Lansdowne: Red-Light Speed Cameras",
                 "description": "This area is only 60kph (not 70)",
@@ -1654,7 +1654,7 @@
         },
         {
             "id": "feature-151.1475502--33.8842324",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Leichhardt: Red-Light Speed Camera",
                 "description": "",
@@ -1670,7 +1670,7 @@
         },
         {
             "id": "feature-151.149068--33.889911",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Leichhardt / Petersham: Red-Light Speed Camera",
                 "description": "",
@@ -1686,7 +1686,7 @@
         },
         {
             "id": "feature-151.041734--33.864997",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Lidcombe: Red-Light Speed Camera",
                 "description": "",
@@ -1702,7 +1702,7 @@
         },
         {
             "id": "feature-151.155237--33.8749523",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Lilyfield: Red-Light Speed Camera",
                 "description": "",
@@ -1718,7 +1718,7 @@
         },
         {
             "id": "feature-150.919423--33.919508",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Liverpool: Red-Light Speed Camera",
                 "description": "",
@@ -1734,7 +1734,7 @@
         },
         {
             "id": "feature-150.9180683--33.9282855",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Liverpool: Red-Light Speed Camera",
                 "description": "",
@@ -1750,7 +1750,7 @@
         },
         {
             "id": "feature-150.92085--33.924573",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Liverpool: Red-Light Speed Camera",
                 "description": "",
@@ -1766,7 +1766,7 @@
         },
         {
             "id": "feature-150.921303--33.9222119",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Liverpool: Red-Light Speed Camera",
                 "description": "",
@@ -1782,7 +1782,7 @@
         },
         {
             "id": "feature-151.2392093--33.940062",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Maroubra Junction: Red-Light Speed Camera",
                 "description": "",
@@ -1798,7 +1798,7 @@
         },
         {
             "id": "feature-151.162206--33.909729",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Marrickville: Red-Light Speed Camera",
                 "description": "",
@@ -1814,7 +1814,7 @@
         },
         {
             "id": "feature-151.190213--33.924729",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Mascot: Red-Light Speed Camera",
                 "description": "",
@@ -1830,7 +1830,7 @@
         },
         {
             "id": "feature-151.191756--33.92083",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Mascot: Red-Light Speed Camera",
                 "description": "",
@@ -1846,7 +1846,7 @@
         },
         {
             "id": "feature-151.1993755--33.9340716",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Mascot: Red-Light Speed Camera",
                 "description": "",
@@ -1862,7 +1862,7 @@
         },
         {
             "id": "feature-151.1871798--33.9243389",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Mascot: Red-Light Speed Camera",
                 "description": "",
@@ -1878,7 +1878,7 @@
         },
         {
             "id": "feature-151.726352--32.889701",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Mayfield West: Red-Light Speed Camera",
                 "description": "",
@@ -1894,7 +1894,7 @@
         },
         {
             "id": "feature-150.981819--33.817953",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Mays Hill: Red-Light Speed Cameras",
                 "description": "",
@@ -1910,7 +1910,7 @@
         },
         {
             "id": "feature-150.9993499--33.8397994",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Merrylands: Red-Light Speed Camera",
                 "description": "",
@@ -1926,7 +1926,7 @@
         },
         {
             "id": "feature-150.969508--33.832325",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Merrylands West: Red-Light Speed Camera",
                 "description": "",
@@ -1942,7 +1942,7 @@
         },
         {
             "id": "feature-150.980306--33.929616",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Milperra: Red-Light Speed Camera",
                 "description": "",
@@ -1958,7 +1958,7 @@
         },
         {
             "id": "feature-150.9824514--33.9441068",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Milperra: Red-Light Speed Camera",
                 "description": "",
@@ -1974,7 +1974,7 @@
         },
         {
             "id": "feature-151.1132308--34.0351946",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Miranda: Red-Light Speed Camera",
                 "description": "",
@@ -1990,7 +1990,7 @@
         },
         {
             "id": "feature-151.221598--33.895065",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Moore Park: Red-Light Speed Camera",
                 "description": "",
@@ -2006,7 +2006,7 @@
         },
         {
             "id": "feature-151.218977--33.88662",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Moore Park: Red-Light Speed Cameras",
                 "description": "",
@@ -2022,7 +2022,7 @@
         },
         {
             "id": "feature-150.948249--33.929218",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Moorebank: Red-Light Speed Camera",
                 "description": "",
@@ -2038,7 +2038,7 @@
         },
         {
             "id": "feature-151.238563--33.824424",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Mosman: Red-Light Speed Camera",
                 "description": "",
@@ -2054,7 +2054,7 @@
         },
         {
             "id": "feature-150.8240007--33.7814415",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Mount Druitt: Red-Light Speed Camera",
                 "description": "",
@@ -2070,7 +2070,7 @@
         },
         {
             "id": "feature-150.814444--33.77929",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Mount Druitt: Red-Light Speed Camera",
                 "description": "",
@@ -2086,7 +2086,7 @@
         },
         {
             "id": "feature-151.200939--33.822084",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Naremburn: Red-Light Speed Camera",
                 "description": "",
@@ -2102,7 +2102,7 @@
         },
         {
             "id": "feature-151.130314--33.791388",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "North Ryde: Red-Light Speed Camera",
                 "description": "",
@@ -2118,7 +2118,7 @@
         },
         {
             "id": "feature-151.119778--33.793196",
-            "type": "Feature",
+            "type": "School Zone",
             "properties": {
                 "name": "North Ryde: School Zone RLSC's x3",
                 "description": "This area drops from 70 to 40 within school zone time periods on Lane Cove Road.",
@@ -2134,7 +2134,7 @@
         },
         {
             "id": "feature-151.215219--33.829852",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "North Sydney: Red-Light Speed Camera",
                 "description": "",
@@ -2150,7 +2150,7 @@
         },
         {
             "id": "feature-150.989635--33.795525",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Northmead: Red-Light Speed Camera",
                 "description": "",
@@ -2166,7 +2166,7 @@
         },
         {
             "id": "feature-150.6057412--34.8722358",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Nowra: Red-Light Speed Camera",
                 "description": "",
@@ -2182,7 +2182,7 @@
         },
         {
             "id": "feature-150.8494521--33.7334972",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Oakhurst: Red-Light Speed Camera",
                 "description": "",
@@ -2198,7 +2198,7 @@
         },
         {
             "id": "feature-150.983233--33.794317",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Old Toongabbie: Red-Light Speed Camera",
                 "description": "",
@@ -2214,7 +2214,7 @@
         },
         {
             "id": "feature-151.2327715--33.8896953",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Paddington: Red-Light Speed Camera",
                 "description": "",
@@ -2230,7 +2230,7 @@
         },
         {
             "id": "feature-150.937874--33.720487",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Parklea: Red-Light Speed Camera",
                 "description": "",
@@ -2246,7 +2246,7 @@
         },
         {
             "id": "feature-151.0001305--33.8193476",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Parramatta: Red-Light Speed Camera",
                 "description": "",
@@ -2262,7 +2262,7 @@
         },
         {
             "id": "feature-151.001729--33.814797",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Parramatta: Red-Light Speed Camera",
                 "description": "",
@@ -2278,7 +2278,7 @@
         },
         {
             "id": "feature-150.99931--33.816101",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Parramatta: Red-Light Speed Camera",
                 "description": "",
@@ -2294,7 +2294,7 @@
         },
         {
             "id": "feature-151.005374--33.808649",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Parramatta: Red-Light Speed Camera",
                 "description": "",
@@ -2310,7 +2310,7 @@
         },
         {
             "id": "feature-151.0607884--33.7404341",
-            "type": "Feature",
+            "type": "School Zone",
             "properties": {
                 "name": "Pennant Hills: School Zone RLSC",
                 "description": "This area drops from 70km/h to 40 within school zone periods. It also is located at the end of the down hill slope on\u00a0Pennant Hills Rd making is very easy to mistakenly speed past!Variable Speed Limit Enforced.",
@@ -2326,7 +2326,7 @@
         },
         {
             "id": "feature-151.1524875--33.8965213",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Petersham: Red-Light Speed Camera",
                 "description": "",
@@ -2342,7 +2342,7 @@
         },
         {
             "id": "feature-150.8348871--33.7440935",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Plumpton: Red-Light Speed Camera",
                 "description": "",
@@ -2358,7 +2358,7 @@
         },
         {
             "id": "feature-152.9148532--31.4329381",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Port Macquarie: Red-Light Speed Camera",
                 "description": "",
@@ -2374,7 +2374,7 @@
         },
         {
             "id": "feature-150.8755774--33.956719",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Prestons: Red-Light Speed Camera",
                 "description": "",
@@ -2390,7 +2390,7 @@
         },
         {
             "id": "feature-150.9276009--33.8050269",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Prospect: Red-Light Speed Camera",
                 "description": "",
@@ -2406,7 +2406,7 @@
         },
         {
             "id": "feature-151.136298--33.984177",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Ramsgate: Red-Light Speed Camera",
                 "description": "",
@@ -2422,7 +2422,7 @@
         },
         {
             "id": "feature-151.24202--33.913177",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Randwick: Red-Light Speed Camera",
                 "description": "New 50km/h speed limit in Randwick from June 2018.",
@@ -2438,7 +2438,7 @@
         },
         {
             "id": "feature-151.244818--33.902842",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Randwick: Red-Light Speed Camera",
                 "description": "New 50km/h speed limit in Randwick from June 2018.",
@@ -2454,7 +2454,7 @@
         },
         {
             "id": "feature-151.2166299--33.8920467",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Redfern: Red-Light Speed Camera",
                 "description": "",
@@ -2470,7 +2470,7 @@
         },
         {
             "id": "feature-150.751913--33.599219",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Richmond: Red-Light Speed Camera",
                 "description": "",
@@ -2486,7 +2486,7 @@
         },
         {
             "id": "feature-151.137559--33.952927",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Rockdale: Red-Light Speed Cameras",
                 "description": "",
@@ -2502,7 +2502,7 @@
         },
         {
             "id": "feature-151.1488727--33.9497016",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Rockdale: Red-Light Speed Camera",
                 "description": "",
@@ -2518,7 +2518,7 @@
         },
         {
             "id": "feature-150.8350754--33.7702024",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Rooty Hill: Red-Light Speed Camera\u00a0",
                 "description": "",
@@ -2534,7 +2534,7 @@
         },
         {
             "id": "feature-150.847081--33.7605854",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Rooty Hill: Red-Light Speed Camera",
                 "description": "",
@@ -2550,7 +2550,7 @@
         },
         {
             "id": "feature-150.9222766--33.690422",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Rouse Hill - Red-Light Speed Camera",
                 "description": "",
@@ -2566,7 +2566,7 @@
         },
         {
             "id": "feature-151.075517--33.939686",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Roselands: Red-Light Speed Camera",
                 "description": "",
@@ -2582,7 +2582,7 @@
         },
         {
             "id": "feature-151.168659--33.862848",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Rozelle: Red-Light Speed Camera",
                 "description": "",
@@ -2598,7 +2598,7 @@
         },
         {
             "id": "feature-151.172124--33.8653",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Rozelle: Red-Light Speed Camera",
                 "description": "",
@@ -2614,7 +2614,7 @@
         },
         {
             "id": "feature-151.2284911--33.8768985",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Rushcutters Bay: Red-Light Speed Camera",
                 "description": "",
@@ -2630,7 +2630,7 @@
         },
         {
             "id": "feature-151.103398--33.815956",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Ryde: Red-Light Speed Camera",
                 "description": "",
@@ -2646,7 +2646,7 @@
         },
         {
             "id": "feature-150.942849--33.768379",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Seven Hills: Red-Light Speed Cameras",
                 "description": "One camera is on a downhill slope, easy to make a mistake here.",
@@ -2662,7 +2662,7 @@
         },
         {
             "id": "feature-151.0497272--33.8301858",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Silverwater: Red-Light Speed Camera",
                 "description": "",
@@ -2678,7 +2678,7 @@
         },
         {
             "id": "feature-151.0444055--33.8423374",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Silverwater: Red-Light Speed Camera",
                 "description": "",
@@ -2694,7 +2694,7 @@
         },
         {
             "id": "feature-151.0435956--33.8432547",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Silverwater: Red-Light Speed Cameras",
                 "description": "One of 2 cameras is located on the M4 off-ramp (monitoring right-turn).",
@@ -2710,7 +2710,7 @@
         },
         {
             "id": "feature-150.940969--33.853479",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Smithfield: Red-Light Speed Camera",
                 "description": "",
@@ -2726,7 +2726,7 @@
         },
         {
             "id": "feature-150.9389305--33.8619502",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Smithfield: Red-Light Speed Camera",
                 "description": "",
@@ -2742,7 +2742,7 @@
         },
         {
             "id": "feature-150.922218--33.850835",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Smithfield: Red-Light Speed Camera",
                 "description": "",
@@ -2758,7 +2758,7 @@
         },
         {
             "id": "feature-150.922633--33.848826",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Smithfield: Red-Light Speed Camera",
                 "description": "",
@@ -2774,7 +2774,7 @@
         },
         {
             "id": "feature-150.962673--33.817487",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "South Wentworthville: Red-Light Speed Camera",
                 "description": "",
@@ -2790,7 +2790,7 @@
         },
         {
             "id": "feature-150.768744--33.769585",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "St Marys: Red-Light Speed Cameras",
                 "description": "",
@@ -2806,7 +2806,7 @@
         },
         {
             "id": "feature-150.772974--33.773195",
-            "type": "Feature",
+            "type": "School Zone",
             "properties": {
                 "name": "St Marys: School Zone RLSC",
                 "description": "Variable Speed Limit Enforced.",
@@ -2822,7 +2822,7 @@
         },
         {
             "id": "feature-150.7711665--33.7831705",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "St Marys: Red-Light Speed Camera",
                 "description": "",
@@ -2838,7 +2838,7 @@
         },
         {
             "id": "feature-151.1814492--33.9072284",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "St Peters: Red-Light Speed Camera",
                 "description": "",
@@ -2854,7 +2854,7 @@
         },
         {
             "id": "feature-151.2143397--33.8835006",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Surry Hills: Red-Light Speed Camera",
                 "description": "",
@@ -2870,7 +2870,7 @@
         },
         {
             "id": "feature-151.2140983--33.885115",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Surry Hills: Red-Light Speed Camera",
                 "description": "",
@@ -2886,7 +2886,7 @@
         },
         {
             "id": "feature-151.217996--33.886173",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Surry Hills: Red-Light Speed Cameras",
                 "description": "",
@@ -2902,7 +2902,7 @@
         },
         {
             "id": "feature-151.206073--33.889682",
-            "type": "Feature",
+            "type": "School Zone",
             "properties": {
                 "name": "Surry Hills: School Zone RLSC",
                 "description": "Variable Speed Limit Enforced",
@@ -2918,7 +2918,7 @@
         },
         {
             "id": "feature-151.2173561--33.8899961",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Surry Hills: Red-Light Speed Camera (Light Rail Crossing)",
                 "description": "",
@@ -2934,7 +2934,7 @@
         },
         {
             "id": "feature-151.2099218--33.8732661",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Sydney: Red-Light Speed Camera",
                 "description": "",
@@ -2950,7 +2950,7 @@
         },
         {
             "id": "feature-151.081249--33.730822",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Thornleigh: Red-Light Speed Camera",
                 "description": "",
@@ -2966,7 +2966,7 @@
         },
         {
             "id": "feature-150.9002403--34.3835309",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Towradgi: Red-Light Speed Camera",
                 "description": "",
@@ -2998,7 +2998,7 @@
         },
         {
             "id": "feature-153.5216361--28.1784305",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Tweed Heads West: Red-Light Speed Camera",
                 "description": "Gold Coast Hwy / M1This is only a 60 zone (not 80)",
@@ -3014,7 +3014,7 @@
         },
         {
             "id": "feature-151.195712--33.879054",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Ultimo: Red-Light Speed Camera",
                 "description": "",
@@ -3030,7 +3030,7 @@
         },
         {
             "id": "feature-150.84928--34.44979",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Unanderra: Red-Light Speed Camera",
                 "description": "",
@@ -3046,7 +3046,7 @@
         },
         {
             "id": "feature-151.1027999--33.7103802",
-            "type": "Feature",
+            "type": "School Zone",
             "properties": {
                 "name": "Waitara: School Zone RLSC",
                 "description": "Variable Speed Limit Enforced.",
@@ -3062,7 +3062,7 @@
         },
         {
             "id": "feature-151.671152--32.906145",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Wallsend: Red-Light Speed Camera",
                 "description": "",
@@ -3078,7 +3078,7 @@
         },
         {
             "id": "feature-150.887604--34.485395",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Warrawong: Red-Light Speed Camera",
                 "description": "",
@@ -3094,7 +3094,7 @@
         },
         {
             "id": "feature-150.928507--33.914219",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Warwick Farm: Red-Light Speed Camera",
                 "description": "",
@@ -3110,7 +3110,7 @@
         },
         {
             "id": "feature-150.9316778--33.913765",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Warwick Farm: Red-Light Speed Camera",
                 "description": "",
@@ -3126,7 +3126,7 @@
         },
         {
             "id": "feature-151.2061697--33.9002749",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Waterloo: Red-Light Speed Camera",
                 "description": "",
@@ -3142,7 +3142,7 @@
         },
         {
             "id": "feature-150.969513--33.815559",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Wentworthville: Red-Light Speed Camera",
                 "description": "Downhill slope.",
@@ -3158,7 +3158,7 @@
         },
         {
             "id": "feature-151.047662--33.754123",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "West Pennant Hills: Red-Light Speed Camera",
                 "description": "",
@@ -3174,7 +3174,7 @@
         },
         {
             "id": "feature-151.135386--33.773259",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "West Pymble:\u00a0Variable Red-Light Speed Camera",
                 "description": "Variable Speed Limit enforced (40 heavy vehicles / 70 light vehicles)",
@@ -3190,7 +3190,7 @@
         },
         {
             "id": "feature-151.0963562--33.813459",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "West Ryde: Red-Light Speed Camera",
                 "description": "",
@@ -3206,7 +3206,7 @@
         },
         {
             "id": "feature-151.0675298--33.9213465",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Wiley Park: Red-Light Speed Camera",
                 "description": "Lakemba Street / King Georges Road",
@@ -3222,7 +3222,7 @@
         },
         {
             "id": "feature-151.068428--33.922882",
-            "type": "Feature",
+            "type": "School Zone",
             "properties": {
                 "name": "Wiley Park: School Zone RLSC",
                 "description": "Variable Speed Limit Enforced.",
@@ -3238,7 +3238,7 @@
         },
         {
             "id": "feature-150.869177--34.529974",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Windang: Red-Light Speed Camera",
                 "description": "",
@@ -3254,7 +3254,7 @@
         },
         {
             "id": "feature-150.8151949--33.612323",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Windsor: Red-Light Speed Camera",
                 "description": "",
@@ -3270,7 +3270,7 @@
         },
         {
             "id": "feature-150.899561--34.426976",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Wollongong: Red-Light Speed Camera",
                 "description": "",
@@ -3286,7 +3286,7 @@
         },
         {
             "id": "feature-150.887378--34.425799",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Wollongong: Red-Light Speed Camera",
                 "description": "",
@@ -3302,7 +3302,7 @@
         },
         {
             "id": "feature-151.239917--33.887932",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Woollahra: Red-Light Speed Camera",
                 "description": "",
@@ -3318,7 +3318,7 @@
         },
         {
             "id": "feature-151.216311--33.874311",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Woolloomooloo: Red-Light Speed Camera",
                 "description": "",
@@ -3334,7 +3334,7 @@
         },
         {
             "id": "feature-151.2180931--33.8745476",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Woolloomooloo: Red-Light Speed Camera",
                 "description": "",
@@ -3350,7 +3350,7 @@
         },
         {
             "id": "feature-151.1386841--34.0391979",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Woolooware: Red-Light Speed Camera",
                 "description": "",
@@ -3366,7 +3366,7 @@
         },
         {
             "id": "feature-151.037351--33.899028",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Yagoona: Red-Light Speed Camera",
                 "description": "",
@@ -3574,7 +3574,7 @@
         },
         {
             "id": "feature-151.023565--33.836057",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Auburn: Fixed Speed Camera",
                 "description": "",
@@ -3590,7 +3590,7 @@
         },
         {
             "id": "feature-151.183929--33.4884",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Bar Point: Fixed Speed Camera (Variable)",
                 "description": "",
@@ -3606,7 +3606,7 @@
         },
         {
             "id": "feature-151.7147793--30.0060828",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Ben Lomond: Fixed Speed Camera (Variable)",
                 "description": "this camera is located on a down hill slope.",
@@ -3622,7 +3622,7 @@
         },
         {
             "id": "feature-150.797286--33.661217",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Berkshire Park: Fixed Speed Camera",
                 "description": "",
@@ -3638,7 +3638,7 @@
         },
         {
             "id": "feature-151.11888--33.94251",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Bexley North: Fixed Speed Camera",
                 "description": "",
@@ -3654,7 +3654,7 @@
         },
         {
             "id": "feature-150.895653--31.783592",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Blandford: Fixed Speed Camera",
                 "description": "",
@@ -3670,7 +3670,7 @@
         },
         {
             "id": "feature-150.605822--34.857676",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Bomaderry: Fixed Speed Camera",
                 "description": "",
@@ -3686,7 +3686,7 @@
         },
         {
             "id": "feature-150.894443--33.898111",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Bonnyrigg: Fixed Speed Camera",
                 "description": "",
@@ -3702,7 +3702,7 @@
         },
         {
             "id": "feature-149.829113--36.519182",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Brogo: Fixed Speed Camera",
                 "description": "",
@@ -3718,7 +3718,7 @@
         },
         {
             "id": "feature-150.913637--34.331591",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Bulli: Fixed Speed Camera",
                 "description": "",
@@ -3734,7 +3734,7 @@
         },
         {
             "id": "feature-153.438124--28.401084",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Burringbar: Fixed Speed Camera",
                 "description": "Overtaking Lane Hazard.",
@@ -3750,7 +3750,7 @@
         },
         {
             "id": "feature-151.104731--33.887682",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Burwood Heights: Fixed Speed Camera",
                 "description": "",
@@ -3766,7 +3766,7 @@
         },
         {
             "id": "feature-151.022428--33.815401",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Camellia: Fixed Speed Camera",
                 "description": "",
@@ -3782,7 +3782,7 @@
         },
         {
             "id": "feature-151.114776--33.913983",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Canterbury: Fixed Speed Camera",
                 "description": "",
@@ -3798,7 +3798,7 @@
         },
         {
             "id": "feature-151.131288--34.035711",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Caringbah: Fixed Speed Camera",
                 "description": "",
@@ -3814,7 +3814,7 @@
         },
         {
             "id": "feature-151.049089--33.782598",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Carlingford: Fixed Speed Camera",
                 "description": "",
@@ -3830,7 +3830,7 @@
         },
         {
             "id": "feature-151.505982--33.22033",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Charmhaven: Fixed Speed Camera",
                 "description": "",
@@ -3846,7 +3846,7 @@
         },
         {
             "id": "feature-153.404599--28.734549",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Clunes:\u00a0Warning Mode Fixed Speed Camera",
                 "description": "This Camera is in warning mode only.",
@@ -3862,7 +3862,7 @@
         },
         {
             "id": "feature-151.089869--33.849436",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Concord West: Fixed Speed Camera",
                 "description": "",
@@ -3878,7 +3878,7 @@
         },
         {
             "id": "feature-151.230428--33.876509",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Edgecliff: Fixed Speed Camera",
                 "description": "",
@@ -3894,7 +3894,7 @@
         },
         {
             "id": "feature-151.0054708--34.0733374",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Engadine: Fixed Speed Camera",
                 "description": "",
@@ -3910,7 +3910,7 @@
         },
         {
             "id": "feature-153.548409--28.647429",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Ewingsdale: Fixed Speed Camera",
                 "description": "The Pacific Motorway has been upgraded & the camera is located on the old road.",
@@ -3926,7 +3926,7 @@
         },
         {
             "id": "feature-150.979121--33.869672",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Fairfield East: Fixed Speed Camera",
                 "description": "",
@@ -3942,7 +3942,7 @@
         },
         {
             "id": "feature-151.170727--33.752105",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Gordon: Warning Mode Fixed Speed Camera",
                 "description": "Camera in warning mode.",
@@ -3958,7 +3958,7 @@
         },
         {
             "id": "feature-150.932732--33.823071",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Greystanes: Fixed Speed Camera",
                 "description": "",
@@ -3974,7 +3974,7 @@
         },
         {
             "id": "feature-150.881271--34.414883",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Gwynneville: Fixed Speed Camera NB",
                 "description": "Gwynneville has two cameras operating approximately 1,000 metres apart and infringing in different directions, therefore they are considered separate locations.",
@@ -3990,7 +3990,7 @@
         },
         {
             "id": "feature-150.883811--34.40608",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Gwynneville: Fixed Speed Camera SB",
                 "description": "Gwynneville has two cameras operating approximately 1,000 metres apart and infringing in different directions, therefore they are considered separate locations.",
@@ -4006,7 +4006,7 @@
         },
         {
             "id": "feature-153.006482--30.554768",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Hungry Head: Fixed Speed Camera",
                 "description": "Speed Limit has changed since Pacific Hwy upgrade.",
@@ -4022,7 +4022,7 @@
         },
         {
             "id": "feature-150.632582--33.533635",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Kurrajong Heights: Fixed Speed Camera",
                 "description": "",
@@ -4038,7 +4038,7 @@
         },
         {
             "id": "feature-151.158145--33.8128449",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Lane Cove: Fixed Speed Camera",
                 "description": "",
@@ -4054,7 +4054,7 @@
         },
         {
             "id": "feature-150.965667--33.891345",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Lansvale: Fixed Speed Camera",
                 "description": "",
@@ -4070,7 +4070,7 @@
         },
         {
             "id": "feature-151.729761--32.892286",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Mayfield West: Fixed Speed Camera",
                 "description": "",
@@ -4086,7 +4086,7 @@
         },
         {
             "id": "feature-150.2402875--33.5825733",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Mount Victoria: Fixed Speed Camera (Variable)",
                 "description": "Both directions are monitored.",
@@ -4102,7 +4102,7 @@
         },
         {
             "id": "feature-151.275773--33.7557553",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Narraweena: Fixed Speed Camera (Variable)",
                 "description": "Variable Speed Limit enforced. Eastbound is only 20kmph for Trucks & Buses.",
@@ -4118,7 +4118,7 @@
         },
         {
             "id": "feature-151.613195--33.134",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Nords Wharf: Fixed Speed Camera",
                 "description": "",
@@ -4134,7 +4134,7 @@
         },
         {
             "id": "feature-152.9231925--30.7034805",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "North Macksville: Fixed Speed Camera",
                 "description": "",
@@ -4150,7 +4150,7 @@
         },
         {
             "id": "feature-152.965087--30.697107",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "North Macksville: Fixed Speed Camera",
                 "description": "",
@@ -4166,7 +4166,7 @@
         },
         {
             "id": "feature-151.008201--33.800754",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "North Parramatta: Fixed Speed Camera",
                 "description": "",
@@ -4182,7 +4182,7 @@
         },
         {
             "id": "feature-151.207956--33.793994",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "North Willoughby:\u00a0Warning Mode Fixed Speed Camera",
                 "description": "Camera is in warning mode only.",
@@ -4198,7 +4198,7 @@
         },
         {
             "id": "feature-150.892542--34.411442",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "North Wollongong: Fixed Speed Camera",
                 "description": "camera is located just after a downhill slope.",
@@ -4214,7 +4214,7 @@
         },
         {
             "id": "feature-151.342608--33.358317",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Ourimbah: Fixed Speed Camera",
                 "description": "",
@@ -4230,7 +4230,7 @@
         },
         {
             "id": "feature-151.027548--33.939958",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Padstow: Fixed Speed Camera",
                 "description": "",
@@ -4246,7 +4246,7 @@
         },
         {
             "id": "feature-151.049499--33.960957",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Peakhurst: Fixed Speed Camera",
                 "description": "",
@@ -4262,7 +4262,7 @@
         },
         {
             "id": "feature-151.009904--33.979128",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Picnic Point: Fixed Speed Camera",
                 "description": "",
@@ -4278,7 +4278,7 @@
         },
         {
             "id": "feature-151.682053--32.925158",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Rankin Park: Fixed Speed Camera ",
                 "description": "",
@@ -4294,7 +4294,7 @@
         },
         {
             "id": "feature-151.101907--33.803166",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Ryde: Fixed Speed Camera",
                 "description": "",
@@ -4310,7 +4310,7 @@
         },
         {
             "id": "feature-151.7046131--32.8574129",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Sandgate: Fixed Speed Cameras",
                 "description": "",
@@ -4326,7 +4326,7 @@
         },
         {
             "id": "feature-150.795159--33.62838",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "South Windsor: Fixed Speed Camera",
                 "description": "",
@@ -4342,7 +4342,7 @@
         },
         {
             "id": "feature-152.016465--29.040176",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Tenterfield: Fixed Speed Camera",
                 "description": "This street is now only 50km/h .",
@@ -4358,7 +4358,7 @@
         },
         {
             "id": "feature-151.243847--33.814013",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "The Spit:\u00a0Warning Mode Fixed Speed Camera",
                 "description": "",
@@ -4374,7 +4374,7 @@
         },
         {
             "id": "feature-151.2454--33.80991",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "The Spit: Warning Mode Fixed Speed Camera",
                 "description": "",
@@ -4390,7 +4390,7 @@
         },
         {
             "id": "feature-153.0277196--29.6336487",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Ulmarra:\u00a0Fixed Speed Camera (NEW)",
                 "description": "The Speed Limit is only 50km/h on this section of the Highway.",
@@ -4406,7 +4406,7 @@
         },
         {
             "id": "feature-153.008424--30.504305",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Urunga:\u00a0Warning Mode Fixed Speed Camera",
                 "description": "Camera is in Warning Mode only.",
@@ -4422,7 +4422,7 @@
         },
         {
             "id": "feature-153.002351--30.583555",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Valla Beach: Fixed Speed Camera",
                 "description": "",
@@ -4438,7 +4438,7 @@
         },
         {
             "id": "feature-150.591992--33.711913",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Valley Heights: Fixed Speed Camera",
                 "description": "",
@@ -4454,7 +4454,7 @@
         },
         {
             "id": "feature-153.4674806--28.9458786",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Wardell: Fixed Speed Camera",
                 "description": "this camera is located in a 80 zone.",
@@ -4470,7 +4470,7 @@
         },
         {
             "id": "feature-150.876054--34.491848",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Warrawong: Fixed Speed Camera",
                 "description": "",
@@ -4486,7 +4486,7 @@
         },
         {
             "id": "feature-151.0385343--33.7400009",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "West Pennant Hills: Fixed Speed Camera",
                 "description": "",
@@ -4502,7 +4502,7 @@
         },
         {
             "id": "feature-153.390781--28.812373",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Wollongbar: Fixed Speed Camera",
                 "description": "",
@@ -4518,7 +4518,7 @@
         },
         {
             "id": "feature-153.351264--29.067442",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Woodburn: Fixed Speed Camera",
                 "description": "",
@@ -4534,7 +4534,7 @@
         },
         {
             "id": "feature-151.008673--33.904734",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Yagoona: Fixed Speed Camera",
                 "description": "",
@@ -4550,7 +4550,7 @@
         },
         {
             "id": "feature-151.12742--33.890051",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "Ashfield: School Zone Speed Camera",
                 "description": "both directions are monitored.",
@@ -4566,7 +4566,7 @@
         },
         {
             "id": "feature-151.038505--33.906021",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "Bankstown: School Zone Speed Cameras",
                 "description": "Variable Speed Enforced.",
@@ -4582,7 +4582,7 @@
         },
         {
             "id": "feature-151.081742--33.950527",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "Beverly Hills: School Zone Speed Cameras",
                 "description": "Variable Speed Enforced",
@@ -4598,7 +4598,7 @@
         },
         {
             "id": "feature-150.894974--33.893723",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "Bonnyrigg: School Zone Speed Camera",
                 "description": "Variable Speed Enforced",
@@ -4614,7 +4614,7 @@
         },
         {
             "id": "feature-151.01333--33.731741",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "Castle Hill: School Zone Speed Camera",
                 "description": "Variable Speed Enforced",
@@ -4630,7 +4630,7 @@
         },
         {
             "id": "feature-151.012581--33.925435",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "Condell Park: School Zone Speed Camera",
                 "description": "Variable Speed Enforced",
@@ -4646,7 +4646,7 @@
         },
         {
             "id": "feature-151.228918--33.947049",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "Eastgardens / Maroubra: School Zone Speed Cameras",
                 "description": "Variable Speed Limit Enforced",
@@ -4662,7 +4662,7 @@
         },
         {
             "id": "feature-151.068082--33.77381",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "Epping:\u00a0Warning Mode School Zone Speed Camera\u00a0",
                 "description": "Camera is in warning mode only",
@@ -4678,7 +4678,7 @@
         },
         {
             "id": "feature-151.692033--32.983693",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "Gateshead: School Zone Speed Cameras",
                 "description": "Variable Speed Limit Enforced",
@@ -4694,7 +4694,7 @@
         },
         {
             "id": "feature-150.997121--33.848726",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "Guildford: School Zone Speed Cameras",
                 "description": "Variable Speed Limit Enforced",
@@ -4710,7 +4710,7 @@
         },
         {
             "id": "feature-151.083668--34.037549",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "Gymea:\u00a0Warning Mode School Zone Speed Camera\u00a0",
                 "description": "Variable Speed Limit Enforced.",
@@ -4726,7 +4726,7 @@
         },
         {
             "id": "feature-151.111587--33.964229",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "Hurstville: School Zone Speed Camera",
                 "description": "Variable Speed Limit Enforced",
@@ -4742,7 +4742,7 @@
         },
         {
             "id": "feature-150.71297--33.753184",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "Kingswood:\u00a0School Zone Speed Cameras",
                 "description": "Variable Speed Limit Enforced",
@@ -4758,7 +4758,7 @@
         },
         {
             "id": "feature-151.136577--33.967275",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "Kogarah: School Zone Speed Cameras",
                 "description": "The 2 cameras located here have a small distance between them.",
@@ -4774,7 +4774,7 @@
         },
         {
             "id": "feature-151.170346--33.78125",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "Lindfield: School Zone Speed Cameras",
                 "description": "The 2 cameras located here have a small distance between them.",
@@ -4790,7 +4790,7 @@
         },
         {
             "id": "feature-150.927633--33.918938",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "Liverpool: School Zone Speed Camera",
                 "description": "",
@@ -4806,7 +4806,7 @@
         },
         {
             "id": "feature-151.458024--32.699518",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "Lochinvar: School Zone Speed Camera",
                 "description": "Variable Speed Limit Enforced",
@@ -4822,7 +4822,7 @@
         },
         {
             "id": "feature-151.251778--33.946809",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "Maroubra: School Zone Speed Cameras",
                 "description": "Variable Speed Limit Enforced",
@@ -4838,7 +4838,7 @@
         },
         {
             "id": "feature-150.982385--33.835029",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "Merrylands: School Zone Speed Camera",
                 "description": "Variable Speed Limit Enforced",
@@ -4854,7 +4854,7 @@
         },
         {
             "id": "feature-151.09695--34.033675",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "Miranda: School Zone Speed Cameras",
                 "description": "Variable Speed Limit Enforced",
@@ -4870,7 +4870,7 @@
         },
         {
             "id": "feature-151.2188425--33.8932529",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "Moore Park:\u00a0School Zone Speed Camera",
                 "description": "Variable Speed Limit Enforced.",
@@ -4886,7 +4886,7 @@
         },
         {
             "id": "feature-151.231959--33.822427",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "Mosman: School Zone Speed Camera",
                 "description": "Variable Speed Limit Enforced",
@@ -4902,7 +4902,7 @@
         },
         {
             "id": "feature-151.298089--33.720284",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "Narrabeen: School Zone Speed Cameras",
                 "description": "Variable Speed Limit Enforced",
@@ -4918,7 +4918,7 @@
         },
         {
             "id": "feature-151.279786--33.76385",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "North Curl Curl: School Zone Speed Camera",
                 "description": "Variable Speed Limit Enforced",
@@ -4934,7 +4934,7 @@
         },
         {
             "id": "feature-151.299087--33.701167",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "North Narrabeen: School Zone Speed Camera",
                 "description": "The 2 cameras located here have a small distance between them.",
@@ -4950,7 +4950,7 @@
         },
         {
             "id": "feature-151.018648--33.793602",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "North Parramatta / Oatlands: School Zone Speed Cameras",
                 "description": "Variable Speed Limit Enforced",
@@ -4966,7 +4966,7 @@
         },
         {
             "id": "feature-150.987666--33.867643",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "Old Guilford: School Zone Speed Cameras",
                 "description": "Variable Speed Limit Enforced",
@@ -4982,7 +4982,7 @@
         },
         {
             "id": "feature-151.369621--33.353444",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "Ourimbah: School Zone Speed Cameras",
                 "description": "Variable Speed Limit Enforced",
@@ -4998,7 +4998,7 @@
         },
         {
             "id": "feature-151.08569--33.963286",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "Penshurst: School Zone Speed Camera",
                 "description": "Variable Speed Limit Enforced",
@@ -5014,7 +5014,7 @@
         },
         {
             "id": "feature-151.239987--33.922722",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "Randwick: School Zone Speed Camera",
                 "description": "Variable Speed Limit Enforced",
@@ -5030,7 +5030,7 @@
         },
         {
             "id": "feature-151.196905--33.920952",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "Rosebery / Alexandria: School Zone Speed Cameras",
                 "description": "Variable Speed Limit Enforced",
@@ -5046,7 +5046,7 @@
         },
         {
             "id": "feature-151.044357--33.812691",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "Rydalmere: School Zone Speed Cameras",
                 "description": "The 2 cameras located here have a small distance between them.",
@@ -5062,7 +5062,7 @@
         },
         {
             "id": "feature-151.11774--33.819807",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "Ryde: School Zone Speed Cameras",
                 "description": "The 2 cameras located here have a small distance between them.",
@@ -5078,7 +5078,7 @@
         },
         {
             "id": "feature-151.093187--33.87794",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "Strathfield: School Zone Speed Camera",
                 "description": "Variable Speed Limit Enforced",
@@ -5094,7 +5094,7 @@
         },
         {
             "id": "feature-151.431065--33.439582",
-            "type": "Feature",
+            "type": "School Zone",
             "properties": {
                 "name": "Terrigal:\u00a0Not currently installed School Zone Camera",
                 "description": "School Cameras not currently installed due to roadworks. Location to be monitored.",
@@ -5110,7 +5110,7 @@
         },
         {
             "id": "feature-150.966045--33.786433",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "Toongabbie: School Zone Speed Cameras",
                 "description": "Variable Speed Limit Enforced",
@@ -5126,7 +5126,7 @@
         },
         {
             "id": "feature-151.118231--33.722361",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "Wahroonga: School Zone Speed Cameras\n",
                 "description": "The 2 cameras located here have a small distance between them.",
@@ -5142,7 +5142,7 @@
         },
         {
             "id": "feature-150.869794--34.426961",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "Wollongong: School Zone Speed Camera",
                 "description": "Variable Speed Limit Enforced",
@@ -5158,7 +5158,7 @@
         },
         {
             "id": "feature-151.349512--33.413678",
-            "type": "Feature",
+            "type": "School Zone Speed Camera",
             "properties": {
                 "name": "Wyoming: School Zone Speed Camera",
                 "description": "Variable Speed Limit Enforced",
@@ -5174,7 +5174,7 @@
         },
         {
             "id": "feature-150.860656--34.393686",
-            "type": "Feature",
+            "type": "Noise Camera",
             "properties": {
                 "name": "Mount Pleasant: Fixed Noise Camera",
                 "description": "Camera is monitoring Southbound traffic only.",
@@ -5942,7 +5942,7 @@
         },
         {
             "id": "feature-151.002327--34.092509",
-            "type": "Feature",
+            "type": "Speed Trap",
             "properties": {
                 "name": "Police Speed Trap Hot-Spot",
                 "description": "",
@@ -5958,7 +5958,7 @@
         },
         {
             "id": "feature-151.164247--33.860712",
-            "type": "Feature",
+            "type": "Speed Trap",
             "properties": {
                 "name": "Police Speed Trap Hot-Spot",
                 "description": "",
@@ -5974,7 +5974,7 @@
         },
         {
             "id": "feature-151.222392--33.691819",
-            "type": "Feature",
+            "type": "Speed Trap",
             "properties": {
                 "name": "Police Speed Trap Hot-Spot",
                 "description": "",
@@ -5990,7 +5990,7 @@
         },
         {
             "id": "feature-149.1295177--35.2758168",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Red-Light Speed Camera",
                 "description": "",
@@ -6006,7 +6006,7 @@
         },
         {
             "id": "feature-149.056411--35.379223",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Red-Light Speed Camera",
                 "description": "",
@@ -6022,7 +6022,7 @@
         },
         {
             "id": "feature-149.062591--35.22159",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Red-Light Speed Camera",
                 "description": "",
@@ -6038,7 +6038,7 @@
         },
         {
             "id": "feature-149.0806849--35.231103",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Red-Light Speed Camera",
                 "description": "",
@@ -6054,7 +6054,7 @@
         },
         {
             "id": "feature-149.1268838--35.2755143",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Red-Light Speed Camera",
                 "description": "",
@@ -6070,7 +6070,7 @@
         },
         {
             "id": "feature-149.068766--35.348281",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Red-Light Speed Camera",
                 "description": "",
@@ -6086,7 +6086,7 @@
         },
         {
             "id": "feature-149.100378--35.350757",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Red-Light Speed Camera",
                 "description": "",
@@ -6102,7 +6102,7 @@
         },
         {
             "id": "feature-149.134128--35.248241",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Red-Light Speed Camera",
                 "description": "",
@@ -6118,7 +6118,7 @@
         },
         {
             "id": "feature-149.1292705--35.279574",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Red-Light Speed Camera",
                 "description": "",
@@ -6134,7 +6134,7 @@
         },
         {
             "id": "feature-149.0861918--35.348832",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Red-Light Speed Camera",
                 "description": "",
@@ -6150,7 +6150,7 @@
         },
         {
             "id": "feature-149.176081--35.33768",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Red-Light Speed Camera",
                 "description": "",
@@ -6166,7 +6166,7 @@
         },
         {
             "id": "feature-149.1191621--35.186173",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Red-Light Speed Camera",
                 "description": "",
@@ -6182,7 +6182,7 @@
         },
         {
             "id": "feature-149.13536--35.319559",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Red-Light Speed Camera",
                 "description": "",
@@ -6198,7 +6198,7 @@
         },
         {
             "id": "feature-149.083244--35.192065",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Barton Hwy: Fixed Speed Camera",
                 "description": "",
@@ -6214,7 +6214,7 @@
         },
         {
             "id": "feature-149.123493--35.228159",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Barton Hwy: Fixed Speed Camera",
                 "description": "",
@@ -6230,7 +6230,7 @@
         },
         {
             "id": "feature-149.161007--35.225784",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Federal Hwy: Fixed Speed Camera",
                 "description": "",
@@ -6246,7 +6246,7 @@
         },
         {
             "id": "feature-149.167474--35.22411",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Federal Hwy: Fixed Speed Camera",
                 "description": "",
@@ -6262,7 +6262,7 @@
         },
         {
             "id": "feature-149.162289--35.390891",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Monaro Highway: Fixed Speed Camera",
                 "description": "",
@@ -6278,7 +6278,7 @@
         },
         {
             "id": "feature-149.147547--35.402763",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Monaro Highway: Fixed Speed Camera",
                 "description": "",
@@ -6294,7 +6294,7 @@
         },
         {
             "id": "feature-149.163051--35.341735",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Monaro Highway: Fixed Speed Camera",
                 "description": "",
@@ -6310,7 +6310,7 @@
         },
         {
             "id": "feature-149.069517--35.34762",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Tuggeranong Parkway: Fixed Speed Camera",
                 "description": "",
@@ -6326,7 +6326,7 @@
         },
         {
             "id": "feature-149.063546--35.319087",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Tuggeranong Parkway: Fixed Speed Camera",
                 "description": "",
@@ -6374,7 +6374,7 @@
         },
         {
             "id": "feature-143.5722542--34.6750056",
-            "type": "Feature",
+            "type": "Safe-T-Cam",
             "properties": {
                 "name": "Safe-T-Cam - Balranald",
                 "description": "",
@@ -6390,7 +6390,7 @@
         },
         {
             "id": "feature-150.6012726--34.3098778",
-            "type": "Feature",
+            "type": "Safe-T-Cam",
             "properties": {
                 "name": "Safe-T-Cam - Bargo",
                 "description": "",
@@ -6406,7 +6406,7 @@
         },
         {
             "id": "feature-151.1542583--30.8963466",
-            "type": "Feature",
+            "type": "Safe-T-Cam",
             "properties": {
                 "name": "Safe-T-Cam - Bendemeer",
                 "description": "",
@@ -6422,7 +6422,7 @@
         },
         {
             "id": "feature-150.3213465--28.5671572",
-            "type": "Feature",
+            "type": "Safe-T-Cam",
             "properties": {
                 "name": "Safe-T-Cam - Boggabilla",
                 "description": "",
@@ -6438,7 +6438,7 @@
         },
         {
             "id": "feature-151.2731123--32.6533412",
-            "type": "Feature",
+            "type": "Safe-T-Cam",
             "properties": {
                 "name": "Safe-T-Cam - Branxton",
                 "description": "",
@@ -6454,7 +6454,7 @@
         },
         {
             "id": "feature-141.5347141--31.9196486",
-            "type": "Feature",
+            "type": "Safe-T-Cam",
             "properties": {
                 "name": "Safe-T-Cam - Broken Hill",
                 "description": "",
@@ -6470,7 +6470,7 @@
         },
         {
             "id": "feature-153.045752--28.8860671",
-            "type": "Feature",
+            "type": "Safe-T-Cam",
             "properties": {
                 "name": "Safe-T-Cam - Casino",
                 "description": "",
@@ -6486,7 +6486,7 @@
         },
         {
             "id": "feature-153.5182795--28.3252215",
-            "type": "Feature",
+            "type": "Safe-T-Cam",
             "properties": {
                 "name": "Safe-T-Cam - Clothiers Creek",
                 "description": "",
@@ -6502,7 +6502,7 @@
         },
         {
             "id": "feature-149.3033034--31.3152948",
-            "type": "Feature",
+            "type": "Safe-T-Cam",
             "properties": {
                 "name": "Safe-T-Cam - Coonabarabran",
                 "description": "",
@@ -6518,7 +6518,7 @@
         },
         {
             "id": "feature-151.8657464--29.5684671",
-            "type": "Feature",
+            "type": "Safe-T-Cam",
             "properties": {
                 "name": "Safe-T-Cam - Dundee",
                 "description": "",
@@ -6534,7 +6534,7 @@
         },
         {
             "id": "feature-148.1115684--35.0074083",
-            "type": "Feature",
+            "type": "Safe-T-Cam",
             "properties": {
                 "name": "Safe-T-Cam - Gundagai",
                 "description": "",
@@ -6550,7 +6550,7 @@
         },
         {
             "id": "feature-153.2406735--29.4345263",
-            "type": "Feature",
+            "type": "Safe-T-Cam",
             "properties": {
                 "name": "Safe-T-Cam - Harwood",
                 "description": "",
@@ -6566,7 +6566,7 @@
         },
         {
             "id": "feature-145.7555294--35.3507703",
-            "type": "Feature",
+            "type": "Safe-T-Cam",
             "properties": {
                 "name": "Safe-T-Cam - Jerilderie",
                 "description": "",
@@ -6582,7 +6582,7 @@
         },
         {
             "id": "feature-152.60046--31.860665",
-            "type": "Feature",
+            "type": "Safe-T-Cam",
             "properties": {
                 "name": "Safe-T-Cam - Jones Island",
                 "description": "",
@@ -6598,7 +6598,7 @@
         },
         {
             "id": "feature-147.5222361--33.7602978",
-            "type": "Feature",
+            "type": "Safe-T-Cam",
             "properties": {
                 "name": "Safe-T-Cam - Marsden",
                 "description": "",
@@ -6614,7 +6614,7 @@
         },
         {
             "id": "feature-150.0149041--34.704607",
-            "type": "Feature",
+            "type": "Safe-T-Cam",
             "properties": {
                 "name": "Safe-T-Cam - Marulan",
                 "description": "",
@@ -6630,7 +6630,7 @@
         },
         {
             "id": "feature-150.2734718--33.6166698",
-            "type": "Feature",
+            "type": "Safe-T-Cam",
             "properties": {
                 "name": "Safe-T-Cam - Mount Boyce",
                 "description": "",
@@ -6646,7 +6646,7 @@
         },
         {
             "id": "feature-151.2067384--33.4542479",
-            "type": "Feature",
+            "type": "Safe-T-Cam",
             "properties": {
                 "name": "Safe-T-Cam - Mt White",
                 "description": "",
@@ -6662,7 +6662,7 @@
         },
         {
             "id": "feature-146.341238--34.6962142",
-            "type": "Feature",
+            "type": "Safe-T-Cam",
             "properties": {
                 "name": "Safe-T-Cam - Narrandera",
                 "description": "",
@@ -6678,7 +6678,7 @@
         },
         {
             "id": "feature-147.2090507--31.5686087",
-            "type": "Feature",
+            "type": "Safe-T-Cam",
             "properties": {
                 "name": "Safe-T-Cam - Nyngan",
                 "description": "",
@@ -6694,7 +6694,7 @@
         },
         {
             "id": "feature-147.0047039--35.9678082",
-            "type": "Feature",
+            "type": "Safe-T-Cam",
             "properties": {
                 "name": "Safe-T-Cam - Table Top",
                 "description": "",
@@ -6710,7 +6710,7 @@
         },
         {
             "id": "feature-148.2218742--32.5789133",
-            "type": "Feature",
+            "type": "Safe-T-Cam",
             "properties": {
                 "name": "Safe-T-Cam - Tomingley",
                 "description": "",
@@ -6726,7 +6726,7 @@
         },
         {
             "id": "feature-153.5455817--28.2454868",
-            "type": "Feature",
+            "type": "Safe-T-Cam",
             "properties": {
                 "name": "Safe-T-Cam - Tweed Heads",
                 "description": "",
@@ -6742,7 +6742,7 @@
         },
         {
             "id": "feature-151.8527377--32.6556266",
-            "type": "Feature",
+            "type": "Safe-T-Cam",
             "properties": {
                 "name": "Safe-T-Cam - Twelve Mile Creek",
                 "description": "",
@@ -6758,7 +6758,7 @@
         },
         {
             "id": "feature-151.6917515--32.8186572",
-            "type": "Feature",
+            "type": "Mobile Speed Camera",
             "properties": {
                 "name": "Pacific Highway Mobile Speed Camera Section - Start Point (A)",
                 "description": "",
@@ -6774,7 +6774,7 @@
         },
         {
             "id": "feature-153.5445786--28.5884785",
-            "type": "Feature",
+            "type": "Mobile Speed Camera",
             "properties": {
                 "name": "Pacific Highway Mobile Speed Camera Section - Start Point (B)",
                 "description": "",
@@ -6790,7 +6790,7 @@
         },
         {
             "id": "feature-150.9896135--34.1514129",
-            "type": "Feature",
+            "type": "Mobile Speed Camera",
             "properties": {
                 "name": "Princes Motorway Mobile Speed Camera Section - Start Point (A)",
                 "description": "",
@@ -6806,7 +6806,7 @@
         },
         {
             "id": "feature-150.7847464--34.5414456",
-            "type": "Feature",
+            "type": "Mobile Speed Camera",
             "properties": {
                 "name": "Princes Motorway Mobile Speed Camera Section - Start Point (B)",
                 "description": "",
@@ -6822,7 +6822,7 @@
         },
         {
             "id": "feature-150.6216842--33.7650964",
-            "type": "Feature",
+            "type": "Mobile Speed Camera",
             "properties": {
                 "name": "Great Western Highway Mobile Speed Camera Section - Start Point (A)",
                 "description": "",
@@ -6838,7 +6838,7 @@
         },
         {
             "id": "feature-149.5788467--33.4113066",
-            "type": "Feature",
+            "type": "Mobile Speed Camera",
             "properties": {
                 "name": "Great Western Highway Mobile Speed Camera Section - Start Point (B)",
                 "description": "",
@@ -6854,7 +6854,7 @@
         },
         {
             "id": "feature-149.5645559--33.4197201",
-            "type": "Feature",
+            "type": "Mobile Speed Camera",
             "properties": {
                 "name": "Mitchell Highway Mobile Speed Camera Section - Start Point (A)",
                 "description": "",
@@ -6870,7 +6870,7 @@
         },
         {
             "id": "feature-149.0996478--33.2835585",
-            "type": "Feature",
+            "type": "Mobile Speed Camera",
             "properties": {
                 "name": "Mitchell Highway Mobile Speed Camera Section - Start Point (B)",
                 "description": "",
@@ -6886,7 +6886,7 @@
         },
         {
             "id": "feature-149.0844011--33.2725247",
-            "type": "Feature",
+            "type": "Mobile Speed Camera",
             "properties": {
                 "name": "Mitchell Highway Mobile Speed Camera Section - Start Point (A)",
                 "description": "",
@@ -6902,7 +6902,7 @@
         },
         {
             "id": "feature-148.7564492--32.333704",
-            "type": "Feature",
+            "type": "Mobile Speed Camera",
             "properties": {
                 "name": "Mitchell Highway Mobile Speed Camera Section - Start Point (B)",
                 "description": "",
@@ -7430,7 +7430,7 @@
         },
         {
             "id": "feature-150.9614557--33.9470669",
-            "type": "Feature",
+            "type": "Speed Trap",
             "properties": {
                 "name": "Police Speed Trap Hot-Spot (M5)",
                 "description": "",
@@ -7446,7 +7446,7 @@
         },
         {
             "id": "feature-150.9276623--33.8064934",
-            "type": "Feature",
+            "type": "Phone Detection Camera",
             "properties": {
                 "name": "Mobile Phone Detection Camera",
                 "description": "",
@@ -7462,7 +7462,7 @@
         },
         {
             "id": "feature-151.2220747--33.8983451",
-            "type": "Feature",
+            "type": "Phone Detection Camera",
             "properties": {
                 "name": "Mobile Phone Detection Camera",
                 "description": "",
@@ -7478,7 +7478,7 @@
         },
         {
             "id": "feature-150.7586863--34.1155247",
-            "type": "Feature",
+            "type": "Phone Detection Camera",
             "properties": {
                 "name": "Mobile Phone Detection Camera",
                 "description": "",
@@ -7494,7 +7494,7 @@
         },
         {
             "id": "feature-151.2195473--33.4376828",
-            "type": "Feature",
+            "type": "Phone Detection Camera",
             "properties": {
                 "name": "Mobile Phone Detection Camera",
                 "description": "",
@@ -7510,7 +7510,7 @@
         },
         {
             "id": "feature-151.2021613--33.9581535",
-            "type": "Feature",
+            "type": "Phone Detection Camera",
             "properties": {
                 "name": "Mobile Phone Detection Camera",
                 "description": "",
@@ -7526,7 +7526,7 @@
         },
         {
             "id": "feature-153.1024952--30.3041749",
-            "type": "Feature",
+            "type": "Phone Detection Camera",
             "properties": {
                 "name": "Mobile Phone Detection Camera",
                 "description": "",
@@ -7542,7 +7542,7 @@
         },
         {
             "id": "feature-150.9447649--33.8116794",
-            "type": "Feature",
+            "type": "Phone Detection Camera",
             "properties": {
                 "name": "Mobile Phone Detection Camera",
                 "description": "",
@@ -7558,7 +7558,7 @@
         },
         {
             "id": "feature-151.1794148--33.8026458",
-            "type": "Feature",
+            "type": "Phone Detection Camera",
             "properties": {
                 "name": "Mobile Phone Detection Camera",
                 "description": "Located just past Fehon Rd. Monitoring North Bound traffic.",
@@ -7574,7 +7574,7 @@
         },
         {
             "id": "feature-151.1576236--33.9280648",
-            "type": "Feature",
+            "type": "Phone Detection Camera",
             "properties": {
                 "name": "Mobile Phone Detection Camera",
                 "description": "",
@@ -7878,7 +7878,7 @@
         },
         {
             "id": "feature-151.0499872--33.8468347",
-            "type": "Feature",
+            "type": "Average Speed Camera",
             "properties": {
                 "name": "Average Speed Camera M4",
                 "description": "",
@@ -7894,7 +7894,7 @@
         },
         {
             "id": "feature-151.0839914--33.8623863",
-            "type": "Feature",
+            "type": "Average Tunnel Speed Camera",
             "properties": {
                 "name": "Average Tunnel Speed Camera",
                 "description": "",
@@ -7910,7 +7910,7 @@
         },
         {
             "id": "feature-151.1326836--33.8817504",
-            "type": "Feature",
+            "type": "Average Tunnel Speed Camera",
             "properties": {
                 "name": "Average Tunnel Speed Camera",
                 "description": "",
@@ -7926,7 +7926,7 @@
         },
         {
             "id": "feature-151.0927934--33.8648543",
-            "type": "Feature",
+            "type": "Average Tunnel Speed Camera",
             "properties": {
                 "name": "Average Tunnel Speed Camera",
                 "description": "",
@@ -7942,7 +7942,7 @@
         },
         {
             "id": "feature-153.5099906--28.1892129",
-            "type": "Feature",
+            "type": "Surveillance Camera",
             "properties": {
                 "name": "Surveillance Camera",
                 "description": "",
@@ -7958,7 +7958,7 @@
         },
         {
             "id": "feature-151.210627--33.8404372",
-            "type": "Feature",
+            "type": "Tunnel Safety Camera",
             "properties": {
                 "name": "Tunnel Safety Camera",
                 "description": "",
@@ -7974,7 +7974,7 @@
         },
         {
             "id": "feature-151.2107374--33.8383128",
-            "type": "Feature",
+            "type": "Tunnel Safety Camera",
             "properties": {
                 "name": "Tunnel Safety Camera",
                 "description": "",
@@ -8070,7 +8070,7 @@
         },
         {
             "id": "feature-151.1751859--33.9158391",
-            "type": "Feature",
+            "type": "Average Tunnel Speed Camera",
             "properties": {
                 "name": "Average Tunnel Speed Camera M8\n\n",
                 "description": "WestConnex M8 Tunnel, updates coming soon.",
@@ -8086,7 +8086,7 @@
         },
         {
             "id": "feature-151.0914316--33.9403079",
-            "type": "Feature",
+            "type": "Average Tunnel Speed Camera",
             "properties": {
                 "name": "Average Tunnel Speed Camera M8",
                 "description": "WestConnex M8 Tunnel, updates coming soon.",
@@ -8486,7 +8486,7 @@
         },
         {
             "id": "feature-151.189469--33.7841963",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Roseville: Red-Light Speed Camera",
                 "description": "",
@@ -8502,7 +8502,7 @@
         },
         {
             "id": "feature-151.1791198--33.7710422",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Lindfield: Red-Light Speed Camera",
                 "description": "",
@@ -8518,7 +8518,7 @@
         },
         {
             "id": "feature-151.0062082--33.8629935",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "South Granville: Red-Light Speed Camera",
                 "description": "",
@@ -8534,7 +8534,7 @@
         },
         {
             "id": "feature-151.7040929--32.9562442",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Highfields (Charlestown): Red-Light Speed Camera",
                 "description": "",
@@ -8550,7 +8550,7 @@
         },
         {
             "id": "feature-151.5774273--33.1901583",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Lake Munmorah: Red-Light Speed Camera",
                 "description": "",
@@ -8566,7 +8566,7 @@
         },
         {
             "id": "feature-150.7932904--34.4953034",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Dapto: Red-Light Speed Camera",
                 "description": "",
@@ -8582,7 +8582,7 @@
         },
         {
             "id": "feature-151.0400569--33.9145963",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Bankstown: Red-Light Speed Camera",
                 "description": "",
@@ -8598,7 +8598,7 @@
         },
         {
             "id": "feature-150.9830211--33.9417276",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Milperra: Red-Light Speed Camera",
                 "description": "",
@@ -8630,7 +8630,7 @@
         },
         {
             "id": "feature-149.1994126--35.205583",
-            "type": "Feature",
+            "type": "Heavy Vehicle Safety Camera",
             "properties": {
                 "name": "Heavy Vehicle Safety Camera",
                 "description": "",
@@ -8646,7 +8646,7 @@
         },
         {
             "id": "feature-149.198595--35.2059953",
-            "type": "Feature",
+            "type": "Heavy Vehicle Safety Camera",
             "properties": {
                 "name": "Heavy Vehicle Safety Camera",
                 "description": "",
@@ -8662,7 +8662,7 @@
         },
         {
             "id": "feature-153.2893058--29.1621703",
-            "type": "Feature",
+            "type": "Average Speed Camera",
             "properties": {
                 "name": "Average Speed Camera",
                 "description": "",
@@ -8678,7 +8678,7 @@
         },
         {
             "id": "feature-151.7592928--32.9194076",
-            "type": "Feature",
+            "type": "Phone Detection Camera",
             "properties": {
                 "name": "Mobile Phone Detection Camera",
                 "description": "",
@@ -8742,7 +8742,7 @@
         },
         {
             "id": "feature-150.8740612--33.8871668",
-            "type": "Feature",
+            "type": "Speed Trap",
             "properties": {
                 "name": "Police Speed Trap Hot-Spot",
                 "description": "",
@@ -8774,7 +8774,7 @@
         },
         {
             "id": "feature-151.0240142--33.9716355",
-            "type": "Feature",
+            "type": "Speed Trap",
             "properties": {
                 "name": "Police Speed Trap Hot-Spot",
                 "description": "This area is monitored frequently by the police for speed/drug abuse.",
@@ -8790,7 +8790,7 @@
         },
         {
             "id": "feature-150.8783387--33.9435069",
-            "type": "Feature",
+            "type": "Average Speed Camera",
             "properties": {
                 "name": "Average Speed Camera",
                 "description": "",
@@ -8806,7 +8806,7 @@
         },
         {
             "id": "feature-150.9624099--33.7639415",
-            "type": "Feature",
+            "type": "Average Speed Camera",
             "properties": {
                 "name": "Average Speed Camera",
                 "description": "",
@@ -8822,7 +8822,7 @@
         },
         {
             "id": "feature-151.1346858--33.8750833",
-            "type": "Feature",
+            "type": "Average Tunnel Speed Camera",
             "properties": {
                 "name": "Average Tunnel Speed Camera",
                 "description": "",
@@ -8838,7 +8838,7 @@
         },
         {
             "id": "feature-151.2031498--33.874008",
-            "type": "Feature",
+            "type": "Average Speed Camera",
             "properties": {
                 "name": "Average Speed Camera",
                 "description": "",
@@ -8854,7 +8854,7 @@
         },
         {
             "id": "feature-151.203536--33.8729524",
-            "type": "Feature",
+            "type": "Average Speed Camera",
             "properties": {
                 "name": "Average Speed Camera",
                 "description": "",
@@ -8870,7 +8870,7 @@
         },
         {
             "id": "feature-151.2250536--33.8763086",
-            "type": "Feature",
+            "type": "Average Speed Camera",
             "properties": {
                 "name": "Average Speed Camera",
                 "description": "",
@@ -8886,7 +8886,7 @@
         },
         {
             "id": "feature-151.072295--33.929447",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Rosleands: Red-Light Speed Cameras",
                 "description": "",
@@ -8902,7 +8902,7 @@
         },
         {
             "id": "feature-149.188911--35.3772537",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Jerrabomberra: Red-Light Speed Camera ",
                 "description": "",
@@ -8918,7 +8918,7 @@
         },
         {
             "id": "feature-153.5411491--28.6717378",
-            "type": "Feature",
+            "type": "Phone Detection Camera",
             "properties": {
                 "name": "Mobile Phone Detection Camera",
                 "description": "",
@@ -8934,7 +8934,7 @@
         },
         {
             "id": "feature-150.6860732--33.7570128",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Penrith: Red-Light Speed Camera",
                 "description": "",
@@ -8950,7 +8950,7 @@
         },
         {
             "id": "feature-150.9096892--33.915282",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Liverpool:\u00a0Red-Light Speed Camera",
                 "description": "",
@@ -8998,7 +8998,7 @@
         },
         {
             "id": "feature-151.2216306--33.9455202",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Eastgardens:\u00a0Red-Light Speed Camera",
                 "description": "",
@@ -9014,7 +9014,7 @@
         },
         {
             "id": "feature-150.9954114--33.9306891",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Milperra: Red-Light Speed Camera",
                 "description": "",
@@ -9030,7 +9030,7 @@
         },
         {
             "id": "feature-150.9257266--33.8737655",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Fairfield West: Red-Light Speed Camera",
                 "description": "",
@@ -9046,7 +9046,7 @@
         },
         {
             "id": "feature-151.4936535--33.2535276",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Gorokan: Red-Light Speed Camera",
                 "description": "",
@@ -9062,7 +9062,7 @@
         },
         {
             "id": "feature-151.1701169--33.8638165",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Rozelle: Red-Light Speed Camera",
                 "description": "",
@@ -9078,7 +9078,7 @@
         },
         {
             "id": "feature-150.8777552--34.4260202",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Wollongong: Red-Light Speed Camera\u00a0",
                 "description": "",
@@ -9158,7 +9158,7 @@
         },
         {
             "id": "feature-150.9527628--33.8972649",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Lansvale: Red-Light Speed Camera",
                 "description": "",
@@ -9174,7 +9174,7 @@
         },
         {
             "id": "feature-150.9124148--33.9406479",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Casula: Red-Light Speed Camera",
                 "description": "",
@@ -9190,7 +9190,7 @@
         },
         {
             "id": "feature-151.1467838--33.9885675",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Sans Souci: Fixed Speed Camera",
                 "description": "The Grand Parade, between Alice Street and Ramsgate Road.",
@@ -9206,7 +9206,7 @@
         },
         {
             "id": "feature-151.1573749--33.95887",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "Brighton-Le-Sands: Fixed Speed Cameras",
                 "description": "There are 2 sperate cameras located here.The Grand Parade, between Gordon Street and Bruce Street.",
@@ -9222,7 +9222,7 @@
         },
         {
             "id": "feature-151.0652159--33.9174706",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Wiley Park: Red-Light Speed Camera",
                 "description": "",
@@ -9238,7 +9238,7 @@
         },
         {
             "id": "feature-151.1792651--33.8054186",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Artamon: Red-Light Speed Camera",
                 "description": "",
@@ -9254,7 +9254,7 @@
         },
         {
             "id": "feature-150.8864669--34.4732498",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Kembla: Red-Light Speed Camera",
                 "description": "",
@@ -9270,7 +9270,7 @@
         },
         {
             "id": "feature-150.8600608--34.5523796",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Warilla: Red-Light Speed Camera",
                 "description": "",
@@ -9286,7 +9286,7 @@
         },
         {
             "id": "feature-151.0259763--33.9077419",
-            "type": "Feature",
+            "type": "School Zone",
             "properties": {
                 "name": "Yagoona: School Zone RLSC",
                 "description": "Variable Speed Limit Enforced.This camera is on a downhill slope and it changes to 40 for school zone hours.",
@@ -9302,7 +9302,7 @@
         },
         {
             "id": "feature-151.1986727--33.8778141",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Ultimo: Red-Light Speed Camera",
                 "description": "",
@@ -9318,7 +9318,7 @@
         },
         {
             "id": "feature-151.1685548--33.8850297",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "M4-M8 Speed Cameras",
                 "description": "",
@@ -9334,7 +9334,7 @@
         },
         {
             "id": "feature-151.1785244--33.9025727",
-            "type": "Feature",
+            "type": "Fixed Speed Camera",
             "properties": {
                 "name": "M4-M8 Speed Cameras",
                 "description": "",
@@ -9350,7 +9350,7 @@
         },
         {
             "id": "feature-153.1015893--30.3059304",
-            "type": "Feature",
+            "type": "Red Light Camera",
             "properties": {
                 "name": "Coffs Harbour South: Red-Light Speed Camera",
                 "description": "Pacific Highway / Halls Street.",

@@ -1,9 +1,19 @@
 @import './base.css';
 
-:root {
-  --primary: rgb(149, 231, 66);
-  --secondary: #b4a7a7;
-  --tertiary: lightseagreen;
+#app {
+  main {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    gap: 4rem;
+    padding: 0 2rem;
+    align-items: center;
+    justify-items: center;
+  }
+
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-weight: normal;
 
   button {
     width: fit-content;
@@ -22,31 +32,17 @@
     border: 1px solid var(--primary);
   }
 
-  .stack {
+  .stack-v {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 2rem;
   }
 
-  .marker-label {
-    white-space: nowrap;
-    font-weight: 600;
-    font-size: 12px;
-    margin-top: 10px;
+  .stack-h {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px 1.25rem;
   }
-
-  #app {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 2rem;
-    font-weight: normal;
-    /* display: grid; */
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
-}
-
-body {
-  display: flex;
-  place-items: center;
 }

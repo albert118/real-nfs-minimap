@@ -50,12 +50,6 @@ watch([() => center, () => zoom], ([newCenter, newZoom]) => {
   miniMap?.setView(newCenter, newZoom);
 });
 
-const clearAllMarkers = () => {
-  if (!assertRefsExist()) return;
-  logger.info('clearing all markers');
-  miniMap?.removeMarkers(markerFeatures);
-};
-
 const assertRefsExist = () => {
   if (!mapRef.value) {
     logger.error('missing map ref');
@@ -72,9 +66,6 @@ const assertRefsExist = () => {
 </script>
 
 <template>
-  <div style="display: flex; gap: 2rem">
-    <button @click.prevent="clearAllMarkers()">Clear markers</button>
-  </div>
   <div ref="mapRef" id="map">
     <div class="arrow-up" style="position: relative; top: 0; left: 48%; z-index: 999" />
   </div>
@@ -82,8 +73,8 @@ const assertRefsExist = () => {
 
 <style lang="css">
 #map {
-  height: 75vh;
-  width: 75vw;
+  height: 1000px;
+  width: 1000px;
   border-radius: calc(infinity * 1px);
   border: 1px solid var(--primary);
 }

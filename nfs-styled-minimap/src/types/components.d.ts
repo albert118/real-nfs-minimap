@@ -8,7 +8,6 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
-    copy: typeof import('./../components/markers/MobileSpeedCameraMarker copy.vue')['default']
     LocationPin: typeof import('./../components/markers/LocationPin.vue')['default']
     MiniMap: typeof import('./../components/mini-map/MiniMap.vue')['default']
     MobileSpeedCameraMarker: typeof import('./../components/markers/MobileSpeedCameraMarker.vue')['default']

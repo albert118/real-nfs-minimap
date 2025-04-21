@@ -7,6 +7,7 @@ import { storeToRefs } from 'pinia';
 import { useGlobalStore } from '@stores/globalStore';
 import Logger from 'js-logger';
 import { FeatureType } from '@stores/feature-types';
+import { VCheckbox } from 'vuetify/components';
 
 const logger = Logger.get('Home View');
 
@@ -27,6 +28,10 @@ const markerFeatures = ref<Set<MarkerFeature>>(new Set());
 // load the datasets
 const { features: arcadeFeatures } = useArcadesDemo();
 const { features: speedCameraFeatures } = useSpeedCamerasNsw();
+
+// form data
+const allFeatureTypes = [...Object.values(FeatureType)];
+const selectedOptions = ref<FeatureType[]>([]);
 
 onMounted(async () => {});
 
@@ -49,6 +54,8 @@ const selectJapData = () => {
     props: { name: 'Current Location' },
     marker: new MapMarker(japCenter),
   });
+
+  selectedOptions.value = [FeatureType.CurrentLocation, FeatureType.Feature];
 };
 
 const selectAusData = () => {
@@ -66,17 +73,39 @@ const selectAusData = () => {
     props: { name: 'Current Location' },
     marker: new MapMarker(currentLocation.value),
   });
+
+  selectedOptions.value = allFeatureTypes;
 };
+
+const clearAllMarkers = () => {
+  logger.info('clearing all markers');
+  markerFeatures.value = new Set();
+};
+
+const clearFilters = () => {
+  selectedOptions.value = [];
+};
+
+watch(selectedOptions, () => {
+  logger.info('filtering features to include: ', selectedOptions.value);
+  // this won't allow resetting the filters, as we'd need the original marker data too
+  markerFeatures.value = new Set([...markerFeatures.value.values()].filter((f) => selectedOptions.value.includes(f.type)));
+});
 </script>
 
 <template>
   <main>
-    <div class="stack">
-      <div style="display: flex; gap: 2rem">
+    <div class="stack-v">
+      <div class="stack-h">
         <button @click.prevent="selectJapData">Select Japan demo data</button>
         <button @click.prevent="selectAusData">Select Australia demo data</button>
+        <button @click.prevent="clearAllMarkers">Clear markers</button>
+        <button @click.prevent="clearFilters">Clear filters</button>
       </div>
-      <MiniMap :zoom="zoom" :center="center" :marker-features="markerFeatures" />
+      <div class="stack-h">
+        <v-checkbox v-for="option in allFeatureTypes" :label="option" :value="option" v-model="selectedOptions"></v-checkbox>
+      </div>
     </div>
+    <MiniMap :zoom="zoom" :center="center" :marker-features="markerFeatures" />
   </main>
 </template>

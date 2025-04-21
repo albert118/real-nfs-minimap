@@ -1,14 +1,21 @@
 <script setup lang="ts">
-export interface MapMarkerProps {
-  label: string;
+// this shoudl be resolved from the global type declarations but isn't recognised for some reason
+// global typing seems broken in this prototype
+export interface FeatureMetaData {
+  name: string;
+  description: string;
+  accreditation: string;
+  source: URL;
+  lastUpdated: Date;
+  createdOn: Date;
 }
 
-defineProps<MapMarkerProps>();
+defineProps<Partial<FeatureMetaData>>();
 </script>
 
 <template>
   <div class="marker">
-    <span class="marker--label">{{ label }}</span>
+    <span class="marker--label">{{ name }}</span>
   </div>
 </template>
 

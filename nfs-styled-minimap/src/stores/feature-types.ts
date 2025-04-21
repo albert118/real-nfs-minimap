@@ -1,6 +1,5 @@
 // this SHOULD be in the @types folder, but for some reason it is considered a DTS file
 // once it's in there, idky
-import type { ComponentAlias } from '@utils/render';
 import SimpleMarker from '@components/markers/SimpleMarker.vue';
 import LocationPin from '@components/markers/LocationPin.vue';
 
@@ -26,21 +25,21 @@ export enum FeatureType {
 
 // every feature type can potenially resolve a component to render it
 export const FeatureTypeMap = {
-  [FeatureType.Feature]: typeof SimpleMarker,
-  [FeatureType.RedLightCamera]: typeof SimpleMarker,
-  [FeatureType.MobileSpeedCamera]: typeof SimpleMarker,
-  [FeatureType.SchoolZone]: typeof SimpleMarker,
-  [FeatureType.SafeTCam]: typeof SimpleMarker,
-  [FeatureType.SpeedTrap]: typeof SimpleMarker,
-  [FeatureType.NoiseCamera]: typeof SimpleMarker,
-  [FeatureType.FixedSpeedCamera]: typeof SimpleMarker,
-  [FeatureType.SurveillanceCamera]: typeof SimpleMarker,
-  [FeatureType.TunnelSafetyCamera]: typeof SimpleMarker,
-  [FeatureType.AverageSpeedCamera]: typeof SimpleMarker,
-  [FeatureType.HeavyVehicleSafetyCamera]: typeof SimpleMarker,
-  [FeatureType.AverageTunnnelSpeedCamera]: typeof SimpleMarker,
-  [FeatureType.PhoneDetectionCamera]: typeof SimpleMarker,
-  [FeatureType.SchoolZoneSpeedCamera]: typeof SimpleMarker,
-  [FeatureType.VariableSpeedZone]: typeof SimpleMarker,
-  [FeatureType.CurrentLocation]: typeof LocationPin,
+  [FeatureType.Feature]: SimpleMarker,
+  [FeatureType.RedLightCamera]: SimpleMarker,
+  [FeatureType.MobileSpeedCamera]: SimpleMarker,
+  [FeatureType.SchoolZone]: SimpleMarker,
+  [FeatureType.SafeTCam]: SimpleMarker,
+  [FeatureType.SpeedTrap]: SimpleMarker,
+  [FeatureType.NoiseCamera]: SimpleMarker,
+  [FeatureType.FixedSpeedCamera]: SimpleMarker,
+  [FeatureType.SurveillanceCamera]: SimpleMarker,
+  [FeatureType.TunnelSafetyCamera]: SimpleMarker,
+  [FeatureType.AverageSpeedCamera]: SimpleMarker,
+  [FeatureType.HeavyVehicleSafetyCamera]: SimpleMarker,
+  [FeatureType.AverageTunnnelSpeedCamera]: SimpleMarker,
+  [FeatureType.PhoneDetectionCamera]: SimpleMarker,
+  [FeatureType.SchoolZoneSpeedCamera]: SimpleMarker,
+  [FeatureType.VariableSpeedZone]: SimpleMarker,
+  [FeatureType.CurrentLocation]: LocationPin,
 };

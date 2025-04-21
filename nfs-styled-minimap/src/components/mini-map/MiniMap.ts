@@ -68,7 +68,6 @@ export class MiniMap {
   }
 
   setView(center: Coordinate, zoom: number) {
-    console.log(center);
     if (center.x === Infinity || center.y === Infinity) {
       this.__logger.warn('cannot update the map view with center-point where either x or y are "Infinity"');
       return;

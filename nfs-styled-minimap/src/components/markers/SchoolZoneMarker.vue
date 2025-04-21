@@ -14,24 +14,16 @@ defineProps<Partial<FeatureMetaData>>();
 </script>
 
 <template>
-  <div class="marker">
-    <span class="marker--label">{{ name }}</span>
+  <div class="school-zone-marker">
+    <div class="marker-label" style="color: #dcd90d">{{ name }}</div>
   </div>
 </template>
 
 <style scoped lang="css">
-.marker {
-  opacity: 0;
-  border: 1px solid black;
+.school-zone-marker {
+  border: 1px solid #dcd90d;
   width: 10px;
   height: 10px;
-}
-
-.marker--label {
-  display: flex;
-  font-weight: 600;
-  color: darkblue;
-  font-size: 12px;
-  margin-top: 10px;
+  border-radius: 999px;
 }
 </style>

@@ -21,8 +21,8 @@ defineProps<Partial<FeatureMetaData>>();
 
 <style scoped lang="css">
 .location-pin {
-  border: 1px solid red;
-  background-color: red;
+  border: 1px solid blueviolet;
+  background-color: blueviolet;
   width: 10px;
   height: 10px;
   border-radius: 999px;
@@ -31,7 +31,7 @@ defineProps<Partial<FeatureMetaData>>();
 .location-pin--label {
   display: flex;
   font-weight: 600;
-  color: darkred;
+  color: darkslateblue;
   font-size: 12px;
   margin-top: 10px;
 }

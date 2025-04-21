@@ -14,11 +14,14 @@ Builds on the prev. prototype and adds much more styling and iconography.
 
 ## TODO
 
-- [ ] improve live geo interaction (current location)
-- [ ] improve design and portability (screen consistency) for "minimap" round aesthetic
+- [x] improve design and portability (screen consistency) for "minimap" round aesthetic
 - [x] add control to filter visible markers
 - [x] add actual icons
+- [ ] improve live geo interaction (current location)
+- [ ] implement routing feature
 - [ ] caching tile assets for improved load times > reduced network calls
+- [ ] implement rally stage data
+- [ ] add even more icons
 
 ## Prototypes
 

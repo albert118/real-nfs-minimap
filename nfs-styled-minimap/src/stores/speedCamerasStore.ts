@@ -1,5 +1,6 @@
 import { defineStore } from 'pinia';
 import speedCamerasNsw from './speed_cameras_nsw.json';
+import type { FeatureType } from './feature-types';
 
 // this metadata is almost entirely useless from the example, but something like it might be needed
 export interface SpeedCamerasNsw {
@@ -24,14 +25,14 @@ export const useSpeedCamerasNsw = defineStore('speedCamerasNsw', () => {
   // we can pre-compute this entire data set, but loading large sets will potentially create performance issues
   const features: Feature[] = typedSpeedCameras.features.map((f: any) => ({
     id: f.id,
-    type: f.type,
-    properties: f.properties,
+    type: f.type as FeatureType,
+    properties: f.properties as Partial<FeatureMetaData>,
     geometry: {
       type: 'Point',
       coordinates: {
         x: f.geometry.coordinates[0],
         y: f.geometry.coordinates[1],
-      },
+      } as Coordinate,
     },
   }));
 

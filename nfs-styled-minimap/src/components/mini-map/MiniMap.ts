@@ -55,6 +55,7 @@ export class MiniMap {
 
   addMarkers(toAdd: Set<MarkerFeature>, el: HTMLElement, instance: ComponentInternalInstance) {
     this.__logger.time('adding markers');
+    this.__logger.debug(`will add '${toAdd.size}' markers`);
 
     toAdd.forEach((value) => {
       // typing must be reapplied here, otherwise we lose deep-typing of the attributes

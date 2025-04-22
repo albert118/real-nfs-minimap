@@ -1,6 +1,7 @@
 # mapping-test
 
-TODO
+- implements a very simple leaflet map with no customisation
+- attempts to roll it as a Vue 3 SFC
 
 ## Generating PWA assets
 

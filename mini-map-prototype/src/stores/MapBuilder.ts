@@ -15,7 +15,8 @@ export class MapBuilder {
     const attribution =
       '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
 
-    L.tileLayer(stadiaMapUrlTemplate, { attribution: attribution }).addTo(this._map);
+    // configure Leaflet.EdgeBuffer here by specifying the number of edge tiles to buffer
+    L.tileLayer(stadiaMapUrlTemplate, { attribution: attribution, edgeBufferTiles: 1 }).addTo(this._map);
 
     return this;
   }

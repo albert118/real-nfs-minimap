@@ -1,6 +1,12 @@
 # mini-map-prototype
 
-TODO
+- implements a more customised leaflet map
+- attempts to make the map a composable that can be "dropped into" the desired Vue 3 SFC
+  - composable uses a builder to wrap up some of the map setup
+  - this is later ditched because it's too fiddly
+- implements some marker customation and reactivity
+- includes PWA config more as a setup demo than an actual usage/PoC
+- implements some caching for tiles
 
 ## Generating PWA assets
 

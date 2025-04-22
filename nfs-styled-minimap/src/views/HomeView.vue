@@ -87,7 +87,6 @@ const clearFilters = () => {
 };
 
 watch(selectedOptions, () => {
-  logger.info('filtering features to include: ', selectedOptions.value);
   // this won't allow resetting the filters, as we'd need the original marker data too
   markerFeatures.value = new Set([...markerFeatures.value.values()].filter((f) => selectedOptions.value.includes(f.type)));
 });

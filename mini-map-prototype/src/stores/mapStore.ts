@@ -58,12 +58,12 @@ export const useMap = defineStore('map', () => {
     // build the marker set for future lifecycle tracking
     features.value.forEach((poi: PointOfInterest, index: number) => {
       const el = elements[index];
-      const vueMarker = new VueMarker(poi.geometry.coordinates, el, appContext.value!);
+      const vueMarker = new VueMarker(poi.geometry.coordinates);
       markers.value.set(vueMarker.toString(), vueMarker);
     });
 
     // first add the marker controls to the map
-    markers.value.forEach((m) => m.getMarker.addTo(builder!.map));
+    markers.value.forEach((m) => m.marker?.addTo(builder!.map));
   }
 
   function setCenter(zoom: number, coordinate: Coordinate) {

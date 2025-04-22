@@ -23,7 +23,7 @@
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
-    "types": ["vite/client", "unplugin-icons/types/vue"],
+    "types": ["vite/client", "unplugin-icons/types/vue", "leaflet"],
     "paths": {
       "@assets/*": ["./src/assets/*"],
       "@stores/*": ["./src/stores/*"],

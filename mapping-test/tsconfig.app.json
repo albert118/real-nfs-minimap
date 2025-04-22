@@ -1,5 +1,5 @@
 {
-  "include": ["src/**/*", "src/**/*.vue", "src/**/*.d.ts", "vite.config.ts"],
+  "include": ["src/**/*", "src/**/*.vue", "src/**/*.d.ts", "vite.config.ts", "../mini-map-prototype/src/types/leaflet-extended-types.d.ts"],
   "exclude": ["src/**/*.spec.ts", "node_modules"],
   "compilerOptions": {
     "lib": ["ES2020", "DOM", "DOM.Iterable"],

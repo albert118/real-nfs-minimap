@@ -6,7 +6,17 @@
   - this is later ditched because it's too fiddly
 - implements some marker customation and reactivity
 - includes PWA config more as a setup demo than an actual usage/PoC
-- implements some caching for tiles
+- adds some interesting plugins to test them
+  - Buffer edge tiles (increase called tiles by N) [GitHub](https://github.com/TolonUK/Leaflet.EdgeBuffer)
+    - not a very clever solution, see notes in MapBuilder.ts
+    - not actually buffering/caching
+  - Fade out when transitioning between grid layers [GitLab](https://gitlab.com/IvanSanchez/Leaflet.GridLayer.FadeOut)
+    - very simple
+    - works!
+  - caching solution but it's for Cordova [GitHub](https://github.com/gregallensworth/L.TileLayer.Cordova)
+    - proves what I was already thinking works
+    - very simple ~400 lines
+    - toggle for online offline is a nice touch
 
 ## Generating PWA assets
 

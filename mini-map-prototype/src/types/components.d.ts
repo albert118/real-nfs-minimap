@@ -8,7 +8,6 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
-    copy: typeof import('./../components/SimpleMarker copy.vue')['default']
     LocationPin: typeof import('./../components/LocationPin.vue')['default']
     Map: typeof import('./../components/Map.vue')['default']
     MapMarker: typeof import('./../components/MapMarker.vue')['default']

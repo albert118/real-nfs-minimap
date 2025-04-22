@@ -15,6 +15,9 @@ import AutoImport from 'unplugin-auto-import/vite';
 import Components from 'unplugin-vue-components/vite';
 import IconsResolver from 'unplugin-icons/resolver';
 
+// clear the service worker cache(s) by pasting this in the console
+// await caches.keys().then((k) => k.forEach(l => caches.delete(k)));
+
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
@@ -70,10 +73,12 @@ export default defineConfig({
       },
       // https://vite-pwa-org.netlify.app/guide/register-service-worker.html
       workbox: {
-        // TODO: implement offline caching with this configuration
+        globPatterns: ['**/*.{js,css,html,ico,png,svg}'],
         runtimeCaching: [
           {
-            urlPattern: ({ request }) => request.destination === 'style' || request.destination === 'script' || request.destination === 'worker',
+            urlPattern: ({ request, sameOrigin }) =>
+              sameOrigin && (request.destination === 'style' || request.destination === 'script' || request.destination === 'worker'),
+            method: 'GET',
             handler: 'StaleWhileRevalidate',
             options: {
               cacheName: 'static-resources',
@@ -84,10 +89,35 @@ export default defineConfig({
             },
           },
           {
-            urlPattern: ({ request }) => request.destination === 'image',
+            // match a URL like https://tile.openstreetmap.org/6/54/24.png
+            // this MUST match the entire URL to support CORs caching
+            urlPattern: /https:\/\/tile.openstreetmap.org\/\d{1,2}\/\d{1,2}\/\d{1,2}.png/,
+            method: 'GET',
             handler: 'CacheFirst',
             options: {
+              cacheName: 'tile-layers',
+              cacheableResponse: {
+                statuses: [0, 200], // only cache successful responses (0 is a fetch response code when handling CORs)
+              },
+              fetchOptions: {
+                mode: 'cors',
+                credentials: 'omit',
+              },
+              expiration: {
+                maxEntries: 100,
+                maxAgeSeconds: 60 * 24 * 60 * 30, // 30 days
+              },
+            },
+          },
+          {
+            urlPattern: ({ request, sameOrigin }) => sameOrigin && request.destination === 'image',
+            method: 'GET',
+            handler: 'StaleWhileRevalidate',
+            options: {
               cacheName: 'images',
+              cacheableResponse: {
+                statuses: [0, 200], // only cache successful responses (0 is a fetch response code when handling CORs)
+              },
               expiration: {
                 maxEntries: 100,
                 maxAgeSeconds: 60 * 24 * 60 * 30, // 30 days

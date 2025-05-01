@@ -37,3 +37,8 @@ lerna-debug.log*
 .gitconfig
 .prettierignore
 CODEOWNERS
+
+# package lock files
+
+package.*.json
+package.json

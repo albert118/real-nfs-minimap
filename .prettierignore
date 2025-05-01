@@ -20,6 +20,8 @@ pyvenv.cfg
 # JavaScript
 
 node_modules
+auto-import.d.ts
+components.d.ts
 
 # Logs
 logs

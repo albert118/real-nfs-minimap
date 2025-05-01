@@ -3,6 +3,9 @@ import type { ComponentInternalInstance } from 'vue';
 import Logger from 'js-logger';
 import { FeatureType, FeatureTypeMap } from '@domain-types/feature-types';
 import type { MapMarker } from '@components/markers/MapMarker';
+import 'leaflet-edgebuffer';
+// Enable the Grid Layer fadeout. https://gitlab.com/IvanSanchez/Leaflet.GridLayer.FadeOut
+import 'leaflet.gridlayer.fadeout';
 
 export interface MiniMapOptions {
     center: Coordinate;
@@ -15,9 +18,6 @@ export interface MiniMapOptions {
 export class MiniMap {
     private __map: L.Map;
     private __logger = Logger.get('MiniMap');
-
-    // tile servers: https://wiki.openstreetmap.org/wiki/Tile_servers
-    // tile providers: https://wiki.openstreetmap.org/wiki/Raster_tile_providers
 
     /** @internal */
     readonly urlTemplate = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png';
@@ -36,9 +36,11 @@ export class MiniMap {
 
         this.setView(center, zoom);
 
-        L.tileLayer(this.urlTemplate, { attribution: this.attribution }).addTo(
-            this.__map,
-        );
+        L.tileLayer(this.urlTemplate, {
+            attribution: this.attribution,
+            edgeBufferTiles: 2,
+        }).addTo(this.__map);
+
         this.__logger.debug('added map layer');
     }
 
@@ -116,10 +118,3 @@ function setDefaultIconOptions() {
         iconSize: undefined,
     };
 }
-
-// Stadia tile provider
-// /** @internal */
-// readonly urlTemplate = 'https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png';
-// /** @internal */
-// readonly attribution =
-//   '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';

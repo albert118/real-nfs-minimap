@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { useGlobalStore } from '@stores/globalStore';
+import { useGlobal } from '@stores/globalStore';
 import { RouterView } from 'vue-router';
 
 const router = useRouter();
-const { init } = useGlobalStore();
+const { init } = useGlobal();
 
 onMounted(async () => {
     await router.isReady();

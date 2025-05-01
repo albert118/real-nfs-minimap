@@ -3,6 +3,7 @@ import { useGeolocation } from '@vueuse/core';
 import Logger from 'js-logger';
 import { useDebounceFn } from '@vueuse/core';
 import { GlobalError } from '@domain-types/errors';
+import type { Coordinate } from '@domain-types/map-types';
 
 export interface GlobalState {
     /**

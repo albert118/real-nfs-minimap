@@ -1,3 +1,4 @@
+import type { Coordinate } from '@domain-types/map-types';
 import { renderComponent, type ComponentAlias } from '@utils/render';
 import Logger from 'js-logger';
 import type { Marker } from 'leaflet';

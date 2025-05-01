@@ -3,6 +3,8 @@ import LocationPin from '@components/markers/LocationPin.vue';
 import RedLightMarker from '@components/markers/RedLightMarker.vue';
 import MobileSpeedCameraMarker from '@components/markers/MobileSpeedCameraMarker.vue';
 import SchoolZoneMarker from '@components/markers/SchoolZoneMarker.vue';
+import type { MapMarker } from '@components/markers/MapMarker';
+import type { Geometry } from './map-types';
 
 export enum FeatureType {
     Feature = 'Feature',
@@ -44,3 +46,25 @@ export const FeatureTypeMap = {
     [FeatureType.VariableSpeedZone]: SimpleMarker,
     [FeatureType.CurrentLocation]: LocationPin,
 };
+
+export interface FeatureMetaData {
+    name: string;
+    description: string;
+    accreditation: string;
+    source: URL;
+    lastUpdated: Date;
+    createdOn: Date;
+}
+
+export interface Feature {
+    type: FeatureType;
+    properties: Partial<FeatureMetaData>;
+    geometry: Geometry;
+    id: string;
+}
+
+export interface MarkerFeature {
+    type: FeatureType;
+    props: Partial<FeatureMetaData>;
+    marker: MapMarker;
+}

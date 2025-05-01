@@ -1,6 +1,8 @@
 <script setup lang="ts">
+import type { MarkerFeature } from '@domain-types/feature-types';
 import { MiniMap } from './MiniMap';
 import Logger from 'js-logger';
+import type { Coordinate } from '@domain-types/map-types';
 
 const logger = Logger.get('MiniMap');
 

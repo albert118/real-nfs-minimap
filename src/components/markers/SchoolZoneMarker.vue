@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import type { FeatureMetaData } from '@domain-types/feature-types';
 import { mdiHumanMaleFemaleChild } from '@mdi/js';
 
 defineProps<Partial<FeatureMetaData>>();

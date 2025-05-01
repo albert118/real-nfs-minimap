@@ -4,17 +4,14 @@ import vueDevTools from 'vite-plugin-vue-devtools';
 import tsconfig from './tsconfig.app.json';
 import path from 'path';
 
-// Components and Unplugin
+// Components and Unplugin auto import plugins
 import vuetify from 'vite-plugin-vuetify';
 import AutoImport from 'unplugin-auto-import/vite';
 import Components from 'unplugin-vue-components/vite';
 
 // https://vite.dev/config/
-export default defineConfig({
+export default defineConfig(({ command }) => ({
     plugins: [
-        vue({
-            isProduction: !import.meta.env.DEV,
-        }),
         AutoImport({
             include: [
                 /\.[tj]s?$/, // .ts / .js
@@ -27,8 +24,6 @@ export default defineConfig({
             vueTemplate: true,
         }),
         vueDevTools(),
-        // https://vite-pwa-org.netlify.app/
-        vuetify(),
         Components({
             dts: './src/types/components.d.ts',
             types: [
@@ -38,6 +33,12 @@ export default defineConfig({
                 },
             ],
         }),
+        vue({
+            isProduction: command === 'serve',
+        }),
+        // must be placed AFTER the Vue plugin
+        // https://vite-pwa-org.netlify.app/
+        vuetify(),
     ],
     resolve: {
         alias: Object.fromEntries(
@@ -49,4 +50,4 @@ export default defineConfig({
             ),
         ),
     },
-});
+}));

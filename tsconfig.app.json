@@ -30,7 +30,7 @@
             "@views/*": ["./src/views/*"],
             "@utils/*": ["./src/utils/*"],
             "@types/*": ["./src/types/*"],
-            "@map-features": ["./src/map-features"],
+            "@map-features": ["./src/map-features/*"],
             "@plugins/*": ["./src/plugins/*"],
             "@components/*": ["./src/components/*"],
             "@router": ["./src/router/index.ts"]

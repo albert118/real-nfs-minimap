@@ -1,56 +1,11 @@
 {
-	"explorer.fileNesting.enabled": true,
-	"explorer.fileNesting.patterns": {
-		"tsconfig.json": "tsconfig.*.json, env.d.ts",
-		"vite.config.*": "jsconfig*, vitest.config.*, cypress.config.*, playwright.config.*",
-		"package.json": "package-lock.json, pnpm*, .yarnrc*, yarn*, .eslint*, eslint*, .prettier*, prettier*, .editorconfig"
-	},
-	"editor.formatOnSave": true,
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	"[typescript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode",
-		"editor.indentSize": "tabSize",
-		"editor.tabSize": 4,
-		"prettier.tabWidth": 4,
-		"editor.detectIndentation": false,
-		"prettier.semi": true,
-		"prettier.singleQuote": true,
-		"prettier.printWidth": 81,
-		"prettier.endOfLine": "lf",
-		"prettier.trailingComma": "all",
-		"prettier.arrowParens": "avoid"
-	},
-	"[javascript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode",
-		"editor.indentSize": "tabSize",
-		"editor.tabSize": 4,
-		"prettier.tabWidth": 4,
-		"editor.detectIndentation": false,
-		"prettier.semi": true,
-		"prettier.singleQuote": true,
-		"prettier.printWidth": 81,
-		"prettier.endOfLine": "lf",
-		"prettier.trailingComma": "all",
-		"prettier.arrowParens": "avoid"
-	},
-	"[vue]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode",
-		"prettier.vueIndentScriptAndStyle": false,
-		"editor.indentSize": "tabSize",
-		"editor.tabSize": 2,
-		"prettier.tabWidth": 2,
-		"editor.detectIndentation": false,
-		"prettier.semi": true,
-		"prettier.singleQuote": true,
-		"prettier.printWidth": 100,
-		"prettier.endOfLine": "lf",
-		"prettier.trailingComma": "all",
-		"prettier.arrowParens": "avoid"
-	},
-	"[markdown]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode",
-		"prettier.proseWrap": "preserve",
-		"editor.indentSize": "tabSize",
-		"editor.tabSize": 2
-	}
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.patterns": {
+        "tsconfig.json": "tsconfig.*.json, env.d.ts",
+        "vite.config.*": "jsconfig*, vitest.config.*, cypress.config.*, playwright.config.*",
+        "package.json": "package-lock.json, pnpm*, .yarnrc*, yarn*, .eslint*, eslint*, .prettier*, prettier*, .editorconfig"
+    },
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.detectIndentation": false
 }

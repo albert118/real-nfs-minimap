@@ -1,24 +1,19 @@
-import { createRouter, createWebHistory, type Router } from 'vue-router';
-import HomeView from '@views/HomeView.vue';
+import { createRouter, createWebHistory } from 'vue-router';
 
+/**
+ * Explicitly define route names here
+ */
 export enum RouteName {
-    Home = 'home',
+    Index = 'index',
 }
-
-////////////////////////////////////////////////////////////////////////////////
-// Lazy Imports
-//    aka. "route level code-splitting"
-//    this generates a separate chunk (eg. About.[hash].js) for this route
-//    which is lazy-loaded when the route is visited.
-////////////////////////////////////////////////////////////////////////////////
 
 export const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
         {
             path: '/',
-            name: RouteName.Home,
-            component: HomeView,
+            name: RouteName.Index,
+            component: async () => await import('@views/index.vue'),
         },
     ],
 });

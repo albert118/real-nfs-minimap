@@ -20,7 +20,7 @@ export interface GlobalState {
      *
      * @returns a hook to clear the caches and a loading ref
      */
-    onClearCaches: () => {
+    onClearCache: () => {
         clear: () => Promise<void>;
         loading: Ref<boolean>;
     };
@@ -35,9 +35,14 @@ export const useGlobal = defineStore('global', () => {
 
     const hasErrored = computed(() => errors.value.length > 0);
 
-    const clearErrors = () => {
-        errors.value = [];
-    };
+    const clearErrors = useDebounceFn(
+        () => {
+            Logger.debug('Clearing errors...');
+            errors.value = [];
+        },
+        500,
+        { maxWait: 1000 },
+    );
 
     const currentLocation = ref<Coordinate>();
 
@@ -81,12 +86,12 @@ export const useGlobal = defineStore('global', () => {
         Logger.timeEnd('Global store initialised');
     }
 
-    function onClearCaches() {
+    function onClearCache() {
         const loading = ref<boolean>(false);
 
         const clear = async () => {
             loading.value = true;
-            Logger.debug('Clearing caches');
+            Logger.debug('Clearing caches...');
 
             try {
                 // clear web worker caches
@@ -109,7 +114,7 @@ export const useGlobal = defineStore('global', () => {
         setCurrentLocation,
         currentLocation,
         init,
-        onClearCaches,
+        onClearCache,
         errors,
         hasErrored,
         clearErrors,

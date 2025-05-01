@@ -21,10 +21,14 @@ onMounted(async () => {
             :v-model="error"
             :timeout="1000"
             variant="tonal"
-            color="red"
+            color="red-lighten-1"
         >
-            An error occurred.
-            {{ error.message }}
+            <div class="text-subtitle-1 pa-2 red-darken-4">
+                An error occurred.
+            </div>
+            <div class="text-subtitle-1 pa-2 red-lighten-3">
+                {{ error.message }}
+            </div>
         </v-snackbar>
     </div>
 

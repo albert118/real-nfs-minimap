@@ -5,6 +5,7 @@ import { createRouter, createWebHistory } from 'vue-router';
  */
 export enum RouteName {
     Index = 'index',
+    Settings = 'settings',
 }
 
 export const router = createRouter({
@@ -14,6 +15,11 @@ export const router = createRouter({
             path: '/',
             name: RouteName.Index,
             component: async () => await import('@views/index.vue'),
+        },
+        {
+            path: '/settings',
+            name: RouteName.Settings,
+            component: async () => await import('@views/settings.vue'),
         },
     ],
 });

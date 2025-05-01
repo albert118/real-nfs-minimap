@@ -1,6 +1,8 @@
 import { defineStore } from 'pinia';
 import { useGeolocation } from '@vueuse/core';
 import Logger from 'js-logger';
+import { useDebounceFn } from '@vueuse/core';
+import { GlobalError } from '@domain-types/errors';
 
 export interface GlobalState {
     /**
@@ -8,11 +10,35 @@ export interface GlobalState {
      * fail to resolve the current location.
      */
     setCurrentLocation: () => void;
+
     currentLocation: Ref<Coordinate>;
+
     init: () => void;
+
+    /**
+     * Clears the current application and web worker caches.
+     *
+     * @returns a hook to clear the caches and a loading ref
+     */
+    onClearCaches: () => {
+        clear: () => Promise<void>;
+        loading: Ref<boolean>;
+    };
+
+    errors: Ref<GlobalError[]>;
+    hasErrored: Ref<boolean>;
+    clearErrors: () => void;
 }
 
 export const useGlobal = defineStore('global', () => {
+    const errors = ref<GlobalError[]>([]);
+
+    const hasErrored = computed(() => errors.value.length > 0);
+
+    const clearErrors = () => {
+        errors.value = [];
+    };
+
     const currentLocation = ref<Coordinate>();
 
     // get location perms and then resolve the user's current position
@@ -55,9 +81,37 @@ export const useGlobal = defineStore('global', () => {
         Logger.timeEnd('Global store initialised');
     }
 
+    function onClearCaches() {
+        const loading = ref<boolean>(false);
+
+        const clear = async () => {
+            loading.value = true;
+            Logger.debug('Clearing caches');
+
+            try {
+                // clear web worker caches
+                const cacheKeys = await caches.keys();
+                cacheKeys.forEach((l) => caches.delete(l));
+            } catch (error: any) {
+                errors.value.push(new GlobalError(error as Error));
+            }
+
+            loading.value = false;
+        };
+
+        return {
+            clear: useDebounceFn(clear, 200),
+            loading,
+        };
+    }
+
     return {
         setCurrentLocation,
         currentLocation,
         init,
+        onClearCaches,
+        errors,
+        hasErrored,
+        clearErrors,
     } as GlobalState;
 });

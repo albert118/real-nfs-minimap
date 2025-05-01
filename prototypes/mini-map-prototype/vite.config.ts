@@ -15,9 +15,6 @@ import AutoImport from 'unplugin-auto-import/vite';
 import Components from 'unplugin-vue-components/vite';
 import IconsResolver from 'unplugin-icons/resolver';
 
-// clear the service worker cache(s) by pasting this in the console
-// await caches.keys().then((k) => k.forEach(l => caches.delete(k)));
-
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [

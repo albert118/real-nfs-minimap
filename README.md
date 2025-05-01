@@ -46,16 +46,15 @@ Additional features I'd like to add,
   - [ ] choose your icon (think Wayze but cooler options)
   - [ ] theme (dark/light preferred or follow device)
   - [ ] labels (enable/disable marker labels)
+  - [ ] dev settings (clear cache, etc.)
 - [ ] "drive with friends" - friend markers if they're nearby
   - [ ] invite system
   - [ ] nearby prompt + opt-in setting (don't share location unless preferred)
 
-## Misc.
-
-### Prototypes
+## Prototypes
 
 Attempts with various configurations to see what's possible,
 
-1. [mapping-test](./mapping-test/README.md)
-2. [mini-map-prototype](./mini-map-prototype/README.md)
-3. [nfs-styled-minimap](./nfs-styled-minimap/README.md)
+1. [mapping-test](./prototypes/mapping-test/README.md)
+2. [mini-map-prototype](./prototypes/mini-map-prototype/README.md)
+3. [nfs-styled-minimap](./prototypes/nfs-styled-minimap/README.md)

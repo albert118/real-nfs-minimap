@@ -8,7 +8,13 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    LocationPin: typeof import('./../components/markers/LocationPin.vue')['default']
+    MiniMap: typeof import('./../components/mini-map/MiniMap.vue')['default']
+    MobileSpeedCameraMarker: typeof import('./../components/markers/MobileSpeedCameraMarker.vue')['default']
+    RedLightMarker: typeof import('./../components/markers/RedLightMarker.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SchoolZoneMarker: typeof import('./../components/markers/SchoolZoneMarker.vue')['default']
+    SimpleMarker: typeof import('./../components/markers/SimpleMarker.vue')['default']
   }
 }

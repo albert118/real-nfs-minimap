@@ -1,6 +1,5 @@
 import { defineStore } from 'pinia';
 import { useGeolocation } from '@vueuse/core';
-import { type Ref } from 'vue';
 import Logger from 'js-logger';
 
 export interface GlobalState {

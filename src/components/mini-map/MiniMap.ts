@@ -3,9 +3,6 @@ import type { ComponentInternalInstance } from 'vue';
 import Logger from 'js-logger';
 import { FeatureType, FeatureTypeMap } from '@domain-types/feature-types';
 import type { MapMarker } from '@components/markers/MapMarker';
-import 'leaflet-edgebuffer';
-// Enable the Grid Layer fadeout. https://gitlab.com/IvanSanchez/Leaflet.GridLayer.FadeOut
-import 'leaflet.gridlayer.fadeout';
 
 export interface MiniMapOptions {
     center: Coordinate;
@@ -28,8 +25,6 @@ export class MiniMap {
 
     constructor(el: HTMLElement, options: MiniMapOptions) {
         const { center, zoom } = options;
-
-        setDefaultIconOptions();
 
         this.__map = L.map(el);
         this.__logger.debug('created and mounted map instance');
@@ -103,18 +98,4 @@ export class MiniMap {
         this.removeMarkers(new Set());
         this.__map.remove();
     }
-}
-
-/**
- * Overrides the default implementation
- * https://leafletjs.com/reference.html#divicon
- */
-function setDefaultIconOptions() {
-    L.Icon.Default.prototype.options = {
-        ...L.Icon.Default.prototype.options,
-        iconUrl: undefined,
-        iconRetinaUrl: undefined,
-        shadowRetinaUrl: undefined,
-        iconSize: undefined,
-    };
 }

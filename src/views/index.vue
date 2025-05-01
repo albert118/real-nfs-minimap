@@ -8,9 +8,9 @@ import MiniMap from '@components/mini-map/MiniMap.vue';
     <main>
         <span>Hello world!</span>
         <!-- <MiniMap
-            :zoom="zoom"
-            :center="center"
-            :marker-features="markerFeatures"
-        /> -->
+        :zoom="zoom"
+        :center="center"
+        :marker-features="markerFeatures"
+    /> -->
     </main>
 </template>

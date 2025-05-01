@@ -96,7 +96,7 @@ export const useGlobal = defineStore('global', () => {
             try {
                 // clear web worker caches
                 const cacheKeys = await caches.keys();
-                cacheKeys.forEach((l) => caches.delete(l));
+                cacheKeys.forEach(l => caches.delete(l));
             } catch (error: any) {
                 errors.value.push(new GlobalError(error as Error));
             }

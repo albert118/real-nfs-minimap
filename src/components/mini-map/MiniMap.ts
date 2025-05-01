@@ -47,7 +47,7 @@ export class MiniMap {
     removeMarkers(toRemove: Set<MarkerFeature>) {
         this.__logger.time('removing markers');
 
-        toRemove.forEach((value) => {
+        toRemove.forEach(value => {
             // typing must be reapplied here, otherwise we lose deep-typing of the attributes
             const { marker }: { marker: MapMarker } = value;
             marker.marker && this.__map.removeLayer(marker.marker);
@@ -65,7 +65,7 @@ export class MiniMap {
         this.__logger.time('adding markers');
         this.__logger.debug(`will add '${toAdd.size}' markers`);
 
-        toAdd.forEach((value) => {
+        toAdd.forEach(value => {
             // typing must be reapplied here, otherwise we lose deep-typing of the attributes
             const {
                 type,

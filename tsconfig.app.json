@@ -29,8 +29,7 @@
             "@stores/*": ["./src/stores/*"],
             "@views/*": ["./src/views/*"],
             "@utils/*": ["./src/utils/*"],
-            "@types/*": ["./src/types/*"],
-            "@map-features": ["./src/map-features/*"],
+            "@domain-types/*": ["./src/domain-types/*"],
             "@plugins/*": ["./src/plugins/*"],
             "@components/*": ["./src/components/*"],
             "@router": ["./src/router/index.ts"]

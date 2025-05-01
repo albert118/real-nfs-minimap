@@ -1,7 +1,7 @@
 import L from 'leaflet';
 import type { ComponentInternalInstance } from 'vue';
 import Logger from 'js-logger';
-import { FeatureType, FeatureTypeMap } from '@map-features/feature-types';
+import { FeatureType, FeatureTypeMap } from '@domain-types/feature-types';
 import type { MapMarker } from '@components/markers/MapMarker';
 
 export interface MiniMapOptions {
